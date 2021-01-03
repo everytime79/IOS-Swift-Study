@@ -1,5 +1,5 @@
 ## Button 으로 Hello 출력
-1.IOS Study 1	에서 했던 것처럼 
+1. IOS Study 1	에서 했던 것처럼 
 App을 선택하고 Next
 Product Name : MyAlbum ,
 Interface : StoryBoard ,
