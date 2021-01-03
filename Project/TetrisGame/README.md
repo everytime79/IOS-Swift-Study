@@ -1,4 +1,6 @@
-# Tetris
+# TetrisGame
+
+## 사용 프로그램 & 언어 Xcode , Swift
 
 ## 시작 화면
 * 시작 버튼 ( -> 게임 화면 )
