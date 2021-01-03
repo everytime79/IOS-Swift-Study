@@ -5,7 +5,8 @@ Assets.xcassets 폴더 위치에 드래그 드랍으로 복사해 줍니다.
 ![](https://images.velog.io/images/everytime79/post/42202865-00d5-4d2d-8a6e-5978106c878e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-09%2022.14.29.png)
 
 2. Main.stroyboard로 돌아와서 Image View를 클릭하고, 우측 Inspector의 image 값에
-위에서 넣었던 사진의 이름을 입력합니다.![](https://images.velog.io/images/everytime79/post/1b524f31-b85c-4516-a167-eb62453c8a69/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-09%2022.16.58.png)
+위에서 넣었던 사진의 이름을 입력합니다.
+![](https://images.velog.io/images/everytime79/post/1b524f31-b85c-4516-a167-eb62453c8a69/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-09%2022.16.58.png)
 
 3. 만약 사진이 다음 사진과 같이 비율이 맞지 않는다면
 ![](https://images.velog.io/images/everytime79/post/31b03771-0f3f-4c4d-a6e1-0ea183034d93/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-09%2022.17.54.png)
