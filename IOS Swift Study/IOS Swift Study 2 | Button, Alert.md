@@ -25,8 +25,11 @@ Language :  Swift 으로 만들어 줍니다.
 우선 Hello 라고 이름을 붙이고 Connect 시켰습니다.![](https://images.velog.io/images/everytime79/post/e386192f-a740-43fc-bfc3-e2f7ca5a0e55/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-02%2019.12.18.png)
 5. ViewController.swift 에 다음과 같이 코드가 생긴 것을 확인
 ![](https://images.velog.io/images/everytime79/post/d926928b-5818-405d-9c22-1a4a66f74ce4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-02%2019.18.34.png)
+
 6. 생긴 func 에 수행할 코드를 입력합니다.
-7. print("hello") 를 추가했습니다.![](https://images.velog.io/images/everytime79/post/45a74545-332d-499f-ad0c-22ca38058763/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-02%2019.20.40.png)
+
+7. print("hello") 를 추가했습니다.
+![](https://images.velog.io/images/everytime79/post/45a74545-332d-499f-ad0c-22ca38058763/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-02%2019.20.40.png)
 8. 빌드를 하여 가상머신으로 버튼이 잘 작동하는지 확인합니다.
 ![](https://images.velog.io/images/everytime79/post/f942dbcc-79f9-45f5-8745-543177d7c650/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-02%2019.21.25.png)
 
