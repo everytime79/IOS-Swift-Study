@@ -1,6 +1,5 @@
 ## Button 으로 Hello 출력
-1.
-IOS Study 1	에서 했던 것처럼 
+1.IOS Study 1	에서 했던 것처럼 
 App을 선택하고 Next
 Product Name : MyAlbum ,
 Interface : StoryBoard ,
@@ -29,8 +28,10 @@ Language :  Swift 으로 만들어 줍니다.
 6. 생긴 func 에 수행할 코드를 입력합니다.
 
 7. print("hello") 를 추가했습니다.
+
 ![](https://images.velog.io/images/everytime79/post/45a74545-332d-499f-ad0c-22ca38058763/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-02%2019.20.40.png)
 8. 빌드를 하여 가상머신으로 버튼이 잘 작동하는지 확인합니다.
+
 ![](https://images.velog.io/images/everytime79/post/f942dbcc-79f9-45f5-8745-543177d7c650/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-02%2019.21.25.png)
 
 ---
