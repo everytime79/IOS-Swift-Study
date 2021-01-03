@@ -61,12 +61,15 @@ Swift에서 switch문은 여러 조건들을 다른 패턴들과 일치할 수 �
 ![](https://images.velog.io/images/everytime79/post/f5897c1d-1b63-4958-97e9-f9f9c2d6359d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.23.58.png)
 
 - where 을 사용하여 짝수 print
+
 ![](https://images.velog.io/images/everytime79/post/f571e25e-c712-4531-873c-8879ba60b3d9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.25.51.png) 
 
 - 특정 수를 제외하고 print
+
 ![](https://images.velog.io/images/everytime79/post/2e89a67c-3e07-4b3b-a744-1bfa30d63300/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.28.18.png)
 
 - 중첩해서 사용 ( 구구단 )
+
 ![](https://images.velog.io/images/everytime79/post/a7ccd910-a89c-499c-a621-80e1201a18cb/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.32.04.png)
 
 ### Switch
@@ -78,21 +81,27 @@ Swift에서 switch문은 여러 조건들을 다른 패턴들과 일치할 수 �
 (단, default 키워드 없이도 모든 경우가 커버 되었다면, default 키워드가 없어도 된다.)
 
 - 사용 예시
+
 ![](https://images.velog.io/images/everytime79/post/85ae8430-01f0-4874-8c53-d28d055e72a4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.37.30.png)
 
 - string 문자 -> case
+
 ![](https://images.velog.io/images/everytime79/post/50174e1d-53c9-4262-a435-a95b0c7ada3c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.53.34.png)
 
 - range 를 사용하여 case 사용이 가능합니다.
+
 ![](https://images.velog.io/images/everytime79/post/a6f19f1d-cf1d-41f2-9ef4-adfa9aaf291e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.40.49.png)
 
 - where 사용
+
 ![](https://images.velog.io/images/everytime79/post/ec2f0cb0-0414-417b-906e-7fcdb7d0be42/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.55.46.png)
 
 - , (쉼표) 를 사용해서 하나의 case에 여러 값을 넣어줄 수 있습니다.
+
 ![](https://images.velog.io/images/everytime79/post/15e66cfa-2835-4175-85ac-ea44f16d2934/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.47.11.png)
 
 - 튜플 -> case
+
 ![](https://images.velog.io/images/everytime79/post/48638f2d-6b92-4241-b2c6-f6596d8bcf26/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2018.51.40.png)
 ![](https://images.velog.io/images/everytime79/post/ae061370-cae9-4bb1-8a66-0f42f501a570/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-12-18%2019.00.22.png)
 
