@@ -4,6 +4,6 @@
   - Xcode
   - Swift
 
-## 개발 
+## 공부 블로그
   - [velog](https://velog.io/@everytime79/IOS-Swift-Study-10)
 
