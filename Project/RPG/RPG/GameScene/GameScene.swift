@@ -12,6 +12,8 @@ class GameScene: SKScene {
     
     let Player = SKSpriteNode(imageNamed: "RedSwan")
     
+    var TouchPoint = CGPoint()
+    
     // didMove 화면이 보이자 마자 실행
     override func didMove(to view: SKView) {
         

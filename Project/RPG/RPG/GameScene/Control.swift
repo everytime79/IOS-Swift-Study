@@ -11,10 +11,8 @@ extension GameScene {
         for touch in (touches) {
             
             let Location = touch.location(in: self)
-            
-            let WalkAction = SKAction.move(to: Location, duration: 5)
 
-            Player.run(WalkAction)
+            TouchPoint = Location
         }
     }
 // Touch_End
