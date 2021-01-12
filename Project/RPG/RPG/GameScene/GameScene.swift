@@ -12,6 +12,7 @@ class GameScene: SKScene {
     
     let Player = SKSpriteNode(imageNamed: "RedSwan")
     
+    // didMove 화면이 보이자 마자 실행
     override func didMove(to view: SKView) {
         
         self.addChild(Player)
