@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */,
-				EBA7A90D25ADFC1400206EF3 /* GameScene.sks */,
+				EBF5A36E25ADFEBB0052BFEF /* Map */,
 				EBA7A90F25ADFC1400206EF3 /* Actions.sks */,
 				EBA7A91125ADFC1400206EF3 /* GameScene.swift */,
 				EBA7A91325ADFC1400206EF3 /* GameViewController.swift */,
@@ -68,6 +68,14 @@
 				EBA7A91A25ADFC1600206EF3 /* Info.plist */,
 			);
 			path = RPG;
+			sourceTree = "<group>";
+		};
+		EBF5A36E25ADFEBB0052BFEF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				EBA7A90D25ADFC1400206EF3 /* GameScene.sks */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
