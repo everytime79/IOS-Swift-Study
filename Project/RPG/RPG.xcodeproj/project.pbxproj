@@ -58,10 +58,10 @@
 		EBA7A90A25ADFC1400206EF3 /* RPG */ = {
 			isa = PBXGroup;
 			children = (
-				EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */,
+				EBF5A37025ADFF080052BFEF /* GameScene */,
 				EBF5A36E25ADFEBB0052BFEF /* Map */,
+				EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */,
 				EBA7A90F25ADFC1400206EF3 /* Actions.sks */,
-				EBA7A91125ADFC1400206EF3 /* GameScene.swift */,
 				EBA7A91325ADFC1400206EF3 /* GameViewController.swift */,
 				EBA7A91525ADFC1400206EF3 /* Main.storyboard */,
 				EBA7A91825ADFC1600206EF3 /* Assets.xcassets */,
@@ -76,6 +76,14 @@
 				EBA7A90D25ADFC1400206EF3 /* GameScene.sks */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		EBF5A37025ADFF080052BFEF /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				EBA7A91125ADFC1400206EF3 /* GameScene.swift */,
+			);
+			path = GameScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
