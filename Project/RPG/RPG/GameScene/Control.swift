@@ -8,6 +8,28 @@ extension GameScene {
 // MARK: - Control Ball Angle
     func ControlBallAngle(Degree: CGFloat) {
         
+        if (Degree >= -45 && Degree < 45) {
+        
+            print("Player's current direction is East")
+            
+        } else if (Degree >= 45 && Degree < 135) {
+            
+            print("Player's current direction is North")
+            
+        } else if (Degree >= 135 && Degree < 180) {
+            
+            print("Player's current direction is West")
+            
+        } else if (Degree >= -180 && Degree < -130) {
+            
+            print("Player's current direction is West")
+            
+        } else if (Degree >= -135 && Degree < -45) {
+            
+            print("Player's current direction is South")
+
+        }
+    
     }
 // Control Ball Angle_End
     
@@ -34,6 +56,9 @@ extension GameScene {
             let DeltaX = Location.x - ControlBase.position.x
             let DeltaY = Location.y - ControlBall.position.y
             let Angle = atan2(DeltaY, DeltaX)
+            let Degree = Angle * CGFloat(180 / Double.pi)
+            
+            ControlBallAngle(Degree: Degree)
             
             let Lenght = ControlBase.frame.size.height / 2
             let DistanceX = cos(Angle) * Lenght
