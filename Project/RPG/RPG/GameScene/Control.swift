@@ -42,8 +42,28 @@ extension GameScene {
             
             let Location = touch.location(in: self)
             
-            ControlBase.position = Location
-            ControlBall.position = ControlBase.position
+            if Location.x < 0 {
+                
+                ControlBase.position = Location
+                ControlBall.position = ControlBase.position
+                
+            } else {
+                
+                if AttackButtonBase.frame.contains(Location) {
+                    
+                    print("Attack")
+                    
+                } else if ItemButtonBase.frame.contains(Location) {
+                    
+                    print("Item")
+                    
+                } else if SkillButtonBase.frame.contains(Location) {
+                    
+                    print("Skill")
+                    
+                }
+                
+            }
         }
     }
     
@@ -53,34 +73,45 @@ extension GameScene {
             
             let Location = touch.location(in: self)
             
-            let DeltaX = Location.x - ControlBase.position.x
-            let DeltaY = Location.y - ControlBall.position.y
-            let Angle = atan2(DeltaY, DeltaX)
-            let Degree = Angle * CGFloat(180 / Double.pi)
-            
-            ControlBallAngle(Degree: Degree)
-            
-            let Lenght = ControlBase.frame.size.height / 2
-            let DistanceX = cos(Angle) * Lenght
-            let DistanceY = sin(Angle) * Lenght
-            
-            if ControlBase.frame.contains(Location) { // 컨트롤베이스 프레임 내에서 터지를 하게 된다면
+            if Location.x < 0 {
                 
-                ControlBall.position = Location // 컨트롤 볼이 그 부분으로 이동한다.
-            } else {
+                let DeltaX = Location.x - ControlBase.position.x
+                let DeltaY = Location.y - ControlBall.position.y
+                let Angle = atan2(DeltaY, DeltaX)
+                let Degree = Angle * CGFloat(180 / Double.pi)
                 
-                ControlBall.position = CGPoint(x: ControlBase.position.x + DistanceX, y: ControlBase.position.y + DistanceY)
+                ControlBallAngle(Degree: Degree)
+                
+                let Lenght = ControlBase.frame.size.height / 2
+                let DistanceX = cos(Angle) * Lenght
+                let DistanceY = sin(Angle) * Lenght
+                
+                if ControlBase.frame.contains(Location) { // 컨트롤베이스 프레임 내에서 터지를 하게 된다면
+                    
+                    ControlBall.position = Location // 컨트롤 볼이 그 부분으로 이동한다.
+                } else {
+                    
+                    ControlBall.position = CGPoint(x: ControlBase.position.x + DistanceX, y: ControlBase.position.y + DistanceY)
+                }
+                
             }
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) { // 터치 후 똈을 경우
                                 
-        let MoveCenterActoin = SKAction.move(to: ControlBase.position, duration: 0.2)
-        MoveCenterActoin.timingMode = .easeOut // 움직이면서 느려지는 효과
+        for touch in (touches) {
             
-        ControlBall.run(MoveCenterActoin)
-        
+            let Location = touch.location(in: self)
+            
+            if Location.x < 0 {
+                
+                let MoveCenterActoin = SKAction.move(to: ControlBase.position, duration: 0.2)
+                MoveCenterActoin.timingMode = .easeOut // 움직이면서 느려지는 효과
+                    
+                ControlBall.run(MoveCenterActoin)
+            }
+        }
     }
 // Touch_End
 }

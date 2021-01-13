@@ -15,6 +15,15 @@ class GameScene: SKScene {
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
     let ControlBall = SKSpriteNode(imageNamed: "ControlBall")
+    
+    let AttackButtonBase = SKSpriteNode(imageNamed: "ButtonBase")
+    let AttackButton = SKSpriteNode(imageNamed: "AttackButton")
+    
+    let ItemButtonBase = SKSpriteNode(imageNamed: "ButtonBase")
+    let ItemButton = SKSpriteNode(imageNamed: "ItemButton")
+    
+    let SkillButtonBase = SKSpriteNode(imageNamed: "ButtonBase")
+    let SkillButton = SKSpriteNode(imageNamed: "SkillButton")
 // Variable_End
     
     // didMove 화면이 보이자 마자 실행
@@ -30,6 +39,41 @@ class GameScene: SKScene {
         ControlBall.zPosition = ControlBase.zPosition
         ControlBall.alpha = ControlBase.alpha
         self.addChild(ControlBall)
+        
+        // AttackButton //
+        AttackButtonBase.position = CGPoint(x: 500, y: -200)
+        AttackButtonBase.zPosition = 99
+        AttackButtonBase.alpha = 0.5
+        self.addChild(AttackButtonBase)
+        
+        AttackButton.position = AttackButtonBase.position
+        AttackButton.zPosition = 100
+        AttackButton.alpha = 0.5
+        self.addChild(AttackButton)
+        
+        // ItemButton //
+        ItemButtonBase.position = CGPoint(x: 350, y: -200)
+        ItemButtonBase.zPosition = 99
+        ItemButtonBase.alpha = 0.5
+        self.addChild(ItemButtonBase)
+        
+        ItemButton.position = ItemButtonBase.position
+        ItemButton.zPosition = 100
+        ItemButton.alpha = 0.5
+        self.addChild(ItemButton)
+        
+        // SkillButton //
+        
+        SkillButtonBase.position = CGPoint(x: 425, y: -100)
+        SkillButtonBase.zPosition = 99
+        SkillButtonBase.alpha = 0.5
+        self.addChild(SkillButtonBase)
+        
+        SkillButton.position = SkillButtonBase.position
+        SkillButton.zPosition = 100
+        SkillButton.alpha = 0.5
+        self.addChild(SkillButton)
+
         
         // Player //
         Player.zPosition = 10
