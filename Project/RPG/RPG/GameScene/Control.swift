@@ -9,25 +9,24 @@ extension GameScene {
     func ControlBallAngle(Degree: CGFloat) {
         
         if (Degree >= -45 && Degree < 45) {
-        
-            print("Player's current direction is East")
+            
+            Player.CurrentDirection =  Direction.E
             
         } else if (Degree >= 45 && Degree < 135) {
             
-            print("Player's current direction is North")
-            
+            Player.CurrentDirection =  Direction.N
+
         } else if (Degree >= 135 && Degree < 180) {
             
-            print("Player's current direction is West")
+            Player.CurrentDirection =  Direction.W
+
+        } else if (Degree >= -180 && Degree < -135) {
             
-        } else if (Degree >= -180 && Degree < -130) {
-            
-            print("Player's current direction is West")
+            Player.CurrentDirection =  Direction.W
             
         } else if (Degree >= -135 && Degree < -45) {
             
-            print("Player's current direction is South")
-
+            Player.CurrentDirection =  Direction.S
         }
     
     }
@@ -110,6 +109,7 @@ extension GameScene {
                 MoveCenterActoin.timingMode = .easeOut // 움직이면서 느려지는 효과
                     
                 ControlBall.run(MoveCenterActoin)
+                Player.CurrentDirection = Direction.ST
             }
         }
     }

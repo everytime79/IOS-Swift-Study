@@ -10,8 +10,8 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-// Mark: - Variable
-    let Player = SKSpriteNode(imageNamed: "RedSwan")
+// MARK: - Variable
+    let Player = Character(imageNamed: "RedSwan")
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
     let ControlBall = SKSpriteNode(imageNamed: "ControlBall")
