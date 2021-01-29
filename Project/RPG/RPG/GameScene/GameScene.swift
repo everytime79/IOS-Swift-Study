@@ -106,5 +106,4 @@ class GameScene: SKScene {
         Data_Player()
         Data_Monster()
     }
-    
 }
