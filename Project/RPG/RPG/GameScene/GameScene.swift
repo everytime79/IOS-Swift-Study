@@ -105,5 +105,6 @@ class GameScene: SKScene {
         GameData = NSMutableDictionary(contentsOfFile: Path!)!
         Data_Player()
         Data_Monster()
+        
     }
 }
