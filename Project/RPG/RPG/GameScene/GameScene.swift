@@ -7,7 +7,7 @@
 
 import SpriteKit
 import GameplayKit
-
+//테스트
 class GameScene: SKScene {
     
 // MARK: - Variable
