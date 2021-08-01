@@ -19,6 +19,10 @@
 		EBA7A91725ADFC1400206EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A91525ADFC1400206EF3 /* Main.storyboard */; };
 		EBA7A91925ADFC1600206EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A91825ADFC1600206EF3 /* Assets.xcassets */; };
 		EBA9673425AF5D6800229A6A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA9673325AF5D6800229A6A /* Character.swift */; };
+		EBBBBB5826B6C0970015BE36 /* RedSwanMoveN.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBB5426B6C0960015BE36 /* RedSwanMoveN.atlas */; };
+		EBBBBB5926B6C0970015BE36 /* RedSwanMoveE.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBB5526B6C0960015BE36 /* RedSwanMoveE.atlas */; };
+		EBBBBB5A26B6C0970015BE36 /* RedSwanMoveS.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBB5626B6C0970015BE36 /* RedSwanMoveS.atlas */; };
+		EBBBBB5B26B6C0970015BE36 /* RedSwanMoveW.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBB5726B6C0970015BE36 /* RedSwanMoveW.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		EBA7A91825ADFC1600206EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBA7A91A25ADFC1600206EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBA9673325AF5D6800229A6A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		EBBBBB5426B6C0960015BE36 /* RedSwanMoveN.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveN.atlas; sourceTree = "<group>"; };
+		EBBBBB5526B6C0960015BE36 /* RedSwanMoveE.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveE.atlas; sourceTree = "<group>"; };
+		EBBBBB5626B6C0970015BE36 /* RedSwanMoveS.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveS.atlas; sourceTree = "<group>"; };
+		EBBBBB5726B6C0970015BE36 /* RedSwanMoveW.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveW.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 				EBF5A37025ADFF080052BFEF /* GameScene */,
 				EBF5A36E25ADFEBB0052BFEF /* Map */,
 				EBA9673625AF5D7100229A6A /* Character */,
+				EBBBBB5326B6C0700015BE36 /* Image */,
 				EB2D5E2725AF6255008B6A6A /* Supporting File */,
 				EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */,
 				EBA7A90F25ADFC1400206EF3 /* Actions.sks */,
@@ -105,6 +114,17 @@
 				EB2D5E2E25AF63E3008B6A6A /* Function */,
 			);
 			path = Character;
+			sourceTree = "<group>";
+		};
+		EBBBBB5326B6C0700015BE36 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EBBBBB5526B6C0960015BE36 /* RedSwanMoveE.atlas */,
+				EBBBBB5426B6C0960015BE36 /* RedSwanMoveN.atlas */,
+				EBBBBB5626B6C0970015BE36 /* RedSwanMoveS.atlas */,
+				EBBBBB5726B6C0970015BE36 /* RedSwanMoveW.atlas */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		EBF5A36E25ADFEBB0052BFEF /* Map */ = {
@@ -184,8 +204,12 @@
 			files = (
 				EBA7A91725ADFC1400206EF3 /* Main.storyboard in Resources */,
 				EBA7A90E25ADFC1400206EF3 /* GameScene.sks in Resources */,
+				EBBBBB5826B6C0970015BE36 /* RedSwanMoveN.atlas in Resources */,
 				EBA7A91925ADFC1600206EF3 /* Assets.xcassets in Resources */,
 				EBA7A91025ADFC1400206EF3 /* Actions.sks in Resources */,
+				EBBBBB5926B6C0970015BE36 /* RedSwanMoveE.atlas in Resources */,
+				EBBBBB5A26B6C0970015BE36 /* RedSwanMoveS.atlas in Resources */,
+				EBBBBB5B26B6C0970015BE36 /* RedSwanMoveW.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

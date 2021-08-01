@@ -7,6 +7,8 @@ class Character: SKSpriteNode {
 // MARK: - Variable
     // Direction //
     var CurrentDirection = Direction.ST
+    var LastDirection = Direction.ST
+    
     
     // Status //
     let SP = CGFloat(5)
