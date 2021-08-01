@@ -2,8 +2,7 @@
 import SpriteKit
 import GameplayKit
 
-//2021. 7. 31.
-//이동 애니메이션 추가하기
+
 // GameScene의 연장, 단지 별개의 파일로 나눴다.
 extension GameScene {
     
