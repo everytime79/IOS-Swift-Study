@@ -88,10 +88,46 @@ extension Character {
             SpeedX = 0
             SpeedY = -SP
             
+            if CurrentDirection != LastDirection {
+                
+                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveE")
+                var MoveFrame = [SKTexture]()
+                
+                for i in 1...MoveAtlas.textureNames.count / 2 {
+
+                    let TextureName = "RedSwanMoveE" + "\(i)"
+                    MoveFrame .append(MoveAtlas.textureNamed(TextureName))
+                }
+                
+                let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
+                
+                self.run(MoveAnimationAction, withKey: "Move")
+                
+            }
+            LastDirection = CurrentDirection
+            
         case .N:
             SpeedX = 0
             SpeedY = SP
+            
+            if CurrentDirection != LastDirection {
+                
+                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveE")
+                var MoveFrame = [SKTexture]()
+                
+                for i in 1...MoveAtlas.textureNames.count / 2 {
 
+                    let TextureName = "RedSwanMoveE" + "\(i)"
+                    MoveFrame .append(MoveAtlas.textureNamed(TextureName))
+                }
+                
+                let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
+                
+                self.run(MoveAnimationAction, withKey: "Move")
+                
+            }
+            LastDirection = CurrentDirection
+            
         }
         
         self.position = CGPoint(x: self.position.x + SpeedX, y: self.position.y + SpeedY)
