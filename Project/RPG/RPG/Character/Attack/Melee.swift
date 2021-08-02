@@ -27,7 +27,7 @@ extension Character {
         } else if self.AttackDirection == .N {
             AttackBody.position = CGPoint(x: 15, y: -12)
             AttackBody.run(SKAction(named: "Attack_MeleeN")!) //!는 해당하는 액션이 반드시 있다.
-        } else
+        } 
         
     
     
