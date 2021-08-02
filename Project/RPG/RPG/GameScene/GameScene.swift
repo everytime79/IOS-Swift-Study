@@ -64,7 +64,7 @@ class GameScene: SKScene {
         
         // SkillButton //
         
-        SkillButtonBase.position = CGPoint(x: 425, y: -100)
+        SkillButtonBase.position = CGPoint(x: 500, y: -50)
         SkillButtonBase.zPosition = 99
         SkillButtonBase.alpha = 0.5
         self.addChild(SkillButtonBase)

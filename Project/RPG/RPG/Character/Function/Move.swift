@@ -36,7 +36,11 @@ extension Character {
                     
                     self.texture = SKTexture(imageNamed: "RedSwanMoveN1")
                 } //최종 방향에 해당하는 곳으로 쳐다보게 한다.
+                
+                AttackDirection = LastDirection
             }
+            
+            LastDirection = CurrentDirection
             
         case .E:
             SpeedX = SP
@@ -59,6 +63,8 @@ extension Character {
                 // repeat한다. with 무브프레임, 바뀌는 시간 0.125
                 self.run(MoveAnimationAction, withKey: "Move")
                 // 캐릭터가 실행, 그리고 이 액션의 이름은 Move
+                
+                AttackDirection = CurrentDirection
             }
             LastDirection = CurrentDirection
             
@@ -81,6 +87,7 @@ extension Character {
                 
                 self.run(MoveAnimationAction, withKey: "Move")
                 
+                AttackDirection = CurrentDirection
             }
             LastDirection = CurrentDirection
             
@@ -103,6 +110,7 @@ extension Character {
                 
                 self.run(MoveAnimationAction, withKey: "Move")
                 
+                AttackDirection = CurrentDirection
             }
             LastDirection = CurrentDirection
             
@@ -125,6 +133,7 @@ extension Character {
                 
                 self.run(MoveAnimationAction, withKey: "Move")
                 
+                AttackDirection = CurrentDirection
             }
             LastDirection = CurrentDirection
             
