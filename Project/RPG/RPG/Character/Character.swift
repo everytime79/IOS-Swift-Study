@@ -9,6 +9,8 @@ class Character: SKSpriteNode {
     var CurrentDirection = Direction.ST
     var LastDirection = Direction.ST
     
+    //공격에 대한 방향
+    var AttackDirection = Direction.S
     
     // Status //
     let SP = CGFloat(5)
