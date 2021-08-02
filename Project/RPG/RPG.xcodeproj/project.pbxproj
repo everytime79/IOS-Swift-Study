@@ -13,6 +13,7 @@
 		EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2B25AF63DF008B6A6A /* Move.swift */; };
 		EB80470026B81A170047132A /* Attack_Melee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB8046FF26B81A170047132A /* Attack_Melee.atlas */; };
 		EB80470426B81BF00047132A /* Melee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80470326B81BF00047132A /* Melee.swift */; };
+		EB80470C26B829A10047132A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80470B26B829A10047132A /* Item.swift */; };
 		EBA7A90C25ADFC1400206EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */; };
 		EBA7A90E25ADFC1400206EF3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A90D25ADFC1400206EF3 /* GameScene.sks */; };
 		EBA7A91025ADFC1400206EF3 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A90F25ADFC1400206EF3 /* Actions.sks */; };
@@ -34,6 +35,7 @@
 		EB2D5E2B25AF63DF008B6A6A /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		EB8046FF26B81A170047132A /* Attack_Melee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Melee.atlas; sourceTree = "<group>"; };
 		EB80470326B81BF00047132A /* Melee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melee.swift; sourceTree = "<group>"; };
+		EB80470B26B829A10047132A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EBA7A90825ADFC1400206EF3 /* RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA7A90D25ADFC1400206EF3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2D5E2B25AF63DF008B6A6A /* Move.swift */,
+				EB80470B26B829A10047132A /* Item.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB80470C26B829A10047132A /* Item.swift in Sources */,
 				EBA7A91225ADFC1400206EF3 /* GameScene.swift in Sources */,
 				EB00A58325AE02950048713E /* Control.swift in Sources */,
 				EB2D5E2525AF6251008B6A6A /* Share.swift in Sources */,

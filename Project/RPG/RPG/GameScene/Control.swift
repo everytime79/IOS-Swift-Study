@@ -55,7 +55,7 @@ extension GameScene {
                     
                 } else if ItemButtonBase.frame.contains(Location) {
                     
-                    print("Item")
+                    Player.Function_Item()
                     
                 } else if SkillButtonBase.frame.contains(Location) {
                     
