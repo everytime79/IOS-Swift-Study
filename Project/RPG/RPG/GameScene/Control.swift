@@ -51,7 +51,7 @@ extension GameScene {
                 
                 if AttackButtonBase.frame.contains(Location) {
                     
-                    print("Attack")
+                    Player.Attack_Melee()
                     
                 } else if ItemButtonBase.frame.contains(Location) {
                     
