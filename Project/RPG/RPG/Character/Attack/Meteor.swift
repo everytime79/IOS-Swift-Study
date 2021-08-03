@@ -22,10 +22,30 @@ extension Character {
             Scene.addChild(AttackBody)
             
             let FadeInAction = SKAction.fadeIn(withDuration: 1.5)
-            let FallAction = SKAction.run {
-                AttackBody.run(SKAction(named: "Attack_Meteor")!)
-            }
+            let FallAction = SKAction.run { AttackBody.run(SKAction(named: "Attack_Meteor")!)}
+            let WaitAction = SKAction.wait(forDuration: 0.2)
+            let ShakeAction = SKAction.run { AttackBody.Attack_Meteor_Animation()}
+            let RemoveAction = SKAction.run { AttackBody.removeFromParent()}
+            
+            AttackBody.run(SKAction.sequence([FadeInAction, FallAction, WaitAction, ShakeAction,RemoveAction]))
         }
+    }
+        
+    func Attack_Meteor_Animation() {
+        
+        let ShakeX1 = SKAction.move(by: CGVector.init(dx: -3, dy: 0), duration: 0.05)
+        let ShakeX2 = SKAction.move(by: CGVector.init(dx: 3, dy: 0), duration: 0.05)
+        let ShakeX3 = SKAction.move(by: CGVector.init(dx: -3, dy: 0), duration: 0.05)
+        let ShakeX4 = SKAction.move(by: CGVector.init(dx: 3, dy: 0), duration: 0.05)
+        
+        let ShakeY1 = SKAction.move(by: CGVector.init(dx: 0, dy: -1), duration: 0.05)
+        let ShakeY2 = SKAction.move(by: CGVector.init(dx: 0, dy: 1), duration: 0.05)
+        let ShakeY3 = SKAction.move(by: CGVector.init(dx: 0, dy: -1), duration: 0.05)
+        let ShakeY4 = SKAction.move(by: CGVector.init(dx: 0, dy: 1), duration: 0.05)
+        
+        LocalCamera.run(SKAction.sequence([ShakeX1,ShakeX2,ShakeX3,ShakeX4]))
+        LocalCamera.run(SKAction.sequence([ShakeY1,ShakeY2,ShakeY3,ShakeY4]))
+
     }
     
     
