@@ -26,6 +26,7 @@
 		EBBBBB5926B6C0970015BE36 /* RedSwanMoveE.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBB5526B6C0960015BE36 /* RedSwanMoveE.atlas */; };
 		EBBBBB5A26B6C0970015BE36 /* RedSwanMoveS.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBB5626B6C0970015BE36 /* RedSwanMoveS.atlas */; };
 		EBBBBB5B26B6C0970015BE36 /* RedSwanMoveW.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBB5726B6C0970015BE36 /* RedSwanMoveW.atlas */; };
+		EBC7D43426B96E0C00331695 /* Attack_Meteor.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBC7D43326B96E0C00331695 /* Attack_Meteor.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		EBBBBB5526B6C0960015BE36 /* RedSwanMoveE.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveE.atlas; sourceTree = "<group>"; };
 		EBBBBB5626B6C0970015BE36 /* RedSwanMoveS.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveS.atlas; sourceTree = "<group>"; };
 		EBBBBB5726B6C0970015BE36 /* RedSwanMoveW.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveW.atlas; sourceTree = "<group>"; };
+		EBC7D43326B96E0C00331695 /* Attack_Meteor.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Meteor.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		EB8046FE26B819FE0047132A /* Attack */ = {
 			isa = PBXGroup;
 			children = (
+				EBC7D43326B96E0C00331695 /* Attack_Meteor.atlas */,
 				EB8046FF26B81A170047132A /* Attack_Melee.atlas */,
 			);
 			path = Attack;
@@ -238,6 +241,7 @@
 				EBA7A91725ADFC1400206EF3 /* Main.storyboard in Resources */,
 				EBA7A90E25ADFC1400206EF3 /* GameScene.sks in Resources */,
 				EBBBBB5826B6C0970015BE36 /* RedSwanMoveN.atlas in Resources */,
+				EBC7D43426B96E0C00331695 /* Attack_Meteor.atlas in Resources */,
 				EBA7A91925ADFC1600206EF3 /* Assets.xcassets in Resources */,
 				EBA7A91025ADFC1400206EF3 /* Actions.sks in Resources */,
 				EBBBBB5926B6C0970015BE36 /* RedSwanMoveE.atlas in Resources */,
