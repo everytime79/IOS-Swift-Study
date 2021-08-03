@@ -20,6 +20,11 @@ extension Character {
             AttackBody.alpha = 0
             
             Scene.addChild(AttackBody)
+            
+            let FadeInAction = SKAction.fadeIn(withDuration: 1.5)
+            let FallAction = SKAction.run {
+                AttackBody.run(SKAction(named: "Attack_Meteor")!)
+            }
         }
     }
     
