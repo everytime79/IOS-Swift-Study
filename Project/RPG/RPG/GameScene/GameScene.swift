@@ -29,6 +29,12 @@ class GameScene: SKScene {
     // didMove 화면이 보이자 마자 실행
     override func didMove(to view: SKView) {
         
+        Scene = self
+        
+        // Local Camera //
+        self.camera = LocalCamera
+        self.addChild(LocalCamera)
+        
         // Controller //
         ControlBase.position = CGPoint(x: -500, y: -200) // 위치 좌표
         ControlBase.zPosition = 100 // 레이어의 높이

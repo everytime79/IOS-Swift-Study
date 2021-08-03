@@ -59,7 +59,7 @@ extension GameScene {
                     
                 } else if SkillButtonBase.frame.contains(Location) {
                     
-                    print("Skill")
+                    Player.Attack_Meteor()
                     
                 }
                 
