@@ -14,6 +14,7 @@
 		EB80470026B81A170047132A /* Attack_Melee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB8046FF26B81A170047132A /* Attack_Melee.atlas */; };
 		EB80470426B81BF00047132A /* Melee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80470326B81BF00047132A /* Melee.swift */; };
 		EB80470C26B829A10047132A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80470B26B829A10047132A /* Item.swift */; };
+		EB82FE4726C009EE00619118 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB82FE4626C009EE00619118 /* Delay.swift */; };
 		EBA7A90C25ADFC1400206EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */; };
 		EBA7A90E25ADFC1400206EF3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A90D25ADFC1400206EF3 /* GameScene.sks */; };
 		EBA7A91025ADFC1400206EF3 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A90F25ADFC1400206EF3 /* Actions.sks */; };
@@ -38,6 +39,7 @@
 		EB8046FF26B81A170047132A /* Attack_Melee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Melee.atlas; sourceTree = "<group>"; };
 		EB80470326B81BF00047132A /* Melee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melee.swift; sourceTree = "<group>"; };
 		EB80470B26B829A10047132A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EB82FE4626C009EE00619118 /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		EBA7A90825ADFC1400206EF3 /* RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA7A90D25ADFC1400206EF3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				EB2D5E2B25AF63DF008B6A6A /* Move.swift */,
 				EB80470B26B829A10047132A /* Item.swift */,
+				EB82FE4626C009EE00619118 /* Delay.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				EB80470426B81BF00047132A /* Melee.swift in Sources */,
 				EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */,
 				EBA9673425AF5D6800229A6A /* Character.swift in Sources */,
+				EB82FE4726C009EE00619118 /* Delay.swift in Sources */,
 				EBA7A91425ADFC1400206EF3 /* GameViewController.swift in Sources */,
 				EBA7A90C25ADFC1400206EF3 /* AppDelegate.swift in Sources */,
 			);
