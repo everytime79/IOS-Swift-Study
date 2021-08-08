@@ -40,6 +40,7 @@ extension Character {
             let EndAngle = CGFloat.pi * 2 * Percent
             let Center = CGPoint.zero
             
+            //베지에 곡선
             let BezeirPath = UIBezierPath()
             BezeirPath.move(to: Center)
         }
