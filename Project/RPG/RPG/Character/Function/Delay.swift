@@ -11,6 +11,19 @@ extension Character {
         let Circle = SKShapeNode(circleOfRadius: Radius)
         // 스킬 버튼 보다는 위에 만들어줘야 하기 때문에 (버튼 : 100) -> 101로 셋팅
         Circle.zPosition = 101
+        Circle.zRotation = CGFloat.pi / 2
+        // /255를 해줘야 함, 알파는 투명도를 나타냄
+        Circle.fillColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.2)
+        // 겉색 , clear시 아에 없앰.
+        Circle.strokeColor = UIColor.clear
+        
+        if Button == "AttackButton" {
+            Circle.position = Scene.AttackButton.position
+        } else if Button == "SkillButton" {
+            Circle.position = Scene.SkillButton.position
+        }
+        
+        Scene.addChild(Circle)
         
     }
 }
