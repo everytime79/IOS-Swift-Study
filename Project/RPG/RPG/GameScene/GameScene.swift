@@ -37,12 +37,13 @@ class GameScene: SKScene {
         // Controller //
         ControlBase.position = CGPoint(x: -500, y: -200) // 위치 좌표
         ControlBase.zPosition = 100 // 레이어의 높이
-        ControlBase.alpha = 0.5 // 투명도
+        ControlBase.alpha = 0.4 // 투명도
         self.addChild(ControlBase)
         
         ControlBall.position = ControlBase.position
         ControlBall.zPosition = ControlBase.zPosition
-        ControlBall.alpha = ControlBase.alpha
+        ControlBall.alpha = 0.8
+        // ControlBall.alpha = ControlBase.alpha
         self.addChild(ControlBall)
         
         // AttackButton //
