@@ -11,10 +11,14 @@ extension Character {
         self.addChild(AttackBody)
         Attack_Melee_Animation(AttackBody: AttackBody)
         
+        // Action
         let WaitAction = SKAction.wait(forDuration: 0.2)
         let RemoveAction = SKAction.run { AttackBody.removeFromParent()}
         //WaitAction 이 끝나야, Remove 하도록 sequence
         AttackBody.run(SKAction.sequence([WaitAction, RemoveAction]))
+        
+        // Delay
+        Function_DelayEffect(Button: "AttackButton", Delay: 0.5)
     }
     
     func Attack_Melee_Animation(AttackBody: Character){
