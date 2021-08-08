@@ -33,6 +33,15 @@ extension Character {
         
         let DelayAction = SKAction.run {
             
+            Percent -= Increment
+            
+            // Shape
+            let StartAngle = CGFloat(0)
+            let EndAngle = CGFloat.pi * 2 * Percent
+            let Center = CGPoint.zero
+            
+            let BezeirPath = UIBezierPath()
+            BezeirPath.move(to: Center)
         }
     }
 }
