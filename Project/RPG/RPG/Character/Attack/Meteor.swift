@@ -29,6 +29,10 @@ extension Character {
             
             AttackBody.run(SKAction.sequence([FadeInAction, FallAction, WaitAction, ShakeAction,RemoveAction]))
         }
+            
+        // Delay
+        Function_DelayEffect(Button: "SkillButton", Delay: 5)
+
     }
         
     func Attack_Meteor_Animation() {
