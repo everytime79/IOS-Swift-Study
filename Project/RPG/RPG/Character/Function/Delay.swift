@@ -43,6 +43,18 @@ extension Character {
             //베지에 곡선
             let BezeirPath = UIBezierPath()
             BezeirPath.move(to: Center)
+            BezeirPath.addArc(withCenter: Center, radius: Radius, startAngle: StartAngle, endAngle: EndAngle, clockwise: true) //마지막은 시계 방향으로 할 것인가 여부
+            BezeirPath.addLine(to: Center)
+            
+            Circle.path = BezeirPath.cgPath
+        }
+        
+        let waitAction = SKAction.wait(forDuration: Interval)
+        
+        Circle.run(SKAction.repeat(SKAction.sequence([DelayAction, waitAction]), count: Step-1)){
+            
+            Circle.path = nil
+            Circle.removeFromParent()
         }
     }
 }
