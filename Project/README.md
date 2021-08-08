@@ -1,3 +1,1 @@
-# Project
-- IOS App
-
+# IOS App Project (practice)
