@@ -13,7 +13,7 @@ extension Character {
         Circle.zPosition = 101
         Circle.zRotation = CGFloat.pi / 2
         // /255를 해줘야 함, 알파는 투명도를 나타냄
-        Circle.fillColor = UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 0.2)
+        Circle.fillColor = UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 0.6)
         // 겉색 , clear시 아에 없앰.
         Circle.strokeColor = UIColor.clear
         
