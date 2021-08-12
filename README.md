@@ -5,6 +5,6 @@
 | Tool | Version |
 |:------:|:------:|
 | MacOS | 11.2 beta |
-| Xcode | 12.2 |
+| Xcode | 12.2 (12B45b) |
 
 # 21. 8. 1. ~
