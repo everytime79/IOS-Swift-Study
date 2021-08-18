@@ -85,9 +85,8 @@ class GameScene: SKScene {
         // Data //
         let Path = Bundle.main.path(forResource: "GameData", ofType: "plist")
         GameData = NSMutableDictionary(contentsOfFile: Path!)!
-        // Player //
-        Player.zPosition = 10
-        self.addChild(Player)
+        Data_Player()
+        
     }
 
     
