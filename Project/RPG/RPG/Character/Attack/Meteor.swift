@@ -30,7 +30,19 @@ extension Character {
             AttackBody.run(SKAction.sequence([FadeInAction, FallAction, WaitAction, ShakeAction,RemoveAction]))
         }
             
-        // Delay
+        // Delay -> 딜레이에 대한 애니메이션
+        let MoveWaitAction = SKAction.wait(forDuration: 0.2)
+        let MoveDelayAction = SKAction.run { self.MoveDelayIs = false}
+        
+        let AttackWaitAction = SKAction.wait(forDuration: 0.5)
+        let AttackDelayAction = SKAction.run { self.MoveDelayIs = false}
+        
+        Function_DelayEffect(Button: "AttackButton", Delay: 0.5)
+        MoveDelayIs = true
+        AttackDelayIs = true
+        
+        self.run(SKAction.sequence([MoveWaitAction, MoveDelayAction])) // 0.2 초 기다린 후 -> 다시 가능하게
+        self.run(SKAction.sequence([AttackWaitAction, AttackDelayAction])) // 0.5 초 기다린 후 -> 다시 가능하게
         Function_DelayEffect(Button: "SkillButton", Delay: 5)
 
     }
