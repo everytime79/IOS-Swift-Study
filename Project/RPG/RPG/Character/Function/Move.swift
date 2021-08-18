@@ -138,7 +138,7 @@ extension Character {
             
         }
         
-        if self.MoveDelayIs == false { // 만약 딜레이가 없다면, 그때 움직임을 주어라.
+        if self.MoveDelayIs == false { // 만약 딜레이가 없다면, 그때 움직임
             self.position = CGPoint(x: self.position.x + SpeedX, y: self.position.y + SpeedY)
 
         }
