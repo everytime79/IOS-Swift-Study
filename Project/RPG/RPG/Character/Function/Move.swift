@@ -137,6 +137,10 @@ extension Character {
             LastDirection = CurrentDirection
             
         }
-        self.position = CGPoint(x: self.position.x + SpeedX, y: self.position.y + SpeedY)
+        
+        if self.MoveDelayIs == false {
+            self.position = CGPoint(x: self.position.x + SpeedX, y: self.position.y + SpeedY)
+
+        }
     }
 }
