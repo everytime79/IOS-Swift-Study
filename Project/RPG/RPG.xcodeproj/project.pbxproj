@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB00A58325AE02950048713E /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00A58225AE02950048713E /* Control.swift */; };
 		EB00A58625AE05DF0048713E /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00A58525AE05DF0048713E /* Update.swift */; };
+		EB27EF1026CD38F40073CF84 /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB27EF0F26CD38F40073CF84 /* GameData.plist */; };
 		EB2D5E2525AF6251008B6A6A /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2425AF6251008B6A6A /* Share.swift */; };
 		EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2B25AF63DF008B6A6A /* Move.swift */; };
 		EB80470026B81A170047132A /* Attack_Melee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB8046FF26B81A170047132A /* Attack_Melee.atlas */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		EB00A58225AE02950048713E /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		EB00A58525AE05DF0048713E /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		EB27EF0F26CD38F40073CF84 /* GameData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
 		EB2D5E2425AF6251008B6A6A /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		EB2D5E2B25AF63DF008B6A6A /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		EB8046FF26B81A170047132A /* Attack_Melee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Melee.atlas; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				EBA7A90F25ADFC1400206EF3 /* Actions.sks */,
 				EB2D5E2425AF6251008B6A6A /* Share.swift */,
+				EB27EF0F26CD38F40073CF84 /* GameData.plist */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				EBBBBB5926B6C0970015BE36 /* RedSwanMoveE.atlas in Resources */,
 				EB80470026B81A170047132A /* Attack_Melee.atlas in Resources */,
 				EBBBBB5A26B6C0970015BE36 /* RedSwanMoveS.atlas in Resources */,
+				EB27EF1026CD38F40073CF84 /* GameData.plist in Resources */,
 				EBBBBB5B26B6C0970015BE36 /* RedSwanMoveW.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
