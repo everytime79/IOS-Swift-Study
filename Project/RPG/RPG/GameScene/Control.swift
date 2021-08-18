@@ -60,7 +60,7 @@ extension GameScene {
                     
                 } else if SkillButtonBase.frame.contains(Location) {
                     
-                    if Player.SkillDelayIs == false {
+                    if Player.SkillDelayIs == false { // false - > use Skill
                         Player.Attack_Meteor()
                     }
                 }
