@@ -23,8 +23,5 @@ class Character: SKSpriteNode {
     var AttackDelayIs = Bool(false)
     var SkillDelayIs = Bool(false)
     
-    
 // Variable_End
-
-
 }

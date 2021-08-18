@@ -14,8 +14,6 @@ extension GameScene {
         Player.zPosition = 10
         self.addChild(Player)
 
-        
     }
 // Player_End
-    
 }
