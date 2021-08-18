@@ -10,6 +10,7 @@ import GameplayKit
 class GameScene: SKScene {
     
 // MARK: - Variable
+    var GameData = NSMutableDictionary//변경이 될 수 있는 dic
     let Player = Character(imageNamed: "RedSwan")
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
