@@ -35,16 +35,13 @@ extension Character {
         let MoveDelayAction = SKAction.run { self.MoveDelayIs = false}
         
         let SkillWaitAction = SKAction.wait(forDuration: 0.5)
-        let AttackDelayAction = SKAction.run { self.MoveDelayIs = false}
+        let SkillDelayAction = SKAction.run { self.SkillDelayIs = false}
         
-        Function_DelayEffect(Button: "AttackButton", Delay: 0.5)
-        MoveDelayIs = true
-        AttackDelayIs = true
+        Function_DelayEffect(Button: "SkillButton", Delay: 5)        MoveDelayIs = true
+        SkillDelayIs = true
         
         self.run(SKAction.sequence([MoveWaitAction, MoveDelayAction])) // 0.2 초 기다린 후 -> 다시 가능하게
         self.run(SKAction.sequence([AttackWaitAction, AttackDelayAction])) // 0.5 초 기다린 후 -> 다시 가능하게
-        Function_DelayEffect(Button: "SkillButton", Delay: 5)
-
     }
         
     func Attack_Meteor_Animation() {
