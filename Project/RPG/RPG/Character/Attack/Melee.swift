@@ -25,6 +25,9 @@ extension Character {
         let AttackDelayAction = SKAction.run { self.MoveDelayIs = false}
         
         Function_DelayEffect(Button: "AttackButton", Delay: 0.5)
+        MoveDelayIs = true
+        AttackDelayIs = true
+        
     }
     
     func Attack_Melee_Animation(AttackBody: Character){
