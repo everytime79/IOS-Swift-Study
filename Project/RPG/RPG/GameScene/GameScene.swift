@@ -12,7 +12,7 @@ class GameScene: SKScene {
 // MARK: - Variable
     var GameData = NSMutableDictionary()//변경이 될 수 있는 dic
     
-    let Player = Character(imageNamed: "RedSwan")
+    var Player = Character()
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
     let ControlBall = SKSpriteNode(imageNamed: "ControlBall")
@@ -86,7 +86,6 @@ class GameScene: SKScene {
         let Path = Bundle.main.path(forResource: "GameData", ofType: "plist")
         GameData = NSMutableDictionary(contentsOfFile: Path!)!
         Data_Player()
-        
     }
 
     
