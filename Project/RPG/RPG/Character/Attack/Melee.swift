@@ -22,7 +22,7 @@ extension Character {
         let MoveDelayAction = SKAction.run { self.MoveDelayIs = false}
         
         let AttackWaitAction = SKAction.wait(forDuration: 0.5)
-        let AttackDelayAction = SKAction.run { self.MoveDelayIs = false}
+        let AttackDelayAction = SKAction.run { self.AttackDelayIs = false}
         
         Function_DelayEffect(Button: "AttackButton", Delay: 0.5)
         MoveDelayIs = true
