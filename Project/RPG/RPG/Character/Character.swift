@@ -12,7 +12,7 @@ class Character: SKSpriteNode {
     var AttackDirection = Direction.S
     
     // Status //
-    let SP = CGFloat()
+    var SP = CGFloat()
     
     // Move //
     var SpeedX = CGFloat()
