@@ -10,17 +10,12 @@ extension GameScene {
         let SP = Data["SP"] as! CGFloat
         
         Player = Character(imageNamed: "RedSwan")
+        Player.SP = SP
+        Player.zPosition = 10
+        self.addChild(Player)
+
         
     }
 // Player_End
     
 }
-
-
-
-
-
-// Player //
-Player.zPosition = 10
-self.addchild(Player)
-
