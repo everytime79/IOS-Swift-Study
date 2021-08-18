@@ -6,6 +6,8 @@ extension GameScene {
 // MARK: - Player
     func Data_Player() {
         
+        let Date = GameData
+        
     }
 // Player_End
     
