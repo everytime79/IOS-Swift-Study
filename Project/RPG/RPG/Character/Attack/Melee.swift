@@ -11,13 +11,13 @@ extension Character {
         self.addChild(AttackBody)
         Attack_Melee_Animation(AttackBody: AttackBody)
         
-        // Action
+        // Action -> 어택에 대한 애니메이션
         let WaitAction = SKAction.wait(forDuration: 0.2)
         let RemoveAction = SKAction.run { AttackBody.removeFromParent()}
         //WaitAction 이 끝나야, Remove 하도록 sequence
         AttackBody.run(SKAction.sequence([WaitAction, RemoveAction]))
         
-        // Delay
+        // Delay -> 딜레이에 대한 애니메이션 
         let MoveWaitAction = SKAction.wait(forDuration: 0.2)
         let MoveDelayAction = SKAction.run { self.MoveDelayIs = false}
         
