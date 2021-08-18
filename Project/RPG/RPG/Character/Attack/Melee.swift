@@ -28,6 +28,8 @@ extension Character {
         MoveDelayIs = true
         AttackDelayIs = true
         
+        self.run(SKAction.sequence([MoveWaitAction, MoveDelayAction]))
+        self.run(SKAction.sequence([AttackWaitAction, AttackDelayAction]))
     }
     
     func Attack_Melee_Animation(AttackBody: Character){
