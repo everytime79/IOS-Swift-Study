@@ -18,6 +18,9 @@ extension Character {
         AttackBody.run(SKAction.sequence([WaitAction, RemoveAction]))
         
         // Delay
+        let MoveWaitAction = SKAction.wait(forDuration: 0.2)
+        let MoveDelayAction = SKAction.run { self.MoveDelayIs = false}
+        
         Function_DelayEffect(Button: "AttackButton", Delay: 0.5)
     }
     
