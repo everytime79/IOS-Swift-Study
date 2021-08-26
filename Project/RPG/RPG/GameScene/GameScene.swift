@@ -14,6 +14,8 @@ class GameScene: SKScene {
     
     var Player = Character()
     
+    var MonsterGroup = [Character]()
+    
     var Monster = Character()
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
