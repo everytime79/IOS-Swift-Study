@@ -36,6 +36,8 @@ extension GameScene {
                 Monster.SP = SP
                 Monster.position = CGPoint(x: PositionX, y: PositionY)
                 Monster.zPosition = 10
+                
+                MonsterGroup.append(Monster)
                 self.addChild(Player)
             }
         }
