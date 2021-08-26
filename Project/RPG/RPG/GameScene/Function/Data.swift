@@ -26,9 +26,11 @@ extension GameScene {
                 
                 
                 let Data = value as! [String:Any]
+                let PositionX = Data["PositionX"] as! CGFloat
+                let PositionY = Data["PositionY"] as! CGFloat
                 let SP = Data["SP"] as! CGFloat
                 
-                Player = Character(imageNamed: "RedSwan")
+                Monster = Character(imageNamed: "Archer")
                 Player.SP = SP
                 Player.zPosition = 10
                 self.addChild(Player)
