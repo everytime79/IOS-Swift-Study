@@ -2,6 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>MonsterGroup</key>
+	<dict>
+		<key>Monster</key>
+		<dict>
+			<key>PositionX</key>
+			<integer>100</integer>
+			<key>PositionY</key>
+			<integer>100</integer>
+			<key>SP</key>
+			<integer>5</integer>
+		</dict>
+		<key>Monster - 2</key>
+		<dict>
+			<key>PositionX</key>
+			<integer>-100</integer>
+			<key>PositionY</key>
+			<integer>100</integer>
+			<key>SP</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
 	<key>Player</key>
 	<dict>
 		<key>SP</key>
