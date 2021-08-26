@@ -34,6 +34,7 @@ extension GameScene {
                 Monster.PositionX = PositionX
                 Monster.PositionY = PositionY
                 Monster.SP = SP
+                Monster.position = CGPoint(x: PositionX, y: PositionY)
                 Monster.zPosition = 10
                 self.addChild(Player)
             }
