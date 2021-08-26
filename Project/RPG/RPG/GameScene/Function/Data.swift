@@ -31,11 +31,11 @@ extension GameScene {
                 let SP = Data["SP"] as! CGFloat
                 
                 Monster = Character(imageNamed: "Archer")
-                Player.SP = SP
-                Player.zPosition = 10
+                Monster.PositionX = PositionX
+                Monster.PositionY = PositionY
+                Monster.SP = SP
+                Monster.zPosition = 10
                 self.addChild(Player)
-
-                
             }
         }
     // Monster_End
