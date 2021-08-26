@@ -25,7 +25,7 @@ extension GameScene {
             for (_, value) in MonsterGroupData {
                 
                 
-                let Data = GameData["Player"] as! [String:Any]
+                let Data = value as! [String:Any]
                 let SP = Data["SP"] as! CGFloat
                 
                 Player = Character(imageNamed: "RedSwan")
