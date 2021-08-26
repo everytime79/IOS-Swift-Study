@@ -38,7 +38,8 @@ extension GameScene {
                 Monster.zPosition = 10
                 
                 MonsterGroup.append(Monster)
-                self.addChild(Player)
+                
+                self.addChild(Monster)
             }
         }
     // Monster_End
