@@ -86,6 +86,11 @@ class GameScene: SKScene {
         SkillButton.alpha = 1
         self.addChild(SkillButton)
 
+        // Mini Map
+        MiniMap = SKSpriteNode(color: UIColor.black, size: CGSize(width: 200, height: 200))
+        MiniMap.alpha = 0.8
+        
+        
         // Data //
         let Path = Bundle.main.path(forResource: "GameData", ofType: "plist")
         GameData = NSMutableDictionary(contentsOfFile: Path!)!
