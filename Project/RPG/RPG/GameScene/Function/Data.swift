@@ -14,6 +14,9 @@ extension GameScene {
         Player.zPosition = 10
         Player.PhysicsBody_Player() // 플레이어를 생성하기 전에 겹치지 않게 해준다.
         self.addChild(Player)
+        
+        PlayerMinion = Character(color: UIColor.green, size: CGSize(width: 5, height: 5))
+        MiniMap.addChild(PlayerMinion)
 
     }
 // Player_End
