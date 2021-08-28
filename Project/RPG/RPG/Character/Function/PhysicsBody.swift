@@ -11,6 +11,8 @@ extension Character {
         
         self.physicsBody = PhysicsBody
         self.physicsBody?.isDynamic = true
+        self.physicsBody?.affectedByGravity = false // 중력의 영향 x
+        self.physicsBody?.allowsRotation = false // 마주쳤을 떄 돌 필요가 없다.
         
     }
     
