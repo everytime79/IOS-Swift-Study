@@ -43,8 +43,11 @@ extension GameScene {
                 Monster.PhysicsBody_Monster() 
                 
                 MonsterGroup.append(Monster)
-                
                 self.addChild(Monster)
+                
+                MonsterMinion = Character(color: UIColor.red, size: CGSize(width: 5, height: 5))
+                MiniMap.addChild(MonsterMinion)
+                
             }
         }
     // Monster_End
