@@ -20,10 +20,10 @@ extension GameScene {
             
             if MiniMap.intersects(MonsterMinionGroup[i]) {
                 
-                MonsterMinionGroup[i].alpha = 1
+                MonsterMinionGroup[i].alpha = 1 // 표시점이 미니맵 경계 내 있을 때 표시
             } else {
                 
-                MonsterMinionGroup[i].alpha = 0
+                MonsterMinionGroup[i].alpha = 0 // 적을 표시하는 표시점이 미니맵 테두리를 벗어났을 경우 알파를 0으로 해서 보이지 않게끔
             }
         }
         
