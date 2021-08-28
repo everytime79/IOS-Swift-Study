@@ -88,7 +88,9 @@ class GameScene: SKScene {
 
         // Mini Map
         MiniMap = SKSpriteNode(color: UIColor.black, size: CGSize(width: 200, height: 200))
-        MiniMap.alpha = 0.8
+        MiniMap.alpha = 0.8 // 불투명도
+        MiniMap.zPosition = 99
+        MiniMap.position = 
         
         
         // Data //
