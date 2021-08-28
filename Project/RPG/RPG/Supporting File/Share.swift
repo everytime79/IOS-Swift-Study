@@ -7,6 +7,12 @@ let LocalCamera = SKCameraNode()
 
 // MARK: - Enumeration
 
+// BodyType //
+enum BodyType: UInt32 {
+    
+    
+}
+
 // Direction // - 방향
 enum Direction {
     case E, W, S, N, ST
