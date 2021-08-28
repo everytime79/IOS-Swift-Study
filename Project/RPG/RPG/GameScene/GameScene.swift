@@ -91,7 +91,8 @@ class GameScene: SKScene {
         MiniMap.alpha = 0.6 // 불투명도
         MiniMap.zPosition = 99
         //MiniMap.position = CGPoint(x: (MiniMap.size.width / 2) - (view.frame.width) + 10, y: (view.frame.height) - (MiniMap.size.height / 2) - 10)
-        MiniMap.position = CGPoint(x: -540, y: 220)
+        MiniMap.position = CGPoint(x: -500, y: 200)
+    
         self.addChild(MiniMap)
         
         
