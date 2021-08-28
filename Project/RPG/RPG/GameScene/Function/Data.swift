@@ -12,6 +12,7 @@ extension GameScene {
         Player = Character(imageNamed: "RedSwan")
         Player.SP = SP
         Player.zPosition = 10
+        Player.PhysicsBody_Player()
         self.addChild(Player)
 
     }
