@@ -46,9 +46,9 @@ extension GameScene {
             CorrectedLocation.y = Location.y - LocalCamera.position.y
 
             
-            if Location.x < 0 {
+            if Location.x < LocalCamera.position.x {
                 
-                ControlBase.position = Location
+                ControlBase.position = CorrectedLocation
                 ControlBall.position = ControlBase.position
                 
             } else {
