@@ -16,7 +16,7 @@ class GameScene: SKScene {
     var MonsterGroup = [Character]()
     var Monster = Character()
     
-        
+    var MiniMap = SKSpriteNode()
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
     let ControlBall = SKSpriteNode(imageNamed: "ControlBall")
