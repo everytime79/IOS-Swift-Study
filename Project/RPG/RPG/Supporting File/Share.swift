@@ -10,7 +10,8 @@ let LocalCamera = SKCameraNode()
 // BodyType //
 enum BodyType: UInt32 {
     
-    
+    case Player = 1
+    case Monster = 2    
 }
 
 // Direction // - 방향
