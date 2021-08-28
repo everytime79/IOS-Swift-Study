@@ -13,7 +13,6 @@ class GameScene: SKScene {
     var GameData = NSMutableDictionary()//변경이 될 수 있는 dic
     
     var Player = Character()
-    
     var MonsterGroup = [Character]()
     
     var Monster = Character()
