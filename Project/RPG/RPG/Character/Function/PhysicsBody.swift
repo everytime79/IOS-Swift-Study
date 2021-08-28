@@ -11,7 +11,6 @@ extension Character {
         
     }
     
-    
 // MARK: - Monster
     
     
