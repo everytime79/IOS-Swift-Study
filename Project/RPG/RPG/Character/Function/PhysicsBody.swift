@@ -9,6 +9,8 @@ extension Character {
         let Texture = SKTexture(imageNamed: "RedSwan")
         let PhysicsBody = SKPhysicsBody(texture: Texture, size: self.size)
         
+        self.physicsBody = PhysicsBody
+        
     }
     
 // MARK: - Monster
