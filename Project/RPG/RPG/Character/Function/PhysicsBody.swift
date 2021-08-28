@@ -2,7 +2,7 @@ import SpriteKit
 import GameplayKit
 
 extension Character {
-    
+    //물리적인 형태를 지니기 위한,
 // MARK: - Player
     func PhysicsBody_Player() {
     
