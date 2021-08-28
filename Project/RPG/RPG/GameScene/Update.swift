@@ -8,6 +8,8 @@ extension GameScene {
         
         Player.Function_Move()
         
+        //
+        LocalCamera.position = Player.position
     }
 // Update_End
     
