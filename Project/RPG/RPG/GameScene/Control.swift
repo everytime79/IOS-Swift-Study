@@ -41,6 +41,11 @@ extension GameScene {
             
             let Location = touch.location(in: self)
             
+            var CorrectedLocation = CGPoint()
+            CorrectedLocation.x = Location.x - LocalCamera.position.x
+            CorrectedLocation.y = Location.y - LocalCamera.position.y
+
+            
             if Location.x < 0 {
                 
                 ControlBase.position = Location
