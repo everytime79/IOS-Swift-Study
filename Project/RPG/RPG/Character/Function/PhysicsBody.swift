@@ -10,7 +10,7 @@ extension Character {
         let PhysicsBody = SKPhysicsBody(texture: Texture, size: self.size)
         
         self.physicsBody = PhysicsBody
-        
+        self.physicsBody?.isDynamic = true
     }
     
 // MARK: - Monster
