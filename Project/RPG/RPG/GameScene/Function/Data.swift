@@ -12,7 +12,7 @@ extension GameScene {
         Player = Character(imageNamed: "RedSwan")
         Player.SP = SP
         Player.zPosition = 10
-        Player.PhysicsBody_Player()
+        Player.PhysicsBody_Player() // 플레이어를 생성하기 전에 겹치지 않게 해준다.
         self.addChild(Player)
 
     }
@@ -37,6 +37,7 @@ extension GameScene {
                 Monster.SP = SP
                 Monster.position = CGPoint(x: PositionX, y: PositionY)
                 Monster.zPosition = 10
+                Monster.PhysicsBody_Monster() 
                 
                 MonsterGroup.append(Monster)
                 
