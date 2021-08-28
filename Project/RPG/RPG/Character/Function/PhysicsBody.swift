@@ -11,6 +11,7 @@ extension Character {
         
         self.physicsBody = PhysicsBody
         self.physicsBody?.isDynamic = true
+        
     }
     
 // MARK: - Monster
