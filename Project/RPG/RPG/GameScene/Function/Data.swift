@@ -26,6 +26,7 @@ extension GameScene {
             
             let MonsterGroupData = GameData["MonsterGroup"] as! [String:Any]
             
+            var Number = Int(0)
             for (_, value) in MonsterGroupData {
                 
                 let Data = value as! [String:Any]
@@ -37,6 +38,7 @@ extension GameScene {
                 Monster.PositionX = PositionX
                 Monster.PositionY = PositionY
                 Monster.SP = SP
+                Monster.Number = Number
                 Monster.position = CGPoint(x: PositionX, y: PositionY)
                 Monster.zPosition = 10
                 Monster.PhysicsBody_Monster() 
@@ -44,9 +46,9 @@ extension GameScene {
                 MonsterGroup.append(Monster)
                 self.addChild(Monster)
                 
-                
-                
                 MonsterMinion = Character(color: UIColor.red, size: CGSize(width: 5, height: 5))
+                MonsterMinion.Number - Number
+                
                 MonsterMinionGroup.append(MonsterMinion)
                 
                 MiniMap.addChild(MonsterMinion)
