@@ -28,7 +28,6 @@ extension GameScene {
             
             for (_, value) in MonsterGroupData {
                 
-                
                 let Data = value as! [String:Any]
                 let PositionX = Data["PositionX"] as! CGFloat
                 let PositionY = Data["PositionY"] as! CGFloat
