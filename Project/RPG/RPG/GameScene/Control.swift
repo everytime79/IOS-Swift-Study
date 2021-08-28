@@ -114,7 +114,7 @@ extension GameScene {
             
             let Location = touch.location(in: self)
             
-            if Location.x < 0 {
+            if Location.x < LocalCamera.position.x {
                 
                 let MoveCenterActoin = SKAction.move(to: ControlBase.position, duration: 0.2)
                 MoveCenterActoin.timingMode = .easeOut // 움직이면서 느려지는 효과
