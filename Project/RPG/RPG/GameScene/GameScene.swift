@@ -44,47 +44,47 @@ class GameScene: SKScene {
         ControlBase.position = CGPoint(x: -500, y: -200) // 위치 좌표
         ControlBase.zPosition = 100 // 레이어의 높이
         ControlBase.alpha = 0.4 // 투명도
-        self.addChild(ControlBase)
+        LocalCamera.addChild(ControlBase)
         
         ControlBall.position = ControlBase.position
         ControlBall.zPosition = ControlBase.zPosition
         ControlBall.alpha = 0.8
         // ControlBall.alpha = ControlBase.alpha
-        self.addChild(ControlBall)
+        LocalCamera.addChild(ControlBall)
         
         // AttackButton //
         AttackButtonBase.position = CGPoint(x: 500, y: -200)
         AttackButtonBase.zPosition = 99
         AttackButtonBase.alpha = 0.4
-        self.addChild(AttackButtonBase)
+        LocalCamera.addChild(AttackButtonBase)
         
         AttackButton.position = AttackButtonBase.position
         AttackButton.zPosition = 100
         AttackButton.alpha = 1
-        self.addChild(AttackButton)
+        LocalCamera.addChild(AttackButton)
         
         // ItemButton //
         ItemButtonBase.position = CGPoint(x: 350, y: -200)
         ItemButtonBase.zPosition = 99
         ItemButtonBase.alpha = 0.4
-        self.addChild(ItemButtonBase)
+        LocalCamera.addChild(ItemButtonBase)
         
         ItemButton.position = ItemButtonBase.position
         ItemButton.zPosition = 100
         ItemButton.alpha = 1
-        self.addChild(ItemButton)
+        LocalCamera.addChild(ItemButton)
         
         // SkillButton //
         
         SkillButtonBase.position = CGPoint(x: 500, y: -50)
         SkillButtonBase.zPosition = 99
         SkillButtonBase.alpha = 0.4
-        self.addChild(SkillButtonBase)
+        LocalCamera.addChild(SkillButtonBase)
         
         SkillButton.position = SkillButtonBase.position
         SkillButton.zPosition = 100
         SkillButton.alpha = 1
-        self.addChild(SkillButton)
+        LocalCamera.addChild(SkillButton)
 
         // Mini Map
         MiniMap = SKSpriteNode(color: UIColor.black, size: CGSize(width: 200, height: 200))
@@ -93,7 +93,7 @@ class GameScene: SKScene {
         //MiniMap.position = CGPoint(x: (MiniMap.size.width / 2) - (view.frame.width) + 10, y: (view.frame.height) - (MiniMap.size.height / 2) - 10)
         MiniMap.position = CGPoint(x: -500, y: 200)
     
-        self.addChild(MiniMap)
+        LocalCamera.addChild(MiniMap)
         
         
         // Data //
