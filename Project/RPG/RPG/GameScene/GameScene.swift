@@ -90,7 +90,8 @@ class GameScene: SKScene {
         MiniMap = SKSpriteNode(color: UIColor.black, size: CGSize(width: 200, height: 200))
         MiniMap.alpha = 0.8 // 불투명도
         MiniMap.zPosition = 99
-        MiniMap.position = CGPoint(x: (MiniMap.size.width / 2) - (view.frame.width) + 10, y: (view.frame.height) - (MiniMap.size.height / 2) - 10)
+        //MiniMap.position = CGPoint(x: (MiniMap.size.width / 2) - (view.frame.width) + 10, y: (view.frame.height) - (MiniMap.size.height / 2) - 10)
+        MiniMap.position = CGPoint(x: -640, y: 320)
         self.addChild(MiniMap)
         
         
