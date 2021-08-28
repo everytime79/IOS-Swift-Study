@@ -21,6 +21,7 @@
 		EB95E01E26D7A38000250067 /* ArcherMoveE.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB95E01A26D7A38000250067 /* ArcherMoveE.atlas */; };
 		EB95E01F26D7A38000250067 /* ArcherMoveW.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB95E01B26D7A38000250067 /* ArcherMoveW.atlas */; };
 		EB95E02026D7A38000250067 /* ArcherMoveN.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB95E01C26D7A38000250067 /* ArcherMoveN.atlas */; };
+		EB95E02326DA8AFA00250067 /* PhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95E02226DA8AFA00250067 /* PhysicsBody.swift */; };
 		EBA7A90C25ADFC1400206EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */; };
 		EBA7A90E25ADFC1400206EF3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A90D25ADFC1400206EF3 /* GameScene.sks */; };
 		EBA7A91025ADFC1400206EF3 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A90F25ADFC1400206EF3 /* Actions.sks */; };
@@ -52,6 +53,7 @@
 		EB95E01A26D7A38000250067 /* ArcherMoveE.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveE.atlas; sourceTree = "<group>"; };
 		EB95E01B26D7A38000250067 /* ArcherMoveW.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveW.atlas; sourceTree = "<group>"; };
 		EB95E01C26D7A38000250067 /* ArcherMoveN.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveN.atlas; sourceTree = "<group>"; };
+		EB95E02226DA8AFA00250067 /* PhysicsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBody.swift; sourceTree = "<group>"; };
 		EBA7A90825ADFC1400206EF3 /* RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA7A90D25ADFC1400206EF3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				EB2D5E2B25AF63DF008B6A6A /* Move.swift */,
 				EB80470B26B829A10047132A /* Item.swift */,
 				EB82FE4626C009EE00619118 /* Delay.swift */,
+				EB95E02226DA8AFA00250067 /* PhysicsBody.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				EB2D5E2525AF6251008B6A6A /* Share.swift in Sources */,
 				EB00A58625AE05DF0048713E /* Update.swift in Sources */,
 				EB80470426B81BF00047132A /* Melee.swift in Sources */,
+				EB95E02326DA8AFA00250067 /* PhysicsBody.swift in Sources */,
 				EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */,
 				EB27EF1426CD3A540073CF84 /* Data.swift in Sources */,
 				EBA9673425AF5D6800229A6A /* Character.swift in Sources */,
