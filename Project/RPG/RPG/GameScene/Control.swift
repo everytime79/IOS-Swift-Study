@@ -32,7 +32,6 @@ extension GameScene {
     }
 // Control Ball Angle_End
     
-    
 // MARK: - Touch
     // override func -> xcode 만의 func, override 가 없는 func이란 직접 만드는 func
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
