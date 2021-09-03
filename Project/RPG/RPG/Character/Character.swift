@@ -25,6 +25,5 @@ class Character: SKSpriteNode {
     var MoveDelayIs = Bool(false) // 값이 2개. 참 거짓 트루 폴스-> 딜레이가 있는가 없는가,
     var AttackDelayIs = Bool(false)
     var SkillDelayIs = Bool(false)
-    
 // Variable_End
 }
