@@ -19,5 +19,4 @@ extension Character {
         
         ItemBody.run(SKAction.sequence([FadeOutAction, RemoveAction]))
     }
-    
 }
