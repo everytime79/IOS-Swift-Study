@@ -18,5 +18,4 @@ enum BodyType: UInt32 {
 enum Direction {
     case E, W, S, N, ST
 }
-
 // Enumeration
