@@ -7,6 +7,7 @@ extension GameScene {
     func Data_Player() {
         
         let Data = GameData["Player"] as! [String:Any]
+        let Costume = Data["Costume"] as! String
         let SP = Data["SP"] as! CGFloat
         
         Player = Character(imageNamed: "RedSwan")
