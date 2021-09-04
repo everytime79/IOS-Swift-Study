@@ -11,6 +11,7 @@ extension GameScene {
         let SP = Data["SP"] as! CGFloat
         
         Player = Character(imageNamed: "RedSwan")
+        Player.Costume = Costume
         Player.SP = SP
         Player.zPosition = 10
         Player.PhysicsBody_Player() // 플레이어를 생성하기 전에 겹치지 않게 해준다.
@@ -33,11 +34,14 @@ extension GameScene {
                 let Data = value as! [String:Any]
                 let PositionX = Data["PositionX"] as! CGFloat
                 let PositionY = Data["PositionY"] as! CGFloat
+                let Costume = Data["Costume"] as! String
+
                 let SP = Data["SP"] as! CGFloat
                 
                 Monster = Character(imageNamed: "Archer")
                 Monster.PositionX = PositionX
                 Monster.PositionY = PositionY
+                Monster.Costume = Costume
                 Monster.SP = SP
                 Monster.RunSP = SP
                 Monster.Number = Number
