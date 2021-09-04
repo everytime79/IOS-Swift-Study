@@ -48,7 +48,7 @@ extension GameScene {
                 self.addChild(Monster)
                 
                 MonsterMinion = Character(color: UIColor.red, size: CGSize(width: 5, height: 5))
-                MonsterMinion.Number - Number
+                MonsterMinion.Number = Number
                 
                 MonsterMinionGroup.append(MonsterMinion)
                 
