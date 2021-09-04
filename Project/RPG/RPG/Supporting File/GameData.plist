@@ -25,6 +25,8 @@
 	</dict>
 	<key>Player</key>
 	<dict>
+		<key>Costume</key>
+		<string>RedSwan</string>
 		<key>SP</key>
 		<integer>5</integer>
 	</dict>
