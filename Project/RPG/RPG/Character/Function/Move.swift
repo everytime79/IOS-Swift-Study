@@ -18,22 +18,22 @@ extension Character {
                 
                 if LastDirection == Direction.E {
                     
-                    self.texture = SKTexture(imageNamed: "RedSwanMoveE1")
+                    self.texture = SKTexture(imageNamed: self.Costume + "MoveE1")
                 }
                 
                 if LastDirection == Direction.W {
                     
-                    self.texture = SKTexture(imageNamed: "RedSwanMoveW1")
+                    self.texture = SKTexture(imageNamed: self.Costume + "MoveW1")
                 }
                 
                 if LastDirection == Direction.S {
                     
-                    self.texture = SKTexture(imageNamed: "RedSwanMoveS1")
+                    self.texture = SKTexture(imageNamed: self.Costume + "MoveS1")
                 }
                 
                 if LastDirection == Direction.N {
                     
-                    self.texture = SKTexture(imageNamed: "RedSwanMoveN1")
+                    self.texture = SKTexture(imageNamed: self.Costume + "MoveN1")
                 } //최종 방향에 해당하는 곳으로 쳐다보게 한다.
                 
                 AttackDirection = LastDirection
