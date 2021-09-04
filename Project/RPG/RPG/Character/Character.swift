@@ -16,7 +16,7 @@ class Character: SKSpriteNode {
     var PositionY = CGFloat()
     var SP = CGFloat()
     var RunSP = CGFloat()
-    var WalkSP = CGFloat()
+    var WalkSP = CGFloat(1)
     var Number = Int()
     
     // Move //
