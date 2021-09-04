@@ -13,6 +13,7 @@
 		EB27EF1426CD3A540073CF84 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB27EF1326CD3A540073CF84 /* Data.swift */; };
 		EB2D5E2525AF6251008B6A6A /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2425AF6251008B6A6A /* Share.swift */; };
 		EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2B25AF63DF008B6A6A /* Move.swift */; };
+		EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AA26E42D2300BC39DF /* AI.swift */; };
 		EB80470026B81A170047132A /* Attack_Melee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB8046FF26B81A170047132A /* Attack_Melee.atlas */; };
 		EB80470426B81BF00047132A /* Melee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80470326B81BF00047132A /* Melee.swift */; };
 		EB80470C26B829A10047132A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80470B26B829A10047132A /* Item.swift */; };
@@ -45,6 +46,7 @@
 		EB27EF1326CD3A540073CF84 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		EB2D5E2425AF6251008B6A6A /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		EB2D5E2B25AF63DF008B6A6A /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		EB7F61AA26E42D2300BC39DF /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		EB8046FF26B81A170047132A /* Attack_Melee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Melee.atlas; sourceTree = "<group>"; };
 		EB80470326B81BF00047132A /* Melee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melee.swift; sourceTree = "<group>"; };
 		EB80470B26B829A10047132A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				EB80470B26B829A10047132A /* Item.swift */,
 				EB82FE4626C009EE00619118 /* Delay.swift */,
 				EB95E02226DA8AFA00250067 /* PhysicsBody.swift */,
+				EB7F61AA26E42D2300BC39DF /* AI.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				EB00A58625AE05DF0048713E /* Update.swift in Sources */,
 				EB80470426B81BF00047132A /* Melee.swift in Sources */,
 				EB95E02326DA8AFA00250067 /* PhysicsBody.swift in Sources */,
+				EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */,
 				EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */,
 				EB27EF1426CD3A540073CF84 /* Data.swift in Sources */,
 				EBA9673425AF5D6800229A6A /* Character.swift in Sources */,
