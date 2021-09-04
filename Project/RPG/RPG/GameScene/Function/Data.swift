@@ -38,6 +38,7 @@ extension GameScene {
                 Monster.PositionX = PositionX
                 Monster.PositionY = PositionY
                 Monster.SP = SP
+                Monster.RunSP = SP
                 Monster.Number = Number
                 Monster.position = CGPoint(x: PositionX, y: PositionY)
                 Monster.zPosition = 10
