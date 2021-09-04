@@ -119,12 +119,12 @@ extension Character {
             
             if CurrentDirection != LastDirection {
                 
-                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveN")
+                let MoveAtlas = SKTextureAtlas(named: self.Costume + "MoveN")
                 var MoveFrame = [SKTexture]()
                 
                 for i in 1...MoveAtlas.textureNames.count / 2 {
 
-                    let TextureName = "RedSwanMoveN" + "\(i)"
+                    let TextureName = self.Costume + "MoveN" + "\(i)"
                     MoveFrame .append(MoveAtlas.textureNamed(TextureName))
                 }
                 
