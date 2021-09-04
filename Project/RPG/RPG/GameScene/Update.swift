@@ -11,9 +11,7 @@ extension GameScene {
         
         // Monster
         for i in 0...MonsterGroup.count - 1 {
-         
             MonsterGroup[i].Update_Monster()    
-            
         }
 
         
