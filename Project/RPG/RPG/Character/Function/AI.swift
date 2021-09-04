@@ -3,4 +3,7 @@ import GameplayKit
 
 extension Character {
 
-}s
+// MARK: - Random Walk
+    
+    
+}
