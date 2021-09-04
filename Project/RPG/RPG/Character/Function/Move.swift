@@ -48,13 +48,13 @@ extension Character {
             // 동쪽으로 가는 동안,
             if CurrentDirection != LastDirection {
                 
-                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveE")
+                let MoveAtlas = SKTextureAtlas(named: self.Costume + "MoveE")
                 var MoveFrame = [SKTexture]()
                 
                 //반복 실행
                 for i in 1...MoveAtlas.textureNames.count / 2 {
                     //1부터 4까지
-                    let TextureName = "RedSwanMoveE" + "\(i)" //i는 숫자임으로 문자로 바꿔준다.
+                    let TextureName = self.Costume + "MoveE" + "\(i)" //i는 숫자임으로 문자로 바꿔준다.
                     MoveFrame .append(MoveAtlas.textureNamed(TextureName))
                 }
                 
@@ -73,12 +73,12 @@ extension Character {
             
             if CurrentDirection != LastDirection {
                 
-                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveW")
+                let MoveAtlas = SKTextureAtlas(named: self.Costume + "MoveW")
                 var MoveFrame = [SKTexture]()
                 
                 for i in 1...MoveAtlas.textureNames.count / 2 {
 
-                    let TextureName = "RedSwanMoveW" + "\(i)"
+                    let TextureName = self.Costume + "MoveW" + "\(i)"
                     MoveFrame .append(MoveAtlas.textureNamed(TextureName))
                 }
                 
@@ -96,12 +96,12 @@ extension Character {
             
             if CurrentDirection != LastDirection {
                 
-                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveS")
+                let MoveAtlas = SKTextureAtlas(named: self.Costume + "MoveS")
                 var MoveFrame = [SKTexture]()
                 
                 for i in 1...MoveAtlas.textureNames.count / 2 {
 
-                    let TextureName = "RedSwanMoveS" + "\(i)"
+                    let TextureName = self.Costume + "MoveS" + "\(i)"
                     MoveFrame .append(MoveAtlas.textureNamed(TextureName))
                 }
                 
