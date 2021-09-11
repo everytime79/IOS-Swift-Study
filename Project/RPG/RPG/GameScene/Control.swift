@@ -103,6 +103,7 @@ extension GameScene {
                 } else {
                     
                     ControlBall.position = CGPoint(x: ControlBase.position.x + DistanceX, y: ControlBase.position.y + DistanceY)
+                    
                 }
                 
             }
