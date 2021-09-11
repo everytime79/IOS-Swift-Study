@@ -34,6 +34,7 @@ extension GameScene {
         
         // Camera
         LocalCamera.position = Player.position
+        
     }
 // Update_End
 }
