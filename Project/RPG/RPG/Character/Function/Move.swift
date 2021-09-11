@@ -56,6 +56,7 @@ extension Character {
                     //1부터 4까지
                     let TextureName = self.Costume + "MoveE" + "\(i)" //i는 숫자임으로 문자로 바꿔준다.
                     MoveFrame .append(MoveAtlas.textureNamed(TextureName))
+                        
                 }
                 
                 let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
