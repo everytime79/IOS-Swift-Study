@@ -110,7 +110,9 @@ extension Character {
                 self.run(MoveAnimationAction, withKey: "Move")
                 
                 AttackDirection = CurrentDirection
+                
             }
+            
             LastDirection = CurrentDirection
             
         case .N:
@@ -133,13 +135,17 @@ extension Character {
                 self.run(MoveAnimationAction, withKey: "Move")
                 
                 AttackDirection = CurrentDirection
+                
             }
+            
             LastDirection = CurrentDirection
             
         }
+        
         if self.MoveDelayIs == false { // 만약 딜레이가 없다면, 그때 움직임 true로 바뀌면 안움직임
             
             self.position = CGPoint(x: self.position.x + SpeedX, y: self.position.y + SpeedY)
+            
         }
     }
 }
