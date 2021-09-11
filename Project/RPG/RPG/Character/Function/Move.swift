@@ -132,6 +132,7 @@ extension Character {
 
                     let TextureName = self.Costume + "MoveN" + "\(i)"
                     MoveFrame .append(MoveAtlas.textureNamed(TextureName))
+                    
                 }
                 
                 let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
