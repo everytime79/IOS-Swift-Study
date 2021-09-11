@@ -18,5 +18,6 @@ extension Character {
         let RemoveAction = SKAction.run { ItemBody.removeFromParent() }
         
         ItemBody.run(SKAction.sequence([FadeOutAction, RemoveAction]))
+        
     }
 }
