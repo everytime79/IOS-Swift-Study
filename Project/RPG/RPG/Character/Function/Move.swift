@@ -64,7 +64,9 @@ extension Character {
                 // 캐릭터가 실행, 그리고 이 액션의 이름은 Move
                 
                 AttackDirection = CurrentDirection
+                
             }
+            
             LastDirection = CurrentDirection
             
         case .W:
