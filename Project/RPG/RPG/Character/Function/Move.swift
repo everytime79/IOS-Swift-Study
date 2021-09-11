@@ -80,6 +80,7 @@ extension Character {
 
                     let TextureName = self.Costume + "MoveW" + "\(i)"
                     MoveFrame .append(MoveAtlas.textureNamed(TextureName))
+                    
                 }
                 
                 let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
@@ -87,7 +88,9 @@ extension Character {
                 self.run(MoveAnimationAction, withKey: "Move")
                 
                 AttackDirection = CurrentDirection
+                
             }
+            
             LastDirection = CurrentDirection
             
         case .S:
@@ -103,6 +106,7 @@ extension Character {
 
                     let TextureName = self.Costume + "MoveS" + "\(i)"
                     MoveFrame .append(MoveAtlas.textureNamed(TextureName))
+                    
                 }
                 
                 let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
