@@ -28,6 +28,7 @@ extension Character {
             let RemoveAction = SKAction.run { AttackBody.removeFromParent()}
             
             AttackBody.run(SKAction.sequence([FadeInAction, FallAction, WaitAction, ShakeAction,RemoveAction]))
+            
         }
             
         // Delay -> 딜레이에 대한 애니메이션
@@ -43,6 +44,7 @@ extension Character {
         
         self.run(SKAction.sequence([MoveWaitAction, MoveDelayAction])) // 0.2 초 기다린 후 -> 다시 가능하게
         self.run(SKAction.sequence([SkillWaitAction, SkillDelayAction])) // 0.5 초 기다린 후 -> 다시 가능하게
+        
     }
         
     func Attack_Meteor_Animation() {
@@ -59,5 +61,6 @@ extension Character {
         
         LocalCamera.run(SKAction.sequence([ShakeX1,ShakeX2,ShakeX3,ShakeX4]))
         LocalCamera.run(SKAction.sequence([ShakeY1,ShakeY2,ShakeY3,ShakeY4]))
+        
     }
 }
