@@ -123,6 +123,7 @@ extension GameScene {
                     
                 ControlBall.run(MoveCenterActoin)
                 Player.CurrentDirection = Direction.ST
+                
             }
         }
     }
