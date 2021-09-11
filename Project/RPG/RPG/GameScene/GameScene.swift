@@ -35,7 +35,7 @@ class GameScene: SKScene {
     let SkillButton = SKSpriteNode(imageNamed: "SkillButton")
 // Variable_End
     
-//MARK:- didMove
+// MARK:- didMove
     // didMove 화면이 보이자 마자 실행
     override func didMove(to view: SKView) {
         
