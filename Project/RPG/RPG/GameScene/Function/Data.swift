@@ -23,6 +23,7 @@ extension GameScene {
     }
 // Player_End
     
+    
     // MARK: - Monster
         func Data_Monster() {
             
@@ -59,7 +60,8 @@ extension GameScene {
                 
                 MiniMap.addChild(MonsterMinion)
                 
-                Number += 1 // 각각의 몬스터는 고유의 번호를 가지고 있다.     
+                Number += 1 // 각각의 몬스터는 고유의 번호를 가지고 있다.
+                
             }
         }
     // Monster_End
