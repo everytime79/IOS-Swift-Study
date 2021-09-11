@@ -30,6 +30,7 @@ extension Character {
         
         self.run(SKAction.sequence([MoveWaitAction, MoveDelayAction])) // 0.2 초 기다린 후 -> 다시 가능하게
         self.run(SKAction.sequence([AttackWaitAction, AttackDelayAction])) // 0.5 초 기다린 후 -> 다시 가능하게
+        
     }
     
     func Attack_Melee_Animation(AttackBody: Character){
