@@ -47,6 +47,7 @@ extension Character {
             BezeirPath.addLine(to: Center)
             
             Circle.path = BezeirPath.cgPath
+            
         }
         
         let waitAction = SKAction.wait(forDuration: Interval)
@@ -55,6 +56,7 @@ extension Character {
             
             Circle.path = nil
             Circle.removeFromParent()
+            
         }
     }
 }
