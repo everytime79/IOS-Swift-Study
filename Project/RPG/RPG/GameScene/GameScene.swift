@@ -100,7 +100,6 @@ class GameScene: SKScene {
     
         LocalCamera.addChild(MiniMap)
         
-        
         // Data //
         let Path = Bundle.main.path(forResource: "GameData", ofType: "plist")
         GameData = NSMutableDictionary(contentsOfFile: Path!)!
