@@ -9,6 +9,10 @@ extension Character {
         let AbsDeltaX = abs(DeltaX)
         let AbsDeltaY = abs(DeltaY)
         
+        if AbsDeltaX < CGFloat(self.SP / 1.7) && AbsDeltaY < CGFloat(self.SP / 1.7) {
+            
+        }
+        
     }
     
 // MARK: - Standoff
