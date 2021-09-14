@@ -11,7 +11,10 @@ extension Character {
         
         if AbsDeltaX < CGFloat(self.SP / 1.7) && AbsDeltaY < CGFloat(self.SP / 1.7) {
             
-        }
+            self.position = AdjustedPosition
+            self.CurrentDirection = .ST
+            
+        } else
         
     }
     
