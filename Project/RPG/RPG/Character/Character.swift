@@ -16,6 +16,7 @@ class Character: SKSpriteNode {
     var PositionX = CGFloat()
     var PositionY = CGFloat()
     var Costume = String()
+    var Class = String()
     var SP = CGFloat()
     var RunSP = CGFloat()
     var WalkSP = CGFloat(1)
