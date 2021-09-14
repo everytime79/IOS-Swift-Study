@@ -35,6 +35,7 @@ extension GameScene {
                 let Data = value as! [String:Any]
                 let PositionX = Data["PositionX"] as! CGFloat
                 let PositionY = Data["PositionY"] as! CGFloat
+                let Class = Data["Class"] as! String
                 let Costume = Data["Costume"] as! String
 
                 let SP = Data["SP"] as! CGFloat
@@ -42,6 +43,7 @@ extension GameScene {
                 Monster = Character(imageNamed: "Archer")
                 Monster.PositionX = PositionX
                 Monster.PositionY = PositionY
+                Monster.Class = Class
                 Monster.Costume = Costume
                 Monster.SP = SP
                 Monster.RunSP = SP
