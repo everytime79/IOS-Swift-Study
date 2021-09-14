@@ -14,7 +14,14 @@ extension Character {
             self.position = AdjustedPosition
             self.CurrentDirection = .ST
             
-        } else
+        } else if AbsDeltaX > AbsDeltaY {
+            
+            if DeltaX > 0 {
+                
+                self.CurrentDirection = .E
+                
+            }
+        }
         
     }
     
