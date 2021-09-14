@@ -44,6 +44,11 @@ extension Character {
 // MARK: - Chase
     func AI_Chase(Target: Character){
         
+        DeltaX = CGFloat(Target.position.x - self.position.x)
+        DeltaY = CGFloat(Target.position.y - self.position.y)
+        
+        AdjustedPosition = Target.position
+        
     }
     
 }
