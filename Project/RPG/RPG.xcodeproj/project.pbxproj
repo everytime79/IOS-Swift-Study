@@ -38,6 +38,7 @@
 		EBBBBB5B26B6C0970015BE36 /* RedSwanMoveW.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBB5726B6C0970015BE36 /* RedSwanMoveW.atlas */; };
 		EBC7D43426B96E0C00331695 /* Attack_Meteor.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBC7D43326B96E0C00331695 /* Attack_Meteor.atlas */; };
 		EBC7D43B26B96E4200331695 /* Meteor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7D43A26B96E4200331695 /* Meteor.swift */; };
+		EBC8129126F0D6C000183660 /* Chase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC8129026F0D6C000183660 /* Chase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		EBBBBB5726B6C0970015BE36 /* RedSwanMoveW.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveW.atlas; sourceTree = "<group>"; };
 		EBC7D43326B96E0C00331695 /* Attack_Meteor.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Meteor.atlas; sourceTree = "<group>"; };
 		EBC7D43A26B96E4200331695 /* Meteor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteor.swift; sourceTree = "<group>"; };
+		EBC8129026F0D6C000183660 /* Chase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				EB95E02226DA8AFA00250067 /* PhysicsBody.swift */,
 				EB7F61AA26E42D2300BC39DF /* AI.swift */,
 				EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */,
+				EBC8129026F0D6C000183660 /* Chase.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB7F61AE26E42F2700BC39DF /* CharacterUpdate.swift in Sources */,
+				EBC8129126F0D6C000183660 /* Chase.swift in Sources */,
 				EB80470C26B829A10047132A /* Item.swift in Sources */,
 				EBC7D43B26B96E4200331695 /* Meteor.swift in Sources */,
 				EBA7A91225ADFC1400206EF3 /* GameScene.swift in Sources */,
