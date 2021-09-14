@@ -15,14 +15,29 @@ extension Character {
             self.CurrentDirection = .ST
             
         } else if AbsDeltaX > AbsDeltaY {
-            
+            // 가로축이 더 멀리 떨어져 있는 경우, 가로축 우선으로 따라가기 위함.
             if DeltaX > 0 {
                 
                 self.CurrentDirection = .E
                 
+            } else if DeltaX < 0 {
+                
+                self.CurrentDirection = .W
+                
+            }
+            
+        } else if AbsDeltaX <= AbsDeltaY {
+            // 세로축이 더 멀리 떨어져 있는 경우, 세로축 우선으로 따라가기 위함.
+            if DeltaY < 0 {
+                
+                self.CurrentDirection = .S
+                
+            } else if DeltaY > 0 {
+                
+                self.CurrentDirection = .N
+                
             }
         }
-        
     }
     
 // MARK: - Standoff
