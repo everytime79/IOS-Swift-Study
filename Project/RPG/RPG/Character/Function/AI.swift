@@ -41,4 +41,9 @@ extension Character {
         
     }
     
+// MARK: - Chase
+    func AI_Chase(Target: Character){
+        
+    }
+    
 }
