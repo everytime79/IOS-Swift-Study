@@ -18,6 +18,7 @@ extension Character {
         }
         
         // AI
+        let DistanceToPlayer = sqrt(pow(self.position.x - Scene.Player.position.x, 2) + pow(self.position.y - Scene.Player.position.y, 2))
         AI_RandomWalk()
         
     }
