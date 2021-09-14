@@ -38,12 +38,77 @@ extension Character {
                 
             }
         }
+        
+        Function_Move()
     }
     
 // MARK: - Standoff
-    
-
-    
-    
-    
+    func Chase_Standoff() {
+        
+        let AbsDeltaX = abs(DeltaX)
+        let AbsDeltaY = abs(DeltaY)
+        
+        if AbsDeltaX < AbsDeltaY {
+            
+            if AbsDeltaX < CGFloat(self.SP / 1.7) && AbsDeltaX >= 0 {
+                
+                self.position.x = AdjustedPosition.x
+                self.CurrentDirection = .ST
+                
+                if AbsDeltaY < CGFloat(self.SP / 1.7) && AbsDeltaY >= 0 {
+                    
+                    self.position.y = AdjustedPosition.y
+                    self.CurrentDirection = .ST
+                    
+                } else if DeltaY > 0 {
+                    
+                    self.CurrentDirection = .N
+                    
+                } else if DeltaY < 0 {
+                    
+                    self.CurrentDirection = .S
+                }
+                
+            } else if DeltaX > 0 {
+                
+                self.CurrentDirection = .E
+                
+            } else if DeltaX < 0 {
+                
+                self.CurrentDirection = .W
+            }
+            
+        } else if AbsDeltaX >= AbsDeltaY {
+            
+            if AbsDeltaY < CGFloat(self.SP / 1.7) && AbsDeltaY >= 0 {
+                
+                self.position.y = AdjustedPosition.y
+                self.CurrentDirection = .ST
+                
+                if AbsDeltaX < CGFloat(self.SP / 1.7) && AbsDeltaX >= 0 {
+                    
+                    self.position.x = AdjustedPosition.x
+                    self.CurrentDirection = .ST
+                    
+                } else if DeltaX > 0 {
+                    
+                    self.CurrentDirection = .E
+                    
+                } else if DeltaX < 0 {
+                    
+                    self.CurrentDirection = .W
+                }
+                
+            } else if DeltaY > 0 {
+                
+                self.CurrentDirection = .N
+                
+            } else if DeltaY < 0 {
+                
+                self.CurrentDirection = .S
+            }
+        }
+        
+        Function_Move()
+    } 
 }
