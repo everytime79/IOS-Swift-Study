@@ -48,6 +48,18 @@ extension Character {
         DeltaY = CGFloat(Target.position.y - self.position.y)
         
         AdjustedPosition = Target.position
+        // 캐릭터와 몬스터는 절대 겹칠 수 없기 떄문에, 거리가 일정치만큼 가까워지면 그만 움직이게 한다.
+        
+        if self.Class == "Knight" {
+            
+            Chase_Melee()
+            
+        } else if self.Class == "Archer" {
+            
+            Chase_Standoff()
+            
+        }
+        
         
     }
     
