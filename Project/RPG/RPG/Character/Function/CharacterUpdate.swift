@@ -31,9 +31,6 @@ extension Character {
             AI_RandomWalk()
             
         }
-        
     }
-    
-    
 }
 
