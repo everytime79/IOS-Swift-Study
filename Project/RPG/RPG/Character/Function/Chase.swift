@@ -107,7 +107,6 @@ extension Character {
                 self.CurrentDirection = .S
             }
         }
-        
         Function_Move()
     } 
 }
