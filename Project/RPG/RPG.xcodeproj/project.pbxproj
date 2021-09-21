@@ -14,6 +14,7 @@
 		EB2D5E2525AF6251008B6A6A /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2425AF6251008B6A6A /* Share.swift */; };
 		EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2B25AF63DF008B6A6A /* Move.swift */; };
 		EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB64990A26F97908003DC953 /* Attack_Standoff.atlas */; };
+		EB64990E26F979F6003DC953 /* Standoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64990D26F979F6003DC953 /* Standoff.swift */; };
 		EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AA26E42D2300BC39DF /* AI.swift */; };
 		EB7F61AE26E42F2700BC39DF /* CharacterUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */; };
 		EB80470026B81A170047132A /* Attack_Melee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB8046FF26B81A170047132A /* Attack_Melee.atlas */; };
@@ -50,6 +51,7 @@
 		EB2D5E2425AF6251008B6A6A /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		EB2D5E2B25AF63DF008B6A6A /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		EB64990A26F97908003DC953 /* Attack_Standoff.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Standoff.atlas; sourceTree = "<group>"; };
+		EB64990D26F979F6003DC953 /* Standoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standoff.swift; sourceTree = "<group>"; };
 		EB7F61AA26E42D2300BC39DF /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUpdate.swift; sourceTree = "<group>"; };
 		EB8046FF26B81A170047132A /* Attack_Melee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Melee.atlas; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				EB80470326B81BF00047132A /* Melee.swift */,
 				EBC7D43A26B96E4200331695 /* Meteor.swift */,
+				EB64990D26F979F6003DC953 /* Standoff.swift */,
 			);
 			path = Attack;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				EBA9673425AF5D6800229A6A /* Character.swift in Sources */,
 				EB82FE4726C009EE00619118 /* Delay.swift in Sources */,
 				EBA7A91425ADFC1400206EF3 /* GameViewController.swift in Sources */,
+				EB64990E26F979F6003DC953 /* Standoff.swift in Sources */,
 				EBA7A90C25ADFC1400206EF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
