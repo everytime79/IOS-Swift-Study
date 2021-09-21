@@ -37,6 +37,8 @@ extension Character {
         
         if self.AttackDirection == .E {
             AttackBody.position = CGPoint(x: 15, y: -12)
+            AttackBody.texture = SKTexture(image: "Attack_StandoffE")
+            //4:26
         } else if self.AttackDirection == .W {
             AttackBody.position = CGPoint(x: -15, y: -12)
         } else if self.AttackDirection == .S {
