@@ -36,14 +36,13 @@ extension Character {
     func Attack_Standoff_Animation(AttackBody: Character){
         
         if self.AttackDirection == .E {
-            
-            AttackBody.position = CGPoint(
+            AttackBody.position = CGPoint(x: 15, y: -12)
         } else if self.AttackDirection == .W {
-            
+            AttackBody.position = CGPoint(x: -15, y: -12)
         } else if self.AttackDirection == .S {
-            
+            AttackBody.position = CGPoint(x: -15, y: -12)
         } else if self.AttackDirection == .N {
-            
+            AttackBody.position = CGPoint(x: -15, y: 12)
         }
     }
 }
