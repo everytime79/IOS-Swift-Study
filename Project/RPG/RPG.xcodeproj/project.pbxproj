@@ -13,6 +13,7 @@
 		EB27EF1426CD3A540073CF84 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB27EF1326CD3A540073CF84 /* Data.swift */; };
 		EB2D5E2525AF6251008B6A6A /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2425AF6251008B6A6A /* Share.swift */; };
 		EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2B25AF63DF008B6A6A /* Move.swift */; };
+		EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB64990A26F97908003DC953 /* Attack_Standoff.atlas */; };
 		EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AA26E42D2300BC39DF /* AI.swift */; };
 		EB7F61AE26E42F2700BC39DF /* CharacterUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */; };
 		EB80470026B81A170047132A /* Attack_Melee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB8046FF26B81A170047132A /* Attack_Melee.atlas */; };
@@ -48,6 +49,7 @@
 		EB27EF1326CD3A540073CF84 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		EB2D5E2425AF6251008B6A6A /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		EB2D5E2B25AF63DF008B6A6A /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		EB64990A26F97908003DC953 /* Attack_Standoff.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Standoff.atlas; sourceTree = "<group>"; };
 		EB7F61AA26E42D2300BC39DF /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUpdate.swift; sourceTree = "<group>"; };
 		EB8046FF26B81A170047132A /* Attack_Melee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Melee.atlas; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		EB8046FE26B819FE0047132A /* Attack */ = {
 			isa = PBXGroup;
 			children = (
+				EB64990A26F97908003DC953 /* Attack_Standoff.atlas */,
 				EBC7D43326B96E0C00331695 /* Attack_Meteor.atlas */,
 				EB8046FF26B81A170047132A /* Attack_Melee.atlas */,
 			);
@@ -286,6 +289,7 @@
 				EBA7A90E25ADFC1400206EF3 /* GameScene.sks in Resources */,
 				EBBBBB5826B6C0970015BE36 /* RedSwanMoveN.atlas in Resources */,
 				EBC7D43426B96E0C00331695 /* Attack_Meteor.atlas in Resources */,
+				EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */,
 				EB95E01E26D7A38000250067 /* ArcherMoveE.atlas in Resources */,
 				EBA7A91925ADFC1600206EF3 /* Assets.xcassets in Resources */,
 				EBA7A91025ADFC1400206EF3 /* Actions.sks in Resources */,
