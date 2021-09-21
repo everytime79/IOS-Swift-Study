@@ -37,6 +37,7 @@ extension Character {
         
         if self.AttackDirection == .E {
             
+            AttackBody.position = CGPoint(
         } else if self.AttackDirection == .W {
             
         } else if self.AttackDirection == .S {
