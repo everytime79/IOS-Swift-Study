@@ -22,6 +22,7 @@ class Character: SKSpriteNode {
     var WalkSP = CGFloat(1)
     var Number = Int()
     var SearchRange = CGFloat()
+    var AttackRange = CGFloat()
     var DeltaX = CGFloat() // 플레이어의 위치를 계산하기 위한 좌표값
     var DeltaY = CGFloat()
     var AdjustedPosition = CGPoint()
