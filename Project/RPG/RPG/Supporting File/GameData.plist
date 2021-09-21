@@ -19,7 +19,7 @@
 			<key>SearchRange</key>
 			<integer>300</integer>
 			<key>AttackRange</key>
-			<string></string>
+			<integer>100</integer>
 		</dict>
 		<key>Monster - 2</key>
 		<dict>
@@ -34,7 +34,7 @@
 			<key>SP</key>
 			<integer>1</integer>
 			<key>SearchRange</key>
-			<integer>300</integer>
+			<integer>500</integer>
 		</dict>
 	</dict>
 	<key>Player</key>
