@@ -45,6 +45,7 @@ extension Character {
             AttackBody.position = CGPoint(x: -15, y: -12)
         } else if self.AttackDirection == .N {
             AttackBody.position = CGPoint(x: -15, y: 12)
+            
         }
     }
 }
