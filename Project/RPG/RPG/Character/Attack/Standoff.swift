@@ -36,6 +36,7 @@ extension Character {
     func Attack_Standoff_Animation(AttackBody: Character){
         
         if self.AttackDirection == .E {
+            
             AttackBody.position = CGPoint(x: 15, y: -12)
             AttackBody.texture = SKTexture(imageNamed: "Attack_StandoffE")
             AttackBody.run(SKAction.move(by: CGVector(dx: 300, dy: 0), duration: 0.2))
