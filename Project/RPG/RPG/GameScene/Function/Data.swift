@@ -39,6 +39,7 @@ extension GameScene {
                 let Costume = Data["Costume"] as! String
                 
                 let SearchRange = Data["SearchRange"] as! CGFloat
+                let AttackRange = Data["AttackRange"] as! CGFloat
 
                 let SP = Data["SP"] as! CGFloat
                 
@@ -50,6 +51,7 @@ extension GameScene {
                 Monster.SP = SP
                 Monster.RunSP = SP
                 Monster.SearchRange = SearchRange
+                Monster.AttackRange = AttackRange
                 Monster.Number = Number
                 
                 Monster.position = CGPoint(x: PositionX, y: PositionY)
