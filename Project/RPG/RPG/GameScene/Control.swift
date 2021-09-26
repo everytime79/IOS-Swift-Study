@@ -57,6 +57,7 @@ extension GameScene {
                     
                     if Player.AttackDelayIs == false {
                         Player.Attack_Melee()
+                        Player.Function_DelayEffect(Button: "SkillButton", Delay: 10)
                     }
                     
                 } else if ItemButtonBase.frame.contains(CorrectedLocation) {
