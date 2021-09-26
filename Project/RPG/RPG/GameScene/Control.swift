@@ -57,7 +57,7 @@ extension GameScene {
                     
                     if Player.AttackDelayIs == false {
                         Player.Attack_Melee()
-                        Player.Function_DelayEffect(Button: "SkillButton", Delay: 10)
+                        Player.Function_DelayEffect(Button: "AttackButton", Delay: 0.5)
                     }
                     
                 } else if ItemButtonBase.frame.contains(CorrectedLocation) {
@@ -68,7 +68,8 @@ extension GameScene {
                     
                     if Player.SkillDelayIs == false { // false - > use Skill
                         Player.Attack_Meteor()
-                        
+                        Player.Function_DelayEffect(Button: "SkillButton", Delay: 10)
+
                     }
                 }
             }
