@@ -38,7 +38,7 @@ extension Character {
             
             if self.AttackDelayIs == false {
                 
-                if self.Class == "Knigh" {
+                if self.Class == "Knight" {
                     
                     Attack_Melee()
                     
