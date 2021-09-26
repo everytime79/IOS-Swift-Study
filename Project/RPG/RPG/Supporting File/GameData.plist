@@ -9,7 +9,7 @@
 			<key>Class</key>
 			<string>Knight</string>
 			<key>Costume</key>
-			<string>Archer</string>
+			<string>Knight</string>
 			<key>PositionX</key>
 			<integer>100</integer>
 			<key>PositionY</key>
