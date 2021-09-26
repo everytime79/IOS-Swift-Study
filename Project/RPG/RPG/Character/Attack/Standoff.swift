@@ -44,19 +44,19 @@ extension Character {
         } else if self.AttackDirection == .W {
             
             AttackBody.position = CGPoint(x: -15, y: -12)
-            AttackBody.texture = SKTexture(imageNamed: "Attack_StandoffE")
+            AttackBody.texture = SKTexture(imageNamed: "Attack_StandoffW")
             AttackBody.run(SKAction.move(by: CGVector(dx: 300, dy: 0), duration: 0.2))
             
         } else if self.AttackDirection == .S {
             
             AttackBody.position = CGPoint(x: -15, y: -12)
-            AttackBody.texture = SKTexture(imageNamed: "Attack_StandoffE")
+            AttackBody.texture = SKTexture(imageNamed: "Attack_StandoffS")
             AttackBody.run(SKAction.move(by: CGVector(dx: 300, dy: 0), duration: 0.2))
             
         } else if self.AttackDirection == .N {
             
             AttackBody.position = CGPoint(x: -15, y: 12)
-            AttackBody.texture = SKTexture(imageNamed: "Attack_StandoffE")
+            AttackBody.texture = SKTexture(imageNamed: "Attack_StandoffN")
             AttackBody.run(SKAction.move(by: CGVector(dx: 300, dy: 0), duration: 0.2))
             
             
