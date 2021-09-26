@@ -38,7 +38,6 @@ extension Character {
         let SkillWaitAction = SKAction.wait(forDuration: 5)
         let SkillDelayAction = SKAction.run { self.SkillDelayIs = false}
         
-        Function_DelayEffect(Button: "SkillButton", Delay: 5)
         MoveDelayIs = true
         SkillDelayIs = true
         
