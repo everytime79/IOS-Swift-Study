@@ -43,6 +43,7 @@ extension GameScene {
 
                 let SP = Data["SP"] as! CGFloat
                 
+    // MARK: - Monster.
                 Monster = Character(imageNamed: "Archer")
                 Monster.PositionX = PositionX
                 Monster.PositionY = PositionY
