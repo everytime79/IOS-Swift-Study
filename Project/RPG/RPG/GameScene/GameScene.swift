@@ -107,5 +107,4 @@ class GameScene: SKScene {
         Data_Monster()
         
     }
-    
 }
