@@ -59,8 +59,5 @@ extension Character {
             Chase_Standoff()
             
         }
-        
-        
     }
-    
 }
