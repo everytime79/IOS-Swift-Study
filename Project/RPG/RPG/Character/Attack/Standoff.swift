@@ -24,7 +24,6 @@ extension Character {
         let AttackWaitAction = SKAction.wait(forDuration: 0.5)
         let AttackDelayAction = SKAction.run { self.AttackDelayIs = false}
         
-         
         MoveDelayIs = true
         AttackDelayIs = true
         
