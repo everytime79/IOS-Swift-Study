@@ -24,6 +24,9 @@ extension Character {
             
         }
         
+        self.addChild(RangeBody)
+        Attack_Melee_Range(RangeBody: RangeBody)
+        
         // Action -> 어택에 대한 애니메이션
         let WaitAction = SKAction.wait(forDuration: 0.2)
         let RemoveAction = SKAction.run { AttackBody.removeFromParent()}
@@ -59,6 +62,15 @@ extension Character {
         } else if self.AttackDirection == .N {
             AttackBody.position = CGPoint(x: -15, y: 12)
             AttackBody.run(SKAction(named: "Attack_MeleeN")!) //!는 해당하는 액션이 반드시 있다.
+        }
+    }
+    
+    func Attack_Melee_Range(RangeBody: Character) {
+        
+        let Distance = CGFloat(50)
+        
+        if self.AttackDirection ==.E {
+                
         }
     }
 }
