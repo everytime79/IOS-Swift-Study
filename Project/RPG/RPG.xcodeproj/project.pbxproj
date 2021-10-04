@@ -113,7 +113,6 @@
 				EBA7A90F25ADFC1400206EF3 /* Actions.sks */,
 				EB2D5E2425AF6251008B6A6A /* Share.swift */,
 				EB27EF0F26CD38F40073CF84 /* GameData.plist */,
-				EBA7A91A25ADFC1600206EF3 /* Info.plist */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
@@ -192,6 +191,7 @@
 				EBA9673625AF5D7100229A6A /* Character */,
 				EBBBBB5326B6C0700015BE36 /* Image */,
 				EB2D5E2725AF6255008B6A6A /* Supporting File */,
+				EBA7A91A25ADFC1600206EF3 /* Info.plist */,
 				EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */,
 				EBA7A91325ADFC1400206EF3 /* GameViewController.swift */,
 				EBA7A91525ADFC1400206EF3 /* Main.storyboard */,
