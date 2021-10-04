@@ -24,11 +24,11 @@ extension Character {
             
         self.physicsBody = PhysicsBody
         self.physicsBody?.isDynamic = true
-        self.physicsBody?.affectedByGravity = false // 중력의 영향 x
-        self.physicsBody?.allowsRotation = false // 마주쳤을 떄 돌 필요가 없다.
-        self.physicsBody?.categoryBitMask = BodyType.PlayerAttack.rawValue // Player = 1, Monster = 2
-        self.physicsBody?.collisionBitMask = BodyType.Monster.rawValue // Monster하고 겹치지 않겠다.
-        self.physicsBody?.collisionBitMask = BodyType.Monster.rawValue // Monster하고 겹치지 않겠다.
+        self.physicsBody?.affectedByGravity = false
+        self.physicsBody?.allowsRotation = false
+        self.physicsBody?.categoryBitMask = BodyType.PlayerAttack.rawValue
+        self.physicsBody?.contactTestBitMask = BodyType.Monster.rawValue // 둘이 붙었을 경우 알려달라,
+        self.physicsBody?.collisionBitMask = BodyType.Monster.rawValue
     }
     
 // MARK: - Monster
