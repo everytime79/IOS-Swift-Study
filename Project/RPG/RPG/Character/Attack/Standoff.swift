@@ -12,8 +12,8 @@ extension Character {
         Attack_Standoff_Animation(AttackBody: AttackBody)
         
         // Range
-        let RangeBody = Character(color:  UIColor.clear, size: CGSize(width: 50, height: 50))
-
+        let RangeBody = Character(color: UIColor.clear, size: CGSize(width: 50, height: 50))
+        
         if self.Sort == "Player" {
             
             RangeBody.PhysicsBody_PlayerAttack()
@@ -21,9 +21,10 @@ extension Character {
         } else if self.Sort == "Monster" {
             
             RangeBody.PhysicsBody_MonsterAttack()
-            
         }
         
+        self.addChild(RangeBody)
+        Attack_Standoff_Range(RangeBody: RangeBody)
         self.addChild(RangeBody)
         Attack_Standoff_Range(RangeBody: RangeBody)
         
@@ -82,23 +83,26 @@ extension Character {
         let Distance = CGFloat(300)
         
         if self.AttackDirection == .E {
+            
             let RangeAction = SKAction.move(by: CGVector(dx: Distance, dy: 0), duration: 0.2)
             RangeBody.run(RangeAction)
-
+            
         } else if self.AttackDirection == .W {
+            
             let RangeAction = SKAction.move(by: CGVector(dx: -Distance, dy: 0), duration: 0.2)
             RangeBody.run(RangeAction)
 
-            
         } else if self.AttackDirection == .S {
+            
             let RangeAction = SKAction.move(by: CGVector(dx: 0, dy: -Distance), duration: 0.2)
             RangeBody.run(RangeAction)
 
         } else if self.AttackDirection == .N {
+            
             let RangeAction = SKAction.move(by: CGVector(dx: 0, dy: Distance), duration: 0.2)
             RangeBody.run(RangeAction)
-
         }
-    }   
+    }
+
 }
 

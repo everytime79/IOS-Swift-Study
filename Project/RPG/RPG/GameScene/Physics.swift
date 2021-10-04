@@ -12,7 +12,7 @@ extension GameScene {
             
             print("Player Attack")
             
-        } else if contact.bodyB.categoryBitMask == BodyType.PlayerAttack.rawValue && contact.bodyA.categoryBitMask == BodyType.Monster.rawValue {
+        } else if contact.bodyA.categoryBitMask == BodyType.PlayerAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Monster.rawValue {
             
             print("Player Attack")
             
