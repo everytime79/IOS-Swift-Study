@@ -11,6 +11,9 @@ extension Character {
         self.addChild(AttackBody)
         Attack_Melee_Animation(AttackBody: AttackBody)
         
+        // Range
+        let RangeBody = Character(color:  UIColor.red, size: CGSize(width: 50, height: 50))
+        
         // Action -> 어택에 대한 애니메이션
         let WaitAction = SKAction.wait(forDuration: 0.2)
         let RemoveAction = SKAction.run { AttackBody.removeFromParent()}
