@@ -7,7 +7,7 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
 // MARK: - Variable
     var GameData = NSMutableDictionary()//변경이 될 수 있는 dic
@@ -40,6 +40,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         
         Scene = self
+        physicsWorld.contactDelegate = self
         
         // Local Camera //
         self.camera = LocalCamera
