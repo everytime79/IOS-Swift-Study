@@ -38,6 +38,12 @@ extension Character {
             
         }
         
+        Defender.addChild(DamageLabel)
+        
+        let DamageAction = SKAction(named: "Effect_Damage")
+        let RemoveAction = SKAction.run { DamageLabel.removeFromParent() }
+        
+        DamageLabel.run(SKAction.sequence([DamageAction!, RemoveAction]))
 
     }
 }
