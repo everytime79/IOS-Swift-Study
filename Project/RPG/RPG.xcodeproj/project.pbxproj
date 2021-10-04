@@ -52,6 +52,7 @@
 		EB2D5E2425AF6251008B6A6A /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		EB2D5E2B25AF63DF008B6A6A /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		EB4B6E27270B3B5E0004FEDF /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
+		EB4B6E2B270B40540004FEDF /* 04B_19__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = 04B_19__.TTF; sourceTree = "<group>"; };
 		EB64990A26F97908003DC953 /* Attack_Standoff.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Standoff.atlas; sourceTree = "<group>"; };
 		EB64990D26F979F6003DC953 /* Standoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standoff.swift; sourceTree = "<group>"; };
 		EB7F61AA26E42D2300BC39DF /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
@@ -106,9 +107,11 @@
 		EB2D5E2725AF6255008B6A6A /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				EB4B6E2B270B40540004FEDF /* 04B_19__.TTF */,
 				EBA7A90F25ADFC1400206EF3 /* Actions.sks */,
 				EB2D5E2425AF6251008B6A6A /* Share.swift */,
 				EB27EF0F26CD38F40073CF84 /* GameData.plist */,
+				EBA7A91A25ADFC1600206EF3 /* Info.plist */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
@@ -190,7 +193,6 @@
 				EBA7A91325ADFC1400206EF3 /* GameViewController.swift */,
 				EBA7A91525ADFC1400206EF3 /* Main.storyboard */,
 				EBA7A91825ADFC1600206EF3 /* Assets.xcassets */,
-				EBA7A91A25ADFC1600206EF3 /* Info.plist */,
 			);
 			path = RPG;
 			sourceTree = "<group>";
