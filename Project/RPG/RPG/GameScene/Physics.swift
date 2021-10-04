@@ -16,6 +16,8 @@ extension GameScene {
             if PlayerAttackBody.AttackDamageIs == true {
                 
                 PlayerAttackBody.AttackDamageIs = false
+                Monster.Damage_Effect(Attacker: Player, Defender: Monster)
+                PlayerAttackBody.removeFromParent()
                 
             }
             
