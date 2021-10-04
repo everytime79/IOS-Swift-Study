@@ -30,11 +30,11 @@ extension Character {
         
         if self.Sort == "Player" {
             
-            DamageLabel.fontColor = UIColor.red
+            DamageLabel.fontColor = UIColor.green
             
         } else if self.Sort == "Monster" {
             
-            DamageLabel.fontColor = UIColor.green
+            DamageLabel.fontColor = UIColor.red 
             
         }
         

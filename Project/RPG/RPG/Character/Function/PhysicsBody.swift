@@ -22,13 +22,13 @@ extension Character {
     func PhysicsBody_PlayerAttack() {
         
         let PhysicsBody = SKPhysicsBody(rectangleOf: self.size)
-            
+        
         self.physicsBody = PhysicsBody
         self.physicsBody?.isDynamic = true
         self.physicsBody?.affectedByGravity = false
         self.physicsBody?.allowsRotation = false
         self.physicsBody?.categoryBitMask = BodyType.PlayerAttack.rawValue
-        self.physicsBody?.contactTestBitMask = BodyType.Monster.rawValue // 둘이 붙었을 경우 알려달라,
+        self.physicsBody?.contactTestBitMask = BodyType.Monster.rawValue
         self.physicsBody?.collisionBitMask = BodyType.Monster.rawValue
     }
     
@@ -55,11 +55,10 @@ extension Character {
 
         self.physicsBody = PhysicsBody
         self.physicsBody?.isDynamic = true
-        self.physicsBody?.affectedByGravity = false // 중력의 영향 x
-        self.physicsBody?.allowsRotation = false // 마주쳤을 떄 돌 필요가 없다.
+        self.physicsBody?.affectedByGravity = false
+        self.physicsBody?.allowsRotation = false
         self.physicsBody?.categoryBitMask = BodyType.MonsterAttack.rawValue
         self.physicsBody?.contactTestBitMask = BodyType.Player.rawValue
         self.physicsBody?.collisionBitMask = BodyType.Player.rawValue | BodyType.Monster.rawValue
-        // 플레이어와 충돌했을 떄, 중복되지 않겠다.(겹침 x). | 몬스터와도 충돌했을 때, 겹치지 않겠다.(오버랩 되지 않겠다.)
     }
 }

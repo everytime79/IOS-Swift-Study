@@ -11,7 +11,7 @@ extension Character {
         self.addChild(AttackBody)
         Attack_Standoff_Animation(AttackBody: AttackBody)
         
-        // Range
+        // Range //
         let RangeBody = Character(color: UIColor.clear, size: CGSize(width: 50, height: 50))
         
         if self.Sort == "Player" {

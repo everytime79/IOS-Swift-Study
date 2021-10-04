@@ -15,6 +15,7 @@
 		EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2B25AF63DF008B6A6A /* Move.swift */; };
 		EB4B6E28270B3B5E0004FEDF /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B6E27270B3B5E0004FEDF /* Physics.swift */; };
 		EB4B6E2E270B42710004FEDF /* Damage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B6E2D270B42710004FEDF /* Damage.swift */; };
+		EB4B6E31270B47ED0004FEDF /* 04B_19__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = EB4B6E2B270B40540004FEDF /* 04B_19__.TTF */; };
 		EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB64990A26F97908003DC953 /* Attack_Standoff.atlas */; };
 		EB64990E26F979F6003DC953 /* Standoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64990D26F979F6003DC953 /* Standoff.swift */; };
 		EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AA26E42D2300BC39DF /* AI.swift */; };
@@ -302,6 +303,7 @@
 				EBC7D43426B96E0C00331695 /* Attack_Meteor.atlas in Resources */,
 				EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */,
 				EB95E01E26D7A38000250067 /* ArcherMoveE.atlas in Resources */,
+				EB4B6E31270B47ED0004FEDF /* 04B_19__.TTF in Resources */,
 				EBA7A91925ADFC1600206EF3 /* Assets.xcassets in Resources */,
 				EBA7A91025ADFC1400206EF3 /* Actions.sks in Resources */,
 				EBBBBB5926B6C0970015BE36 /* RedSwanMoveE.atlas in Resources */,
