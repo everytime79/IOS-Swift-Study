@@ -17,7 +17,7 @@ extension Character {
         self.physicsBody?.collisionBitMask = BodyType.Monster.rawValue // Monster하고 겹치지 않겠다.
     }
     
-// MARK: - Player
+// MARK: - PlayerAttack
     func PhysicsBody_PlayerAttack() {
         
         let PhysicsBody = SKPhysicsBody(rectangleOf: self.size)
