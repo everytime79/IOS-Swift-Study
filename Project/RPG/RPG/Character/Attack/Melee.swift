@@ -71,14 +71,20 @@ extension Character {
         
         if self.AttackDirection == .E {
             let RangeAction = SKAction.move(by: CGVector(dx: Distance, dy: 0), duration: 0.2)
+            RangeBody.run(RangeAction)
 
         } else if self.AttackDirection == .W {
             let RangeAction = SKAction.move(by: CGVector(dx: -Distance, dy: 0), duration: 0.2)
+            RangeBody.run(RangeAction)
+
             
         } else if self.AttackDirection == .S {
             let RangeAction = SKAction.move(by: CGVector(dx: 0, dy: -Distance), duration: 0.2)
-            
+            RangeBody.run(RangeAction)
+
         } else if self.AttackDirection == .N {
             let RangeAction = SKAction.move(by: CGVector(dx: 0, dy: Distance), duration: 0.2)
+            RangeBody.run(RangeAction)
+
     }
 }
