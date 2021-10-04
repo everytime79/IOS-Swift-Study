@@ -24,7 +24,7 @@ extension Character {
             let FallAction = SKAction.run { AttackBody.run(SKAction(named: "Attack_Meteor")!)}
             let WaitAction = SKAction.wait(forDuration: 0.2)
             let ShakeAction = SKAction.run { AttackBody.Attack_Meteor_Animation()}
-            let RemoveAction = SKAction.run { AttackBody.removeFromParent()}
+            let RemoveAction = SKAction.run { AttackBody.removeFromParent(); RangeBody.removeFromParent()}
             let DamageAction = SKAction.run {
                 
                 // Range
