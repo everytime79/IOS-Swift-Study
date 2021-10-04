@@ -25,8 +25,6 @@ extension Character {
         
         self.addChild(RangeBody)
         Attack_Standoff_Range(RangeBody: RangeBody)
-        self.addChild(RangeBody)
-        Attack_Standoff_Range(RangeBody: RangeBody)
         
         // Action -> 어택에 대한 애니메이션
         let WaitAction = SKAction.wait(forDuration: 0.2)
