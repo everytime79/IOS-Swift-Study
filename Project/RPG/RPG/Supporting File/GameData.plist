@@ -45,6 +45,10 @@
 	</dict>
 	<key>Player</key>
 	<dict>
+		<key>DF</key>
+		<integer>10</integer>
+		<key>AT</key>
+		<integer>50</integer>
 		<key>Sort</key>
 		<string>Player</string>
 		<key>Costume</key>
