@@ -11,7 +11,7 @@ extension GameScene {
         if contact.bodyA.categoryBitMask == BodyType.PlayerAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Monster.rawValue {
             
             let PlayerAttackBody = contact.bodyA.node as! Character
-            let Moneter = contact.bodyB.node as! Character
+            let Monster = contact.bodyB.node as! Character
             
             if PlayerAttackBody.AttackDamageIs == true {
                 
