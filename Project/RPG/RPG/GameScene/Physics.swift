@@ -20,23 +20,29 @@ extension GameScene {
                 PlayerAttackBody.removeFromParent()
                 
             }
-            
-            print("Player Attack")
+
             
         } else if contact.bodyA.categoryBitMask == BodyType.PlayerAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Monster.rawValue {
             
-            print("Player Attack")
+            let PlayerAttackBody = contact.bodyB.node as! Character
+            let Monster = contact.bodyA.node as! Character
+            
+            if PlayerAttackBody.AttackDamageIs == true {
+                
+                PlayerAttackBody.AttackDamageIs = false
+                Monster.Damage_Effect(Attacker: Player, Defender: Monster)
+                PlayerAttackBody.removeFromParent()
+                
+            }
             
         }
         
         //Monster
         if contact.bodyA.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Player.rawValue {
             
-            print("Monster Attack")
             
         } else if contact.bodyB.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyA.categoryBitMask == BodyType.Player.rawValue {
             
-            print("Monster Attack")
             
         }
     }
