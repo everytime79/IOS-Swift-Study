@@ -6,6 +6,8 @@
 	<dict>
 		<key>Monster</key>
 		<dict>
+			<key>Sort</key>
+			<string>Monster</string>
 			<key>Class</key>
 			<string>Knight</string>
 			<key>Costume</key>
@@ -23,6 +25,8 @@
 		</dict>
 		<key>Monster - 2</key>
 		<dict>
+			<key>Sort</key>
+			<string>Monster</string>
 			<key>Class</key>
 			<string>Archer</string>
 			<key>Costume</key>
@@ -41,6 +45,8 @@
 	</dict>
 	<key>Player</key>
 	<dict>
+		<key>Sort</key>
+		<string>Player</string>
 		<key>Costume</key>
 		<string>RedSwan</string>
 		<key>SP</key>
