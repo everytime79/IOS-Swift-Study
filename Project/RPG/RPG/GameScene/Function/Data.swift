@@ -7,10 +7,12 @@ extension GameScene {
     func Data_Player() {
         
         let Data = GameData["Player"] as! [String:Any]
+        let Sort = Data["Sort"] as! String
         let Costume = Data["Costume"] as! String
         let SP = Data["SP"] as! CGFloat
         
         Player = Character(imageNamed: "RedSwan")
+        Player.Sort = Sort
         Player.Costume = Costume
         Player.SP = SP
         Player.zPosition = 10
@@ -35,6 +37,8 @@ extension GameScene {
                 let Data = value as! [String:Any]
                 let PositionX = Data["PositionX"] as! CGFloat
                 let PositionY = Data["PositionY"] as! CGFloat
+                let Sort = Data["Sort"] as! String
+
                 let Class = Data["Class"] as! String
                 let Costume = Data["Costume"] as! String
                 
