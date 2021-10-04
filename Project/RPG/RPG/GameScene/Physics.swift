@@ -10,6 +10,15 @@ extension GameScene {
         //Player
         if contact.bodyA.categoryBitMask == BodyType.PlayerAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Monster.rawValue {
             
+            let PlayerAttackBody = contact.bodyA.node as! Character
+            let Moneter = contact.bodyB.node as! Character
+            
+            if PlayerAttackBody.AttackDamageIs == true {
+                
+                PlayerAttackBody.AttackDamageIs = false
+                
+            }
+            
             print("Player Attack")
             
         } else if contact.bodyA.categoryBitMask == BodyType.PlayerAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Monster.rawValue {
