@@ -14,6 +14,7 @@
 		EB2D5E2525AF6251008B6A6A /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2425AF6251008B6A6A /* Share.swift */; };
 		EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D5E2B25AF63DF008B6A6A /* Move.swift */; };
 		EB4B6E28270B3B5E0004FEDF /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B6E27270B3B5E0004FEDF /* Physics.swift */; };
+		EB4B6E2E270B42710004FEDF /* Damage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4B6E2D270B42710004FEDF /* Damage.swift */; };
 		EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB64990A26F97908003DC953 /* Attack_Standoff.atlas */; };
 		EB64990E26F979F6003DC953 /* Standoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64990D26F979F6003DC953 /* Standoff.swift */; };
 		EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AA26E42D2300BC39DF /* AI.swift */; };
@@ -53,6 +54,7 @@
 		EB2D5E2B25AF63DF008B6A6A /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		EB4B6E27270B3B5E0004FEDF /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
 		EB4B6E2B270B40540004FEDF /* 04B_19__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = 04B_19__.TTF; sourceTree = "<group>"; };
+		EB4B6E2D270B42710004FEDF /* Damage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Damage.swift; sourceTree = "<group>"; };
 		EB64990A26F97908003DC953 /* Attack_Standoff.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Standoff.atlas; sourceTree = "<group>"; };
 		EB64990D26F979F6003DC953 /* Standoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standoff.swift; sourceTree = "<group>"; };
 		EB7F61AA26E42D2300BC39DF /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				EB7F61AA26E42D2300BC39DF /* AI.swift */,
 				EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */,
 				EBC8129026F0D6C000183660 /* Chase.swift */,
+				EB4B6E2D270B42710004FEDF /* Damage.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				EB7F61AE26E42F2700BC39DF /* CharacterUpdate.swift in Sources */,
 				EBC8129126F0D6C000183660 /* Chase.swift in Sources */,
+				EB4B6E2E270B42710004FEDF /* Damage.swift in Sources */,
 				EB80470C26B829A10047132A /* Item.swift in Sources */,
 				EBC7D43B26B96E4200331695 /* Meteor.swift in Sources */,
 				EBA7A91225ADFC1400206EF3 /* GameScene.swift in Sources */,

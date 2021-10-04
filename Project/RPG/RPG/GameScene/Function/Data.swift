@@ -18,6 +18,9 @@ extension GameScene {
         Player = Character(imageNamed: "RedSwan")
         Player.Sort = Sort
         Player.Costume = Costume
+        Player.AT = AT
+        Player.DF = DF
+        Player.Luck = Luck
         Player.SP = SP
         Player.zPosition = 10
         Player.PhysicsBody_Player() // 플레이어를 생성하기 전에 겹치지 않게 해준다.
@@ -58,9 +61,14 @@ extension GameScene {
                 Monster = Character(imageNamed: "Archer")
                 Monster.PositionX = PositionX
                 Monster.PositionY = PositionY
-                Player.Sort = Sort
+                Monster.Sort = Sort
                 Monster.Class = Class
                 Monster.Costume = Costume
+                
+                Monster.AT = AT
+                Monster.DF = DF
+                Monster.Luck = Luck
+                
                 Monster.SP = SP
                 Monster.RunSP = SP
                 Monster.SearchRange = SearchRange
