@@ -69,8 +69,8 @@ extension Character {
         
         let Distance = CGFloat(50)
         
-        if self.AttackDirection ==.E {
-                
+        if self.AttackDirection == .E {
+            let RangeAction = SKAction.move(by: CGVector(dx: Distance, dy: 0), duration: 0.2)
         }
     }
 }
