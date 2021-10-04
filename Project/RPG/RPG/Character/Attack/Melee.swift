@@ -13,6 +13,16 @@ extension Character {
         
         // Range
         let RangeBody = Character(color:  UIColor.red, size: CGSize(width: 50, height: 50))
+
+        if self.Sort == "Player" {
+            
+            RangeBody.PhysicsBody_PlayerAttack()
+            
+        } else if self.Sort == "Monster" {
+            
+            RangeBody.PhysicsBody_MonsterAttack()
+            
+        }
         
         // Action -> 어택에 대한 애니메이션
         let WaitAction = SKAction.wait(forDuration: 0.2)
