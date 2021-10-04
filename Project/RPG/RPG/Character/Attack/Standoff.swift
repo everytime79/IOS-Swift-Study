@@ -29,7 +29,7 @@ extension Character {
         
         // Action -> 어택에 대한 애니메이션
         let WaitAction = SKAction.wait(forDuration: 0.2)
-        let RemoveAction = SKAction.run { AttackBody.removeFromParent()}
+        let RemoveAction = SKAction.run { AttackBody.removeFromParent(); RangeBody.removeFromParent()}
         //WaitAction 이 끝나야, Remove 하도록 sequence
         AttackBody.run(SKAction.sequence([WaitAction, RemoveAction]))
         
