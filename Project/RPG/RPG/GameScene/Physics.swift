@@ -21,11 +21,11 @@ extension GameScene {
         //Monster
         if contact.bodyA.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Player.rawValue {
             
-            print("Player Attack")
+            print("Monster Attack")
             
         } else if contact.bodyB.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyA.categoryBitMask == BodyType.Player.rawValue {
             
-            print("Player Attack")
+            print("Monster Attack")
             
         }
     }
