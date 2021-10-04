@@ -12,7 +12,8 @@ let LocalCamera = SKCameraNode()
 enum BodyType: UInt32 {
     
     case Player = 1
-    case Monster = 2    
+    case PlayerAttack = 2
+    case Monster = 4
 }
 
 
