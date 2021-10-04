@@ -40,7 +40,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func didMove(to view: SKView) {
         
         Scene = self
-        physicsWorld.contactDelegate = self
+        self.physicsWorld.contactDelegate = self
         
         // Local Camera //
         self.camera = LocalCamera
