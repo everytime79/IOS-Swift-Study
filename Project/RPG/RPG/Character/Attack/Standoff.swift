@@ -58,7 +58,6 @@ extension Character {
             AttackBody.texture = SKTexture(imageNamed: "Attack_StandoffN")
             AttackBody.run(SKAction.move(by: CGVector(dx: 0, dy: 300), duration: 0.2))
             
-            
         }
     }
 }
