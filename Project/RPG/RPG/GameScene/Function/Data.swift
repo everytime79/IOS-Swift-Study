@@ -11,6 +11,10 @@ extension GameScene {
         let Costume = Data["Costume"] as! String
         let SP = Data["SP"] as! CGFloat
         
+        let AT = Data["AT"] as! CGFloat
+        let DF = Data["DF"] as! CGFloat
+        let Luck = Data["Luck"] as! CGFloat
+        
         Player = Character(imageNamed: "RedSwan")
         Player.Sort = Sort
         Player.Costume = Costume
@@ -39,6 +43,10 @@ extension GameScene {
                 let PositionY = Data["PositionY"] as! CGFloat
                 let Sort = Data["Sort"] as! String
 
+                let AT = Data["AT"] as! CGFloat
+                let DF = Data["DF"] as! CGFloat
+                let Luck = Data["Luck"] as! CGFloat
+                
                 let Class = Data["Class"] as! String
                 let Costume = Data["Costume"] as! String
                 let SP = Data["SP"] as! CGFloat
