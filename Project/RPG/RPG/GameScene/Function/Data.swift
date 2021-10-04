@@ -41,16 +41,16 @@ extension GameScene {
 
                 let Class = Data["Class"] as! String
                 let Costume = Data["Costume"] as! String
-                
+                let SP = Data["SP"] as! CGFloat
+
                 let SearchRange = Data["SearchRange"] as! CGFloat
                 let AttackRange = Data["AttackRange"] as! CGFloat
-
-                let SP = Data["SP"] as! CGFloat
                 
     // MARK: - Monster.
                 Monster = Character(imageNamed: "Archer")
                 Monster.PositionX = PositionX
                 Monster.PositionY = PositionY
+                Player.Sort = Sort
                 Monster.Class = Class
                 Monster.Costume = Costume
                 Monster.SP = SP
