@@ -28,7 +28,7 @@ extension Character {
             let DamageAction = SKAction.run {
                 
                 // Range
-                let RangeBody = Character(color:  UIColor.red, size: CGSize(width: 50, height: 50))
+                let RangeBody = Character(color:  UIColor.clear, size: CGSize(width: 50, height: 50))
 
                 if self.Sort == "Player" {
                     
