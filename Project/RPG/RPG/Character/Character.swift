@@ -18,6 +18,11 @@ class Character: SKSpriteNode {
     var Sort = String()
     var Costume = String()
     var Class = String()
+    
+    var AT = CGFloat()
+    var DF = CGFloat()
+    var Luck = CGFloat()
+    
     var SP = CGFloat()
     var RunSP = CGFloat()
     var WalkSP = CGFloat(1)
