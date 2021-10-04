@@ -18,10 +18,9 @@ extension Character {
     }
     
 // MARK: - Player
-    func PhysicsBody_Player() {
+    func PhysicsBody_PlayerAttack() {
         
-        let Texture = SKTexture(imageNamed: "RedSwan")
-        let PhysicsBody = SKPhysicsBody(texture: Texture, size: self.size)
+        let PhysicsBody = SKPhysicsBody(rectangleOf: self.size)
             
         self.physicsBody = PhysicsBody
         self.physicsBody?.isDynamic = true
