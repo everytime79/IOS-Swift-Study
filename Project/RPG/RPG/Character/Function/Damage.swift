@@ -22,6 +22,9 @@ extension Character {
         
         let DamagePoint = ATPoint - DFPoint
         
+    // Do Damage
+        Defender.CurrentHP -= CGFloat(DamagePoint)
+        
     // Damage Label
         let DamageLabel = SKLabelNode(fontNamed: "04b_19")
         DamageLabel.zPosition = 13 // 상단에 출력하기 위함
