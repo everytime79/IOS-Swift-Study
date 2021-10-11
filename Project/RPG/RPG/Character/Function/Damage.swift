@@ -25,6 +25,8 @@ extension Character {
     // Do Damage
         Defender.CurrentHP -= CGFloat(DamagePoint)
         
+    // Damage Label
+        Damage_Lable(Attacker: Attacker, Defender: Defender, DamagePoint: DamagePoint)
     
     }
     
@@ -39,11 +41,11 @@ extension Character {
             
             if self.Sort == "Player" {
                 
-                DamageLabel.fontColor = UIColor.green
+                DamageLabel.fontColor = UIColor.red
                 
             } else if self.Sort == "Monster" {
                 
-                DamageLabel.fontColor = UIColor.red
+                DamageLabel.fontColor = UIColor.cyan
                 
             }
             
@@ -59,6 +61,22 @@ extension Character {
     
     
 // MARK: - Death
-    
+    func Damage_Death(Defender: Character, MonsterMinionGroup: [Character]) {
+        
+        if Defender.CurrentHP <= 0 {
+            
+            if Defender.Sort == "Player" {
+                
+                Defender.colorBlendFactor = 1
+                Defender.alpha = 1
+                Defender.color = UIColor.red
+                
+                let WaitAction = SKAction.wait(forDuration: 0.5)
+                let DeathAction = SKAction.run {
+                    
+                }
+            }
+        }
+    }
     
 }
