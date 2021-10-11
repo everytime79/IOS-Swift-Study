@@ -28,7 +28,7 @@ extension Character {
     // Damage Label
         let DamageLabel = SKLabelNode(fontNamed: "04b_19")
         DamageLabel.zPosition = 13 // 상단에 출력하기 위함
-        DamageLabel.fontSize = 50 // 글자 크기
+        DamageLabel.fontSize = 30 // 글자 크기
         DamageLabel.text = "\(DamagePoint)"
         
         if self.Sort == "Player" {
