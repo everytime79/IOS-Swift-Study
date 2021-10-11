@@ -21,6 +21,7 @@ extension Character {
         } else if self.Sort == "Monster" {
             
             RangeBody.PhysicsBody_MonsterAttack()
+        
         }
         
         self.addChild(RangeBody)

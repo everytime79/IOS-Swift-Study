@@ -2,8 +2,8 @@ import SpriteKit
 import GameplayKit
 
 extension Character {
-
-    func Function_Healthbar() {
+    
+    func Function_HealthBar() {
         
         let HealthBar = SKSpriteNode(imageNamed: "HPBar")
         HealthBar.zPosition = 2
@@ -16,7 +16,7 @@ extension Character {
         if self.Sort == "Player" {
             
             Health = SKSpriteNode(imageNamed: "HP_Player")
-
+            
         } else if self.Sort == "Monster" {
             
             Health = SKSpriteNode(imageNamed: "HP_Monster")
@@ -28,7 +28,7 @@ extension Character {
         Health.name = "HP"
         Health.anchorPoint = CGPoint(x: 0, y: 0.5)
         self.addChild(Health)
-        
     }
-    
+
+
 }
