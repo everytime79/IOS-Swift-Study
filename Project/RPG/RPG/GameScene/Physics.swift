@@ -18,9 +18,7 @@ extension GameScene {
                 PlayerAttackBody.AttackDamageIs = false
                 Monster.Damage_Effect(Attacker: Player, Defender: Monster)
                 PlayerAttackBody.removeFromParent()
-                
-                print("Attack Monster")
-                
+                                
             }
 
             
@@ -34,10 +32,7 @@ extension GameScene {
                 PlayerAttackBody.AttackDamageIs = false
                 Monster.Damage_Effect(Attacker: Player, Defender: Monster)
                 PlayerAttackBody.removeFromParent()
-                
-                print("Attack Monster")
-
-                
+                s
             }
             
         }
@@ -45,14 +40,29 @@ extension GameScene {
         //Monster
         if contact.bodyA.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Player.rawValue {
             
-            print("Attack P")
+            let MonsterAttackBody = contact.bodyA.node as! Character
+            let Player = contact.bodyB.node as! Character
+            
+            if MonsterAttackBody.AttackDamageIs == true {
+                
+                MonsterAttackBody.AttackDamageIs = false
+                Player.Damage_Effect(Attacker: Monster, Defender: Player)
+                MonsterAttackBody.removeFromParent()
+                
+            }
 
         } else if contact.bodyB.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyA.categoryBitMask == BodyType.Player.rawValue {
             
-            print("Attack P")
-
+            let MonsterAttackBody = contact.bodyA.node as! Character
+            let Player = contact.bodyB.node as! Character
             
-            
+            if MonsterAttackBody.AttackDamageIs == true {
+                
+                MonsterAttackBody.AttackDamageIs = false
+                Player.Damage_Effect(Attacker: Monster, Defender: Player)
+                MonsterAttackBody.removeFromParent()
+                
+            }
         }
     }
 }

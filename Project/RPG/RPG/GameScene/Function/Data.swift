@@ -26,7 +26,7 @@ extension GameScene {
         Player.HP = HP
         Player.CurrentHP = HP
         Player.zPosition = 10
-        Player.Function_Healthbar()
+        Player.Function_HealthBar()
         Player.PhysicsBody_Player() // 플레이어를 생성하기 전에 겹치지 않게 해준다.
         self.addChild(Player)
         
@@ -88,7 +88,7 @@ extension GameScene {
                 
                 Monster.position = CGPoint(x: PositionX, y: PositionY)
                 Monster.zPosition = 10
-                Monster.Function_Healthbar()
+                Monster.Function_HealthBar()
                 Monster.PhysicsBody_Monster() 
                 
                 MonsterGroup.append(Monster)
