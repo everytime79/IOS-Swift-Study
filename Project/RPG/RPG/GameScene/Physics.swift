@@ -19,6 +19,8 @@ extension GameScene {
                 Monster.Damage_Effect(Attacker: Player, Defender: Monster)
                 PlayerAttackBody.removeFromParent()
                 
+                print("Attack Monster")
+                
             }
 
             
@@ -33,6 +35,9 @@ extension GameScene {
                 Monster.Damage_Effect(Attacker: Player, Defender: Monster)
                 PlayerAttackBody.removeFromParent()
                 
+                print("Attack Monster")
+
+                
             }
             
         }
@@ -40,8 +45,12 @@ extension GameScene {
         //Monster
         if contact.bodyA.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Player.rawValue {
             
-            
+            print("Attack P")
+
         } else if contact.bodyB.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyA.categoryBitMask == BodyType.Player.rawValue {
+            
+            print("Attack P")
+
             
             
         }
