@@ -27,10 +27,9 @@ extension GameScene {
         
         for i in 0...MonsterGroup.count - 1 {
             
-            if MonsterGroup[i].CurrentHP <= 0 {
+            if MonsterGroup[i].CurrentHP < 0 {
                 
                 MonsterGroup[i].CurrentHP = 0
-                
             }
             
             MonsterGroup[i].childNode(withName: "HP")?.xScale = MonsterGroup[i].CurrentHP / MonsterGroup[i].HP
