@@ -74,7 +74,12 @@ extension Character {
                 let WaitAction = SKAction.wait(forDuration: 0.5)
                 let DeathAction = SKAction.run {
                     
+                    Defender.removeFromParent()
+                    Defender.physicsBody = nil
                 }
+                
+                self.run(SKAction.sequence([WaitAction, DeathAction]))
+                print("Game Over")
             }
         }
     }
