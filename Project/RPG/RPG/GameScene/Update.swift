@@ -14,6 +14,15 @@ extension GameScene {
             MonsterGroup[i].Update_Monster()    
         }
         
+        // Health Point
+        if Player.CurrentHP < 0 {
+            
+            Player.CurrentHP = 0
+            
+        }
+        
+        Player.childNode(withName: "HP")?.xScale = Player.CurrentHP / Player.anchorPoint
+        
         // MiniMap
         PlayerMinion.position = CGPoint.zero
         
