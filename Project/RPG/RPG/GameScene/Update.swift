@@ -23,7 +23,7 @@ extension GameScene {
             
         }
         
-        Player.childNode(withName: "HP")?.xScale = Player.CurrentHP / Player.anchorPoint
+        Player.childNode(withName: "HP")?.xScale = Player.CurrentHP / Player.HP
         
         for i in 0...MonsterGroup.count - 1 {
             
