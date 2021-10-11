@@ -80,6 +80,12 @@ extension Character {
                 
                 self.run(SKAction.sequence([WaitAction, DeathAction]))
                 print("Game Over")
+                
+            } else if Defender.Sort == "Monster" {
+                
+                let DefenderNumber = Defender.Number
+                let DefenderMinion = MonsterMinionGroup[DefenderNumber]
+                
             }
         }
     }
