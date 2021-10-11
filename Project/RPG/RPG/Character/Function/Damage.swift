@@ -3,8 +3,8 @@ import GameplayKit
 
 extension Character {
     
-// MARK: - Effect
-    func Damage_Effect(Attacker: Character, Defender: Character) {
+// MARK: - Damage Point
+    func Damage_Point(Attacker: Character, Defender: Character) {
     
     // Damage Point
         let AT = Attacker.AT
@@ -49,4 +49,12 @@ extension Character {
         DamageLabel.run(SKAction.sequence([DamageAction!, RemoveAction]))
 
     }
+    
+// MARK: - Damage Label
+    
+    
+    
+// MARK: - Death
+    
+    
 }
