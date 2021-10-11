@@ -32,7 +32,7 @@ extension GameScene {
                 PlayerAttackBody.AttackDamageIs = false
                 Monster.Damage_Effect(Attacker: Player, Defender: Monster)
                 PlayerAttackBody.removeFromParent()
-                s
+                
             }
             
         }
