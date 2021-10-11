@@ -25,32 +25,36 @@ extension Character {
     // Do Damage
         Defender.CurrentHP -= CGFloat(DamagePoint)
         
-    // Damage Label
-        let DamageLabel = SKLabelNode(fontNamed: "04b_19")
-        DamageLabel.zPosition = 13 // 상단에 출력하기 위함
-        DamageLabel.fontSize = 30 // 글자 크기
-        DamageLabel.text = "\(DamagePoint)"
-        
-        if self.Sort == "Player" {
-            
-            DamageLabel.fontColor = UIColor.green
-            
-        } else if self.Sort == "Monster" {
-            
-            DamageLabel.fontColor = UIColor.red 
-            
-        }
-        
-        Defender.addChild(DamageLabel)
-        
-        let DamageAction = SKAction(named: "Effect_Damage")
-        let RemoveAction = SKAction.run { DamageLabel.removeFromParent() }
-        
-        DamageLabel.run(SKAction.sequence([DamageAction!, RemoveAction]))
-
+    
     }
     
 // MARK: - Damage Label
+    func Damage_Lable(Attacker: Character, Defender: Character, DamagePoint: Int) {
+        
+        // Damage Label
+            let DamageLabel = SKLabelNode(fontNamed: "04b_19")
+            DamageLabel.zPosition = 13 // 상단에 출력하기 위함
+            DamageLabel.fontSize = 30 // 글자 크기
+            DamageLabel.text = "\(DamagePoint)"
+            
+            if self.Sort == "Player" {
+                
+                DamageLabel.fontColor = UIColor.green
+                
+            } else if self.Sort == "Monster" {
+                
+                DamageLabel.fontColor = UIColor.red
+                
+            }
+            
+            Defender.addChild(DamageLabel)
+            
+            let DamageAction = SKAction(named: "Effect_Damage")
+            let RemoveAction = SKAction.run { DamageLabel.removeFromParent() }
+            
+            DamageLabel.run(SKAction.sequence([DamageAction!, RemoveAction]))
+
+    }
     
     
     
