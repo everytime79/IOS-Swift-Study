@@ -19,7 +19,7 @@
 			<key>Costume</key>
 			<string>Archer</string>
 			<key>PositionX</key>
-			<integer>100</integer>
+			<integer>200</integer>
 			<key>PositionY</key>
 			<integer>100</integer>
 			<key>SP</key>
@@ -46,7 +46,7 @@
 			<key>Costume</key>
 			<string>Archer</string>
 			<key>PositionX</key>
-			<integer>-100</integer>
+			<integer>-200</integer>
 			<key>PositionY</key>
 			<integer>100</integer>
 			<key>SP</key>
