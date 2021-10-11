@@ -4,7 +4,7 @@ import GameplayKit
 extension Character {
     
 // MARK: - Damage Point
-    func Damage_Point(Attacker: Character, Defender: Character) {
+    func Damage_Point(Attacker: Character, Defender: Character, MonsterMinionGroup: [Character]) {
     
     // Damage Point
         let AT = Attacker.AT
@@ -27,6 +27,9 @@ extension Character {
         
     // Damage Label
         Damage_Lable(Attacker: Attacker, Defender: Defender, DamagePoint: DamagePoint)
+        
+    // Damage Death
+        Damage_Death(Defender: Defender, MonsterMinionGroup: MonsterMinionGroup)
     
     }
     
