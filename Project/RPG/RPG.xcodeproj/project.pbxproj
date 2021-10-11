@@ -126,12 +126,12 @@
 				EB2D5E2B25AF63DF008B6A6A /* Move.swift */,
 				EB80470B26B829A10047132A /* Item.swift */,
 				EB82FE4626C009EE00619118 /* Delay.swift */,
-				EB95E02226DA8AFA00250067 /* PhysicsBody.swift */,
 				EB7F61AA26E42D2300BC39DF /* AI.swift */,
-				EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */,
-				EBC8129026F0D6C000183660 /* Chase.swift */,
-				EB4B6E2D270B42710004FEDF /* Damage.swift */,
 				EBD8587F271422A9007EA2E9 /* HealthBar.swift */,
+				EBC8129026F0D6C000183660 /* Chase.swift */,
+				EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */,
+				EB95E02226DA8AFA00250067 /* PhysicsBody.swift */,
+				EB4B6E2D270B42710004FEDF /* Damage.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
