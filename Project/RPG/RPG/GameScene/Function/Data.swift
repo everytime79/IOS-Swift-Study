@@ -24,6 +24,7 @@ extension GameScene {
         Player.Luck = Luck
         Player.SP = SP
         Player.HP = HP
+        Player.CurrentHP = HP
         Player.zPosition = 10
         Player.Function_Healthbar()
         Player.PhysicsBody_Player() // 플레이어를 생성하기 전에 겹치지 않게 해준다.
@@ -56,6 +57,9 @@ extension GameScene {
                 let Class = Data["Class"] as! String
                 let Costume = Data["Costume"] as! String
                 let SP = Data["SP"] as! CGFloat
+                
+                let HP = Data["HP"] as! CGFloat
+
 
                 let SearchRange = Data["SearchRange"] as! CGFloat
                 let AttackRange = Data["AttackRange"] as! CGFloat
@@ -74,6 +78,10 @@ extension GameScene {
                 
                 Monster.SP = SP
                 Monster.RunSP = SP
+                
+                Monster.HP = HP
+                Monster.CurrentHP = HP
+                
                 Monster.SearchRange = SearchRange
                 Monster.AttackRange = AttackRange
                 Monster.Number = Number
