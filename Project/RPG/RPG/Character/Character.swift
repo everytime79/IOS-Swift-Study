@@ -26,6 +26,10 @@ class Character: SKSpriteNode {
     var SP = CGFloat()
     var RunSP = CGFloat()
     var WalkSP = CGFloat(1)
+    
+    var HP = CGFloat()
+    var CurrentHP = CGFloat()
+    
     var Number = Int()
     var SearchRange = CGFloat()
     var AttackRange = CGFloat()
