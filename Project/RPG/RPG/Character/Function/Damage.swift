@@ -86,8 +86,23 @@ extension Character {
                 let DefenderNumber = Defender.Number
                 let DefenderMinion = MonsterMinionGroup[DefenderNumber]
                 
+                DefenderMinion.removeFromParent()
+                
+                Defender.colorBlendFactor = 1
+                Defender.alpha = 1
+                Defender.color = UIColor.red
+                
+                let WaitAction = SKAction.wait(forDuration: 0.5)
+                let DeathAction = SKAction.run {
+                    
+                    Defender.removeFromParent()
+                    Defender.physicsBody = nil
+                    
+                }
+                
+                self.run(SKAction.sequence([WaitAction, DeathAction]))
+
             }
         }
     }
-    
 }
