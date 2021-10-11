@@ -44,6 +44,7 @@
 		EBC7D43426B96E0C00331695 /* Attack_Meteor.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EBC7D43326B96E0C00331695 /* Attack_Meteor.atlas */; };
 		EBC7D43B26B96E4200331695 /* Meteor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7D43A26B96E4200331695 /* Meteor.swift */; };
 		EBC8129126F0D6C000183660 /* Chase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC8129026F0D6C000183660 /* Chase.swift */; };
+		EBD85880271422A9007EA2E9 /* HealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8587F271422A9007EA2E9 /* HealthBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		EBC7D43326B96E0C00331695 /* Attack_Meteor.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Meteor.atlas; sourceTree = "<group>"; };
 		EBC7D43A26B96E4200331695 /* Meteor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteor.swift; sourceTree = "<group>"; };
 		EBC8129026F0D6C000183660 /* Chase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chase.swift; sourceTree = "<group>"; };
+		EBD8587F271422A9007EA2E9 /* HealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */,
 				EBC8129026F0D6C000183660 /* Chase.swift */,
 				EB4B6E2D270B42710004FEDF /* Damage.swift */,
+				EBD8587F271422A9007EA2E9 /* HealthBar.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				EBC7D43B26B96E4200331695 /* Meteor.swift in Sources */,
 				EBA7A91225ADFC1400206EF3 /* GameScene.swift in Sources */,
 				EB00A58325AE02950048713E /* Control.swift in Sources */,
+				EBD85880271422A9007EA2E9 /* HealthBar.swift in Sources */,
 				EB2D5E2525AF6251008B6A6A /* Share.swift in Sources */,
 				EB4B6E28270B3B5E0004FEDF /* Physics.swift in Sources */,
 				EB00A58625AE05DF0048713E /* Update.swift in Sources */,
