@@ -11,7 +11,9 @@ extension GameScene {
         
         // Monster
         for i in 0...MonsterGroup.count - 1 {
-            MonsterGroup[i].Update_Monster()    
+            
+            MonsterGroup[i].Update_Monster()
+            
         }
         
         // Health Point
@@ -22,6 +24,17 @@ extension GameScene {
         }
         
         Player.childNode(withName: "HP")?.xScale = Player.CurrentHP / Player.anchorPoint
+        
+        for i in 0...MonsterGroup.count - 1 {
+            
+            if MonsterGroup[i].CurrentHP <= 0 {
+                
+                MonsterGroup[i].CurrentHP = 0
+                
+            }
+            
+            MonsterGroup[i].childNode(withName: "HP")?.xScale = MonsterGroup[i].CurrentHP / MonsterGroup[i].HP
+        }
         
         // MiniMap
         PlayerMinion.position = CGPoint.zero
