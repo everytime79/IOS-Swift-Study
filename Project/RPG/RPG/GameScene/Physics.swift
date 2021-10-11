@@ -17,7 +17,7 @@ extension GameScene {
             if PlayerAttackBody.AttackDamageIs == true {
                 
                 PlayerAttackBody.AttackDamageIs = false
-                Monster.Damage_Effect(Attacker: Player, Defender: Monster)
+                Monster.Damage_Point(Attacker: Player, Defender: Monster, MonsterMinionGroup: MonsterMinionGroup)
                 PlayerAttackBody.removeFromParent()
             }
             
@@ -29,7 +29,7 @@ extension GameScene {
             if PlayerAttackBody.AttackDamageIs == true {
                 
                 PlayerAttackBody.AttackDamageIs = false
-                Monster.Damage_Effect(Attacker: Player, Defender: Monster)
+                Monster.Damage_Point(Attacker: Player, Defender: Monster, MonsterMinionGroup: MonsterMinionGroup)
                 PlayerAttackBody.removeFromParent()
             }
         }
@@ -44,7 +44,8 @@ extension GameScene {
                 if MonsterAttackBody.AttackDamageIs == true {
                     
                     MonsterAttackBody.AttackDamageIs = false
-                    Player.Damage_Effect(Attacker: Monster, Defender: Player)
+                    Player.Damage_Point(Attacker: Monster, Defender: Player, MonsterMinionGroup: MonsterMinionGroup)
+
                     MonsterAttackBody.removeFromParent()
                 }
 
@@ -56,7 +57,7 @@ extension GameScene {
                 if MonsterAttackBody.AttackDamageIs == true {
                     
                     MonsterAttackBody.AttackDamageIs = false
-                    Player.Damage_Effect(Attacker: Monster, Defender: Player)
+                    Player.Damage_Point(Attacker: Monster, Defender: Player, MonsterMinionGroup: MonsterMinionGroup)
                     MonsterAttackBody.removeFromParent()
                 }
             }
