@@ -14,6 +14,7 @@ extension GameScene {
         let AT = Data["AT"] as! CGFloat
         let DF = Data["DF"] as! CGFloat
         let Luck = Data["Luck"] as! CGFloat
+        let HP = Data["HP"] as! CGFloat
         
         Player = Character(imageNamed: "RedSwan")
         Player.Sort = Sort
@@ -22,6 +23,7 @@ extension GameScene {
         Player.DF = DF
         Player.Luck = Luck
         Player.SP = SP
+        Player.HP = HP
         Player.zPosition = 10
         Player.Function_Healthbar()
         Player.PhysicsBody_Player() // 플레이어를 생성하기 전에 겹치지 않게 해준다.
