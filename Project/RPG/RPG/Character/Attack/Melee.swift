@@ -55,13 +55,13 @@ extension Character {
             AttackBody.run(SKAction(named: "Attack_MeleeE")!) //!는 해당하는 액션이 반드시 있다.
         } else if self.AttackDirection == .W {
             AttackBody.position = CGPoint(x: -15, y: -12)
-            AttackBody.run(SKAction(named: "Attack_MeleeW")!) //!는 해당하는 액션이 반드시 있다.
+            AttackBody.run(SKAction(named: "Attack_MeleeW")!) 
         } else if self.AttackDirection == .S {
             AttackBody.position = CGPoint(x: -15, y: -12)
-            AttackBody.run(SKAction(named: "Attack_MeleeS")!) //!는 해당하는 액션이 반드시 있다.
+            AttackBody.run(SKAction(named: "Attack_MeleeS")!)
         } else if self.AttackDirection == .N {
             AttackBody.position = CGPoint(x: -15, y: 12)
-            AttackBody.run(SKAction(named: "Attack_MeleeN")!) //!는 해당하는 액션이 반드시 있다.
+            AttackBody.run(SKAction(named: "Attack_MeleeN")!)
         }
     }
     
