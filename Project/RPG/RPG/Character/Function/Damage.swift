@@ -12,7 +12,7 @@ extension Character {
         let DF = Defender.DF
         let DR = Defender.Luck
         
-        let ATRate = (AT * AR / 100).rounded(.down) // 정수로 계산되게끔
+        let ATRate = (AT * AR / 100).rounded(.down) // 정수로 계산되게끔, round() 반올림
         let ATRange = UInt32((AT - ATRate).rounded(.down))
         let DFRate = (DF * DR / 100).rounded(.down)
         let DFRange = UInt32((DF - DFRate).rounded(.down))
