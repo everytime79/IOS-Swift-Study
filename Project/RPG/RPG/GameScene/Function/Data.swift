@@ -48,17 +48,13 @@ extension GameScene {
                 let PositionX = Data["PositionX"] as! CGFloat
                 let PositionY = Data["PositionY"] as! CGFloat
                 let Sort = Data["Sort"] as! String
-
                 let AT = Data["AT"] as! CGFloat
                 let DF = Data["DF"] as! CGFloat
                 let Luck = Data["Luck"] as! CGFloat
-                
                 let Class = Data["Class"] as! String
                 let Costume = Data["Costume"] as! String
                 let SP = Data["SP"] as! CGFloat
-                
                 let HP = Data["HP"] as! CGFloat
-
 
                 let SearchRange = Data["SearchRange"] as! CGFloat
                 let AttackRange = Data["AttackRange"] as! CGFloat
@@ -70,14 +66,11 @@ extension GameScene {
                 Monster.Sort = Sort
                 Monster.Class = Class
                 Monster.Costume = Costume
-                
                 Monster.AT = AT
                 Monster.DF = DF
                 Monster.Luck = Luck
-                
                 Monster.SP = SP
                 Monster.RunSP = SP
-                
                 Monster.HP = HP
                 Monster.CurrentHP = HP
                 
