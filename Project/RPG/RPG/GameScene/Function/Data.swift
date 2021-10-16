@@ -10,7 +10,6 @@ extension GameScene {
         let Sort = Data["Sort"] as! String
         let Costume = Data["Costume"] as! String
         let SP = Data["SP"] as! CGFloat
-        
         let AT = Data["AT"] as! CGFloat
         let DF = Data["DF"] as! CGFloat
         let Luck = Data["Luck"] as! CGFloat
