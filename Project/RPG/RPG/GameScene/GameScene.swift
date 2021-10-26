@@ -46,11 +46,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         Scene = self
         self.physicsWorld.contactDelegate = self
         
-        // Local Camera //
+        // Local Camera 
         self.camera = LocalCamera
         self.addChild(LocalCamera)
         
-        // Controller //
+        // Controller
         ControlBase.position = CGPoint(x: -500, y: -200) // 위치 좌표
         ControlBase.zPosition = 100 // 레이어의 높이
         ControlBase.alpha = 0.4 // 투명도
@@ -62,7 +62,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // ControlBall.alpha = ControlBase.alpha
         LocalCamera.addChild(ControlBall)
         
-        // AttackButton //
+        // AttackButton
         AttackButtonBase.position = CGPoint(x: 500, y: -200)
         AttackButtonBase.zPosition = 99
         AttackButtonBase.alpha = 0.4
@@ -73,7 +73,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         AttackButton.alpha = 1
         LocalCamera.addChild(AttackButton)
         
-        // ItemButton //
+        // ItemButton
         ItemButtonBase.position = CGPoint(x: 350, y: -200)
         ItemButtonBase.zPosition = 99
         ItemButtonBase.alpha = 0.4
@@ -84,7 +84,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         ItemButton.alpha = 1
         LocalCamera.addChild(ItemButton)
         
-        // SkillButton //
+        // SkillButton
         
         SkillButtonBase.position = CGPoint(x: 500, y: -50)
         SkillButtonBase.zPosition = 99
@@ -105,11 +105,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
         LocalCamera.addChild(MiniMap)
         
-        // Data //
+        // Data
         let Path = Bundle.main.path(forResource: "GameData", ofType: "plist")
         GameData = NSMutableDictionary(contentsOfFile: Path!)!
         Data_Player()
         Data_Monster()
+        
+        //
         
     }
 }
