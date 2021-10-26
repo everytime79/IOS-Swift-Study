@@ -33,6 +33,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let SkillButtonBase = SKSpriteNode(imageNamed: "ButtonBase")
     let SkillButton = SKSpriteNode(imageNamed: "SkillButton")
+    
+    var Status_Gold = SKLabelNode(fontNamed: "04b_19")
+    var Gold = SKSpriteNode(imageNamed: "Gold")
+    
 // Variable_End
     
 // MARK:- didMove
