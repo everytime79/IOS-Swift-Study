@@ -108,4 +108,19 @@ extension Character {
             }
         }
     }
+    
+// MARK: - Gold
+    // Spawn Gold
+    func Spawn_Gold(Monster: Character) {
+        
+        let GoldAmount = arc4random_uniform(99) + 1
+        let Gold = Character(imageNamed: "Gold")
+        
+        
+        Gold.zPosition = 98
+        Gold.position = Monster.position
+        Gold.GoldAmount = Int(GoldAmount)
+        Gold.PhysicsBody_Gold()
+        Gold.run(SKAction(named: "Effect_Gold")!)
+    }
 }
