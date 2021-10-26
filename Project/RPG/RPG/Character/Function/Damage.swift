@@ -105,6 +105,9 @@ extension Character {
                 
                 self.run(SKAction.sequence([WaitAction, DeathAction]))
 
+                
+                // Gold Spawn
+                Spawn_Gold(Monster: Defender)
             }
         }
     }
@@ -122,5 +125,27 @@ extension Character {
         Gold.GoldAmount = Int(GoldAmount)
         Gold.PhysicsBody_Gold()
         Gold.run(SKAction(named: "Effect_Gold")!)
+        
+        Scene.addChild(Gold)
+        
+    }
+    
+    // Spawn Gold Effect
+    func Spawn_Gold_Effect(GoldAmount: Int) {
+        
+        let GoldLabel = SKLabelNode(fontNamed: "04b_19")
+        
+        GoldLabel.zPosition = 98
+        GoldLabel.position = self.position
+        GoldLabel.fontSize = 25
+        GoldLabel.fontColor = UIColor.yellow
+        GoldLabel.text = "\(GoldAmount)"
+        
+        Scene.addChild(GoldLabel)
+        
+        let GainGoldAction = SKAction(named: "Effect_GoldGain")
+        let RemoveAction = SKAction.run { GoldLabel.removeFromParent()}
+        
+        GoldLabel.run(SKAction.sequence([GainGoldAction!, RemoveAction]))
     }
 }
