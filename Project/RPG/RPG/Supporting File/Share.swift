@@ -15,6 +15,7 @@ enum BodyType: UInt32 {
     case PlayerAttack = 2
     case Monster = 4
     case MonsterAttack = 8
+    case Gold = 16
 }
 
 
