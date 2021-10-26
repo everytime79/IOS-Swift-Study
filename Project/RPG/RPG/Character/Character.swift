@@ -48,6 +48,7 @@ class Character: SKSpriteNode {
     var SkillDelayIs = Bool(false)
     var StopDelayIs = Bool(false)
     var WalkingIs = Bool(true)
+    var GoldActiveIs = Bool(true)
     
 // Variable_End
 }
