@@ -31,7 +31,7 @@ class Character: SKSpriteNode {
     var CurrentHP = CGFloat()
     
     var Gold = Int()
-    var GoldAmount = int()
+    var GoldAmount = Int()
     
     var Number = Int()
     var SearchRange = CGFloat()
