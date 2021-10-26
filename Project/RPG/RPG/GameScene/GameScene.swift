@@ -113,12 +113,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // Gold
         Gold.zPosition = 98
-        Gold.position = CGPoint(x: view.frame.width - 100, y: view.frame.height - 35)
+        //Gold.position = CGPoint(x: view.frame.width - 100, y: view.frame.height - 35)
+        Gold.position = CGPoint(x: 450, y: 261)
         LocalCamera.addChild(Gold)
         
         Status_Gold.zPosition = Gold.zPosition
         //Status_Gold.position = CGPoint(x: Gold.position.x + Gold.size.width + 20, y: Gold.position.y - 10)
-        Status_Gold.position = CGPoint(x: 550, y: 180)
+        Status_Gold.position = CGPoint(x: 500, y: 250)
         Status_Gold.fontSize = 25
         Status_Gold.fontColor = UIColor.yellow
         Status_Gold.text = "\(Player.Gold)"
