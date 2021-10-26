@@ -46,7 +46,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         Scene = self
         self.physicsWorld.contactDelegate = self
         
-        // Local Camera 
+        // Local Camera
         self.camera = LocalCamera
         self.addChild(LocalCamera)
         
@@ -111,7 +111,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         Data_Player()
         Data_Monster()
         
-        //
+        // Gold
+        Gold.zPosition = 98
+        Gold.position = CGPoint(x: view.frame.width - 100, y: view.frame.height - 35)
         
     }
 }
