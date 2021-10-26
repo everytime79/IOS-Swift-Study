@@ -14,7 +14,7 @@ extension Character {
         self.physicsBody?.affectedByGravity = false // 중력의 영향 x
         self.physicsBody?.allowsRotation = false // 마주쳤을 떄 돌 필요가 없다.
         self.physicsBody?.categoryBitMask = BodyType.Player.rawValue // Player = 1, Monster = 2
-        self.physicsBody?.contactTestBitMask = BodyType.MonsterAttack.rawValue
+        self.physicsBody?.contactTestBitMask = BodyType.MonsterAttack.rawValue | BodyType.Gold.rawValue
         self.physicsBody?.collisionBitMask = BodyType.Monster.rawValue // Monster하고 겹치지 않겠다.
     }
     
@@ -60,5 +60,20 @@ extension Character {
         self.physicsBody?.categoryBitMask = BodyType.MonsterAttack.rawValue
         self.physicsBody?.contactTestBitMask = BodyType.Player.rawValue
         self.physicsBody?.collisionBitMask = BodyType.Player.rawValue | BodyType.Monster.rawValue
+    }
+    
+// MARK: - Gold
+    func PhysicsBody_Gold() {
+        
+        let PhysicsBody = SKPhysicsBody(rectangleOf: self.size)
+
+        self.physicsBody = PhysicsBody
+        self.physicsBody?.isDynamic = true
+        self.physicsBody?.affectedByGravity = false
+        self.physicsBody?.allowsRotation = false
+        self.physicsBody?.categoryBitMask = BodyType.Gold.rawValue
+        self.physicsBody?.contactTestBitMask = BodyType.Player.rawValue
+        self.physicsBody?.collisionBitMask = 0
+        
     }
 }
