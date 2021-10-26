@@ -30,6 +30,9 @@ class Character: SKSpriteNode {
     var HP = CGFloat()
     var CurrentHP = CGFloat()
     
+    var Gold = Int()
+    var GoldAmount = int()
+    
     var Number = Int()
     var SearchRange = CGFloat()
     var AttackRange = CGFloat()
