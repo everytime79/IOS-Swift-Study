@@ -183,16 +183,16 @@ extension Character {
         
         LevelLabel.zPosition = 98
         LevelLabel.position = CGPoint(x: 0, y: self.size.height)
-        LevelLabel.fontSize = 25
-        LevelLabel.fontColor = UIColor.yellow
-        LevelLabel.text = "\(GoldAmount)"
+        LevelLabel.fontSize = 30
+        LevelLabel.fontColor = UIColor(red: 255/255, green: 210/255, blue: 65/255, alpha: 1.0)
+        LevelLabel.text = "Level UP"
         
         Scene.addChild(LevelLabel)
         
-        let GainGoldAction = SKAction(named: "Effect_GoldGain")
-        let RemoveAction = SKAction.run { GoldLabel.removeFromParent()}
+        let LevelUpAction = SKAction(named: "Effect_LV")
+        let RemoveAction = SKAction.run { LevelLabel.removeFromParent()}
         
-        GoldLabel.run(SKAction.sequence([GainGoldAction!, RemoveAction]))
+        LevelLabel.run(SKAction.sequence([LevelUpAction!, RemoveAction]))
     }
 // <- Level Up
 }
