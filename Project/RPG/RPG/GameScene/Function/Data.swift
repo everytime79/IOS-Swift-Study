@@ -59,6 +59,8 @@ extension GameScene {
                 let Costume = Data["Costume"] as! String
                 let SP = Data["SP"] as! CGFloat
                 let HP = Data["HP"] as! CGFloat
+                
+                let EXP = Data["EXP"] as! CGFloat
 
                 let SearchRange = Data["SearchRange"] as! CGFloat
                 let AttackRange = Data["AttackRange"] as! CGFloat
@@ -77,6 +79,8 @@ extension GameScene {
                 Monster.RunSP = SP
                 Monster.HP = HP
                 Monster.CurrentHP = HP
+                
+                Monster.EXP = EXP
                 
                 Monster.SearchRange = SearchRange
                 Monster.AttackRange = AttackRange
