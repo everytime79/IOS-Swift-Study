@@ -24,6 +24,10 @@ extension GameScene {
         Player.SP = SP
         Player.HP = HP
         Player.CurrentHP = HP
+        
+        Player.LV = 1
+        Player.EXP = 0
+        
         Player.zPosition = 10
         Player.Function_HealthBar()
         Player.PhysicsBody_Player() // 플레이어를 생성하기 전에 겹치지 않게 해준다.
