@@ -132,7 +132,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         Status_LV.position = CGPoint(x: 0, y: 250)
         Status_LV.fontSize = 30
         Status_LV.fontColor = UIColor(red: 255/255, green: 210/255, blue: 65/255, alpha: 1.0)
-        Status_LV.text = "LV.\(Player.LV)"
+        Status_LV.text = "LV.\(Int(Player.LV))"
         LocalCamera.addChild(Status_LV)
     }
 }
