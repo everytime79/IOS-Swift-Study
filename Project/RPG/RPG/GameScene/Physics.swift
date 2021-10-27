@@ -64,9 +64,19 @@ extension GameScene {
 // MARK: - Field
         
         // Gold
-        if Contact.bodyA.categoryBitMask == BodyType.Player.rawValue && contact.bodyB.categoryBitMask == BodyType.Gold.rawValue {
+        if contact.bodyA.categoryBitMask == BodyType.Player.rawValue && contact.bodyB.categoryBitMask == BodyType.Gold.rawValue {
             
-            14:12
-        }
+            if let Gold = contact.bodyB.node as? Character {
+                
+                Gold.removeFromParent()
+                
+                if Gold.GoldActiveIs == true {
+                    
+                    Gold.GoldActiveIs = false
+                    Gold.Spawn_Gold_Effect(GoldAmount: Gold.GoldAmount)
+                }
+            }
+                
+        } else
     }
 }
