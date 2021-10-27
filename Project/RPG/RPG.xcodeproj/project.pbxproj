@@ -192,6 +192,8 @@
 		EBA7A90A25ADFC1400206EF3 /* RPG */ = {
 			isa = PBXGroup;
 			children = (
+				EBA7A91325ADFC1400206EF3 /* GameViewController.swift */,
+				EBA7A91525ADFC1400206EF3 /* Main.storyboard */,
 				EBF5A37025ADFF080052BFEF /* GameScene */,
 				EBF5A36E25ADFEBB0052BFEF /* Map */,
 				EBA9673625AF5D7100229A6A /* Character */,
@@ -199,8 +201,6 @@
 				EB2D5E2725AF6255008B6A6A /* Supporting File */,
 				EBA7A91A25ADFC1600206EF3 /* Info.plist */,
 				EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */,
-				EBA7A91325ADFC1400206EF3 /* GameViewController.swift */,
-				EBA7A91525ADFC1400206EF3 /* Main.storyboard */,
 				EBA7A91825ADFC1600206EF3 /* Assets.xcassets */,
 			);
 			path = RPG;
