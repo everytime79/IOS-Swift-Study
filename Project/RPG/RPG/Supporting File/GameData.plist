@@ -30,6 +30,8 @@
 			<integer>100</integer>
 			<key>HP</key>
 			<integer>200</integer>
+			<key>EXP</key>
+			<integer>10</integer>
 		</dict>
 		<key>Monster - 2</key>
 		<dict>
@@ -57,6 +59,8 @@
 			<integer>300</integer>
 			<key>HP</key>
 			<integer>200</integer>
+			<key>EXP</key>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>Player</key>
@@ -66,7 +70,7 @@
 		<key>DF</key>
 		<integer>10</integer>
 		<key>AT</key>
-		<integer>50</integer>
+		<integer>300</integer>
 		<key>Sort</key>
 		<string>Player</string>
 		<key>Costume</key>
