@@ -163,7 +163,7 @@ extension Character {
         let ReqEXP = 5 * CurrentLV * CurrentLV
         let GainEXP = Defender.EXP
         
-        Attacker.EXP + CurrentEXP + GainEXP
+        Attacker.EXP = CurrentEXP + GainEXP
         
         if Attacker.EXP >= ReqEXP {
             
@@ -174,7 +174,7 @@ extension Character {
     }
     
     // Level Up Effect
-    func LevelUp_Effect(GoldAmount: Int) {
+    func LevelUp_Effect() {
         
         Scene.Status_LV.text = "LV.\(Int(self.LV))"
         
