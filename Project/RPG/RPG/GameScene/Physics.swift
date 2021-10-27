@@ -75,7 +75,7 @@ extension GameScene {
                     Gold.GoldActiveIs = false
                     Gold.Spawn_Gold_Effect(GoldAmount: Gold.GoldAmount)
                     Player.Gold += Gold.GoldAmount
-                    Status_Gold = "\(Player.Gold)"
+                    Status_Gold.text = "\(Player.Gold)"
                 }
             }
                 
