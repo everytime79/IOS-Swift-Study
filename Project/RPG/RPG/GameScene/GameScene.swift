@@ -11,6 +11,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
 // MARK: - Variable
     var GameData = NSMutableDictionary()//변경이 될 수 있는 dic
+    var MapData = [String:Any]()
+    var CurrentMapData = [String:Any]()
+    var CurrentMap = String() //현재맵이 어딘지,
     
     var Player = Character()
     var PlayerMinion = Character() // MiniMap Player
@@ -109,6 +112,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Data
         let Path = Bundle.main.path(forResource: "GameData", ofType: "plist")
         GameData = NSMutableDictionary(contentsOfFile: Path!)!
+        
         Data_Player()
         Data_Monster()
         
