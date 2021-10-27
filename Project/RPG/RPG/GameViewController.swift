@@ -13,14 +13,27 @@ class GameViewController: UIViewController {
 
 // MARK: - Status Bar
     override var prefersStatusBarHidden: Bool { return true } // 상단 스테이스 바를 숨길 건인지 여부
-    
-    override var shouldAutorotate: Bool {
-        return true
-    }
 // <- Status Bar
     
+// MARK: - Rotaion & Orientation
+    override var shouldAutorotate: Bool { return true } // 자동으로 로테이트 할 것인지 여부
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return .allButUpsideDown
+        } else {
+            return .all
+        }
+    }
+
+// <- Rotaion & Orientation
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let CurrentMap = "Field"
+        Scene = GameScene(fileNamed: CurrentMap)!
+        Scene.CurrentMap = CurrentMap
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -38,14 +51,4 @@ class GameViewController: UIViewController {
             view.showsNodeCount = true
         }
     }
-
-
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
-    }
-
 }
