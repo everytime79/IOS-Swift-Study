@@ -79,7 +79,6 @@ extension GameScene {
                 Monster.RunSP = SP
                 Monster.HP = HP
                 Monster.CurrentHP = HP
-                
                 Monster.EXP = EXP
                 
                 Monster.SearchRange = SearchRange
