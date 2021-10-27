@@ -34,23 +34,13 @@ class GameViewController: UIViewController {
         let CurrentMap = "Field" // 시작할 맵이 무엇인지
         Scene = GameScene(fileNamed: CurrentMap)!
         Scene.CurrentMap = CurrentMap
-        scene.scaleMode = .aspectFill // 화면 꽉차게
+        Scene.scaleMode = .aspectFill // 화면 꽉차게
 
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+        let View = self.view as! SKView
+        View.presentScene(Scene)
+        View.ignoresSiblingOrder = true
+        View.showsFPS = true
+        View.showsNodeCount = true
     }
 }

@@ -43,7 +43,7 @@ extension GameScene {
     // MARK: - Monster
         func Data_Monster() {
             
-            let MonsterGroupData = GameData["MonsterGroup"] as! [String:Any]
+            let MonsterGroupData = CurrentMapData["MonsterGroup"] as! [String:Any]
             
             var Number = Int(0)
             for (_, value) in MonsterGroupData {
