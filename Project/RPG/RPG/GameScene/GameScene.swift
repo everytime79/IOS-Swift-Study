@@ -34,6 +34,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let SkillButtonBase = SKSpriteNode(imageNamed: "ButtonBase")
     let SkillButton = SKSpriteNode(imageNamed: "SkillButton")
     
+    var Status_LV = SKLabelNode(fontNamed: "04b_19")
     var Status_Gold = SKLabelNode(fontNamed: "04b_19")
     var Gold = SKSpriteNode(imageNamed: "Gold")
     
@@ -125,5 +126,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         Status_Gold.text = "\(Player.Gold)"
         LocalCamera.addChild(Status_Gold)
         
+        // Level
+        Status_LV.zPosition = Gold.zPosition
+        //Status_Gold.position = CGPoint(x: 0, y: view.frame.height - 50)
+        Status_LV.position = CGPoint(x: 0, y: 250)
+        Status_LV.fontSize = 30
+        Status_LV.fontColor = UIColor(red: 255/255, green: 210/255, blue: 65/255, alpha: 1.0)
+        Status_LV.text = "LV.\(Player.LV)"
+        LocalCamera.addChild(Status_LV)
     }
 }
