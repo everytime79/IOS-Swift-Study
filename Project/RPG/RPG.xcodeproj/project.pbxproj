@@ -192,8 +192,8 @@
 		EBA7A90A25ADFC1400206EF3 /* RPG */ = {
 			isa = PBXGroup;
 			children = (
-				EBA7A91325ADFC1400206EF3 /* GameViewController.swift */,
 				EBA7A91525ADFC1400206EF3 /* Main.storyboard */,
+				EBA7A91325ADFC1400206EF3 /* GameViewController.swift */,
 				EBF5A37025ADFF080052BFEF /* GameScene */,
 				EBF5A36E25ADFEBB0052BFEF /* Map */,
 				EBA9673625AF5D7100229A6A /* Character */,

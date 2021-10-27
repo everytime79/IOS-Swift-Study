@@ -11,6 +11,14 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+// MARK: - Status Bar
+    override var prefersStatusBarHidden: Bool { return true } // 상단 스테이스 바를 숨길 건인지 여부
+    
+    override var shouldAutorotate: Bool {
+        return true
+    }
+// <- Status Bar
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,9 +39,6 @@ class GameViewController: UIViewController {
         }
     }
 
-    override var shouldAutorotate: Bool {
-        return true
-    }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
@@ -43,7 +48,4 @@ class GameViewController: UIViewController {
         }
     }
 
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
 }
