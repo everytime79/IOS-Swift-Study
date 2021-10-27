@@ -18,6 +18,7 @@
 		EB4B6E31270B47ED0004FEDF /* 04B_19__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = EB4B6E2B270B40540004FEDF /* 04B_19__.TTF */; };
 		EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB64990A26F97908003DC953 /* Attack_Standoff.atlas */; };
 		EB64990E26F979F6003DC953 /* Standoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64990D26F979F6003DC953 /* Standoff.swift */; };
+		EB77D46F27298F0800D2CF18 /* Field.sks in Resources */ = {isa = PBXBuildFile; fileRef = EB77D46E27298F0800D2CF18 /* Field.sks */; };
 		EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AA26E42D2300BC39DF /* AI.swift */; };
 		EB7F61AE26E42F2700BC39DF /* CharacterUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */; };
 		EB80470026B81A170047132A /* Attack_Melee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB8046FF26B81A170047132A /* Attack_Melee.atlas */; };
@@ -30,7 +31,7 @@
 		EB95E02026D7A38000250067 /* ArcherMoveN.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB95E01C26D7A38000250067 /* ArcherMoveN.atlas */; };
 		EB95E02326DA8AFA00250067 /* PhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95E02226DA8AFA00250067 /* PhysicsBody.swift */; };
 		EBA7A90C25ADFC1400206EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */; };
-		EBA7A90E25ADFC1400206EF3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A90D25ADFC1400206EF3 /* GameScene.sks */; };
+		EBA7A90E25ADFC1400206EF3 /* Village.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A90D25ADFC1400206EF3 /* Village.sks */; };
 		EBA7A91025ADFC1400206EF3 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A90F25ADFC1400206EF3 /* Actions.sks */; };
 		EBA7A91225ADFC1400206EF3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A91125ADFC1400206EF3 /* GameScene.swift */; };
 		EBA7A91425ADFC1400206EF3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A91325ADFC1400206EF3 /* GameViewController.swift */; };
@@ -59,6 +60,7 @@
 		EB4B6E2D270B42710004FEDF /* Damage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Damage.swift; sourceTree = "<group>"; };
 		EB64990A26F97908003DC953 /* Attack_Standoff.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Standoff.atlas; sourceTree = "<group>"; };
 		EB64990D26F979F6003DC953 /* Standoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standoff.swift; sourceTree = "<group>"; };
+		EB77D46E27298F0800D2CF18 /* Field.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Field.sks; sourceTree = "<group>"; };
 		EB7F61AA26E42D2300BC39DF /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUpdate.swift; sourceTree = "<group>"; };
 		EB8046FF26B81A170047132A /* Attack_Melee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Melee.atlas; sourceTree = "<group>"; };
@@ -72,7 +74,7 @@
 		EB95E02226DA8AFA00250067 /* PhysicsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBody.swift; sourceTree = "<group>"; };
 		EBA7A90825ADFC1400206EF3 /* RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA7A90B25ADFC1400206EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBA7A90D25ADFC1400206EF3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		EBA7A90D25ADFC1400206EF3 /* Village.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Village.sks; sourceTree = "<group>"; };
 		EBA7A90F25ADFC1400206EF3 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		EBA7A91125ADFC1400206EF3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		EBA7A91325ADFC1400206EF3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -226,7 +228,8 @@
 		EBF5A36E25ADFEBB0052BFEF /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				EBA7A90D25ADFC1400206EF3 /* GameScene.sks */,
+				EB77D46E27298F0800D2CF18 /* Field.sks */,
+				EBA7A90D25ADFC1400206EF3 /* Village.sks */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -301,7 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBA7A91725ADFC1400206EF3 /* Main.storyboard in Resources */,
-				EBA7A90E25ADFC1400206EF3 /* GameScene.sks in Resources */,
+				EBA7A90E25ADFC1400206EF3 /* Village.sks in Resources */,
 				EBBBBB5826B6C0970015BE36 /* RedSwanMoveN.atlas in Resources */,
 				EBC7D43426B96E0C00331695 /* Attack_Meteor.atlas in Resources */,
 				EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */,
@@ -310,6 +313,7 @@
 				EBA7A91925ADFC1600206EF3 /* Assets.xcassets in Resources */,
 				EBA7A91025ADFC1400206EF3 /* Actions.sks in Resources */,
 				EBBBBB5926B6C0970015BE36 /* RedSwanMoveE.atlas in Resources */,
+				EB77D46F27298F0800D2CF18 /* Field.sks in Resources */,
 				EB95E02026D7A38000250067 /* ArcherMoveN.atlas in Resources */,
 				EB80470026B81A170047132A /* Attack_Melee.atlas in Resources */,
 				EBBBBB5A26B6C0970015BE36 /* RedSwanMoveS.atlas in Resources */,
