@@ -29,6 +29,8 @@ class Character: SKSpriteNode {
     
     var HP = CGFloat()
     var CurrentHP = CGFloat()
+    var EXP = CGFloat()
+    var LV = CGFloat()
     
     var Gold = Int()
     var GoldAmount = Int()
