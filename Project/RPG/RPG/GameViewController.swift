@@ -31,7 +31,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let CurrentMap = "Field" // 시작할 맵이 무엇인지
+        let CurrentMap = "Village" // 시작할 맵이 무엇인지
         Scene = GameScene(fileNamed: CurrentMap)!
         Scene.CurrentMap = CurrentMap
         Scene.scaleMode = .aspectFill // 화면 꽉차게
