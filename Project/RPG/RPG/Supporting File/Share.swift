@@ -18,7 +18,6 @@ enum BodyType: UInt32 {
     case Gold = 16
 }
 
-
 // Direction // - 방향
 enum Direction {
     case E, W, S, N, ST
