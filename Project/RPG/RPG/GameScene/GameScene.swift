@@ -112,6 +112,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Data
         let Path = Bundle.main.path(forResource: "GameData", ofType: "plist")
         GameData = NSMutableDictionary(contentsOfFile: Path!)!
+        MapData = GameData["Map"] as! [String:Any]
+        CurrentMapData = MapData[CurrentMap] as! [String:Any]
         
         Data_Player()
         Data_Monster()
