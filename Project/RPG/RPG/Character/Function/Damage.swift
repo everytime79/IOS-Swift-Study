@@ -108,6 +108,10 @@ extension Character {
                 
                 // Gold Spawn
                 Spawn_Gold(Monster: Defender)
+                
+                // Level Up
+                LevelUp(Attacker: Attacker, Defender: Defender)
+                
             }
         }
     }
@@ -148,4 +152,47 @@ extension Character {
         
         GoldLabel.run(SKAction.sequence([GainGoldAction!, RemoveAction]))
     }
+// <- Gold
+// MARK: - Level Up
+
+    // Level Up
+    func LevelUp(Attacker: Character, Defender: Character) {
+        
+        let CurrentLV = Attacker.LV
+        let CurrentEXP = Attacker.EXP
+        let ReqEXP = 5 * CurrentLV * CurrentLV
+        let GainEXP = Defender.EXP
+        
+        Attacker.EXP + CurrentEXP + GainEXP
+        
+        if Attacker.EXP >= ReqEXP {
+            
+            Attacker.LV += 1
+            Attacker.EXP = 0
+            Attacker.LevelUp_Effect()
+        }
+    }
+    
+    // Level Up Effect
+    func Level_Up_Effect(GoldAmount: Int) {
+        
+        Scene.Status_LV.text = "LV.\(Int(self.LV))"
+        
+        let LevelLabel = SKLabelNode(fontNamed: "04b_19")
+        
+        
+        LevelLabel.zPosition = 98
+        LevelLabel.position = CGPoint(x: 0, y: self.size.height)
+        LevelLabel.fontSize = 25
+        LevelLabel.fontColor = UIColor.yellow
+        LevelLabel.text = "\(GoldAmount)"
+        
+        Scene.addChild(LevelLabel)
+        
+        let GainGoldAction = SKAction(named: "Effect_GoldGain")
+        let RemoveAction = SKAction.run { GoldLabel.removeFromParent()}
+        
+        GoldLabel.run(SKAction.sequence([GainGoldAction!, RemoveAction]))
+    }
+// <- Level Up
 }
