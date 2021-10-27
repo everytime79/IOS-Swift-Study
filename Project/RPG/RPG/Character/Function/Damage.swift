@@ -29,7 +29,7 @@ extension Character {
         Damage_Lable(Attacker: Attacker, Defender: Defender, DamagePoint: DamagePoint)
         
     // Damage Death
-        Damage_Death(Defender: Defender, MonsterMinionGroup: MonsterMinionGroup)
+        Damage_Death(Attacker: Attacker, Defender: Defender, MonsterMinionGroup: MonsterMinionGroup)
     
     }
     
@@ -64,7 +64,7 @@ extension Character {
     
     
 // MARK: - Death
-    func Damage_Death(Defender: Character, MonsterMinionGroup: [Character]) {
+    func Damage_Death(Attacker: Character, Defender: Character, MonsterMinionGroup: [Character]) {
         
         if Defender.CurrentHP <= 0 {
             
@@ -174,7 +174,7 @@ extension Character {
     }
     
     // Level Up Effect
-    func Level_Up_Effect(GoldAmount: Int) {
+    func LevelUp_Effect(GoldAmount: Int) {
         
         Scene.Status_LV.text = "LV.\(Int(self.LV))"
         
