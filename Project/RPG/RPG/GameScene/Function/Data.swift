@@ -38,8 +38,6 @@ extension GameScene {
 
     }
 // Player_End
-    
-    
     // MARK: - Monster
         func Data_Monster() {
             
