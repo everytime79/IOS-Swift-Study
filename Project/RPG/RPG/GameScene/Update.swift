@@ -62,13 +62,11 @@ extension GameScene {
             }
             
         }
-        
 // <- Monster
         
 // MARK: - Field
         // Camera
         LocalCamera.position = Player.position
-        
     }
 // Update_End
 }
