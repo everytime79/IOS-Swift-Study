@@ -34,7 +34,6 @@ extension GameScene {
             }
         }
         
-        
         // Monster
             if contact.bodyA.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Player.rawValue {
                 
