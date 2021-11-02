@@ -99,6 +99,7 @@ extension Character {
             
             let RangeAction = SKAction.move(by: CGVector(dx: 0, dy: Distance), duration: 0.2)
             RangeBody.run(RangeAction)
+            
         }
     }
 }
