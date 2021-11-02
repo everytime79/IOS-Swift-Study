@@ -102,4 +102,3 @@ extension Character {
         }
     }
 }
-
