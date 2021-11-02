@@ -36,9 +36,7 @@ extension Character {
                 
             }
         }
-        
         Function_Move()
-        
     }
     
 // MARK: - Chase
