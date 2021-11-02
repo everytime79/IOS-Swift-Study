@@ -78,6 +78,5 @@ extension Character {
         
         LocalCamera.run(SKAction.sequence([ShakeX1,ShakeX2,ShakeX3,ShakeX4]))
         LocalCamera.run(SKAction.sequence([ShakeY1,ShakeY2,ShakeY3,ShakeY4]))
-        
     }
 }
