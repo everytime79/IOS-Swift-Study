@@ -78,15 +78,15 @@
 		<key>DF</key>
 		<integer>10</integer>
 		<key>AT</key>
-		<integer>300</integer>
+		<integer>500</integer>
 		<key>Sort</key>
 		<string>Player</string>
 		<key>Costume</key>
 		<string>RedSwan</string>
 		<key>SP</key>
-		<integer>3</integer>
+		<integer>4</integer>
 		<key>HP</key>
-		<integer>500</integer>
+		<integer>1000</integer>
 	</dict>
 </dict>
 </plist>
