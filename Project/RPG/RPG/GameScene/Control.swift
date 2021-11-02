@@ -44,7 +44,6 @@ extension GameScene {
             var CorrectedLocation = CGPoint()
             CorrectedLocation.x = Location.x - LocalCamera.position.x
             CorrectedLocation.y = Location.y - LocalCamera.position.y
-
             
             if Location.x < LocalCamera.position.x {
                 
