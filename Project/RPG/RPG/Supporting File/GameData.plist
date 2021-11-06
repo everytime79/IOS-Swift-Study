@@ -33,7 +33,7 @@
 					<key>AttackRange</key>
 					<integer>100</integer>
 					<key>HP</key>
-					<integer>200</integer>
+					<integer>100</integer>
 					<key>EXP</key>
 					<integer>20</integer>
 				</dict>
