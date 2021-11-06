@@ -86,7 +86,7 @@
 		<key>SP</key>
 		<integer>4</integer>
 		<key>HP</key>
-		<integer>1000</integer>
+		<integer>500</integer>
 	</dict>
 </dict>
 </plist>
