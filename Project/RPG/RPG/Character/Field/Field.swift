@@ -1,8 +1,4 @@
-//
-//  Field.swift
-//  RPG
-//
-//  Created by 박성수 on 2021/12/19.
-//
+import SpriteKit
+import GameplayKit
 
-import Foundation
+class Character: SKSpriteNode {
