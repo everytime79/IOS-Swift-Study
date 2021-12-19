@@ -1,9 +1,9 @@
 import SpriteKit
 import GameplayKit
 
-class Field: SKSpriteNode {
+extension Field {
     
-// MARK: - Variable
+
   
     
 }
