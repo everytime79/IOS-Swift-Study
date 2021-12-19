@@ -111,9 +111,6 @@ extension GameScene {
             let PositionX = PortalData["PositionX"] as! CGFloat
             let PositionY = PortalData["PositionY"] as! CGFloat
             let Destination = PortalData["Sort"] as! String
-
-            let SearchRange = Data["SearchRange"] as! CGFloat
-            let AttackRange = Data["AttackRange"] as! CGFloat
             
             Portal = Field(imageNamed: "Portal")
             Portal.Destination = Destination
