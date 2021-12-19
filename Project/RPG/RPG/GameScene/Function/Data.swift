@@ -118,17 +118,11 @@ extension GameScene {
             Portal.zPosition = 0
             Portal.PhysicsBody_Portal()
             
-            MonsterGroup.append(Monster)
             self.addChild(Monster)
             
-            MonsterMinion = Character(color: UIColor.red, size: CGSize(width: 5, height: 5))
-            MonsterMinion.Number = Number
-        
-            MonsterMinionGroup.append(MonsterMinion)
-        
-            MiniMap.addChild(MonsterMinion)
-            
-            Number += 1 // 각각의 몬스터는 고유의 번호를 가지고 있다.
+            PortalMinion = Field(color: UIColor.blue, size: CGSize(width: 5, height: 5))
+                
+            MiniMap.addChild(PortalMinion)
     }
 // Monster_End
 }
