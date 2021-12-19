@@ -111,8 +111,6 @@ extension GameScene {
             let PositionX = PortalData["PositionX"] as! CGFloat
             let PositionY = PortalData["PositionY"] as! CGFloat
             let Destination = PortalData["Sort"] as! String
-            
-            let EXP = Data["EXP"] as! CGFloat
 
             let SearchRange = Data["SearchRange"] as! CGFloat
             let AttackRange = Data["AttackRange"] as! CGFloat
@@ -130,7 +128,9 @@ extension GameScene {
             
             MonsterMinion = Character(color: UIColor.red, size: CGSize(width: 5, height: 5))
             MonsterMinion.Number = Number
+        
             MonsterMinionGroup.append(MonsterMinion)
+        
             MiniMap.addChild(MonsterMinion)
             
             Number += 1 // 각각의 몬스터는 고유의 번호를 가지고 있다.
