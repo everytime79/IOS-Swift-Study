@@ -114,11 +114,9 @@ extension GameScene {
             
             Portal = Field(imageNamed: "Portal")
             Portal.Destination = Destination
-            
-            Monster.position = CGPoint(x: PositionX, y: PositionY)
-            Monster.zPosition = 10
-            Monster.Function_HealthBar()
-            Monster.PhysicsBody_Monster()
+            Portal.position = CGPoint(x: PositionX, y: PositionY)
+            Portal.zPosition = 0
+            Portal.PhysicsBody_Portal()
             
             MonsterGroup.append(Monster)
             self.addChild(Monster)
