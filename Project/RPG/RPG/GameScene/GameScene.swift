@@ -120,6 +120,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         Data_Player()
         Data_Monster()
+        Data_Portal()
         
         // Gold
         Gold.zPosition = 98
