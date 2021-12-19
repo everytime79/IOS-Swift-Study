@@ -86,7 +86,7 @@ extension GameScene {
             Monster.position = CGPoint(x: PositionX, y: PositionY)
             Monster.zPosition = 10
             Monster.Function_HealthBar()
-            Monster.PhysicsBody_Monster() 
+            Monster.PhysicsBody_Monster()
             
             MonsterGroup.append(Monster)
             self.addChild(Monster)
@@ -99,6 +99,41 @@ extension GameScene {
             Number += 1 // 각각의 몬스터는 고유의 번호를 가지고 있다.
             
         }
+    }
+// Monster_End
+    
+    
+// MARK: - Portal
+    func Data_Portal() {
+        
+        let PortalData = CurrentMapData["Portal"] as! [String:Any]
+        
+            let PositionX = PortalData["PositionX"] as! CGFloat
+            let PositionY = PortalData["PositionY"] as! CGFloat
+            let Destination = PortalData["Sort"] as! String
+            
+            let EXP = Data["EXP"] as! CGFloat
+
+            let SearchRange = Data["SearchRange"] as! CGFloat
+            let AttackRange = Data["AttackRange"] as! CGFloat
+            
+            Portal = Field(imageNamed: "Portal")
+            Portal.Destination = Destination
+            
+            Monster.position = CGPoint(x: PositionX, y: PositionY)
+            Monster.zPosition = 10
+            Monster.Function_HealthBar()
+            Monster.PhysicsBody_Monster()
+            
+            MonsterGroup.append(Monster)
+            self.addChild(Monster)
+            
+            MonsterMinion = Character(color: UIColor.red, size: CGSize(width: 5, height: 5))
+            MonsterMinion.Number = Number
+            MonsterMinionGroup.append(MonsterMinion)
+            MiniMap.addChild(MonsterMinion)
+            
+            Number += 1 // 각각의 몬스터는 고유의 번호를 가지고 있다.
     }
 // Monster_End
 }
