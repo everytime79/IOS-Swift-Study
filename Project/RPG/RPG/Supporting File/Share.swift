@@ -16,6 +16,8 @@ enum BodyType: UInt32 {
     case Monster = 4
     case MonsterAttack = 8
     case Gold = 16
+    
+    case Portal = 32
 }
 
 // Direction // - 방향
