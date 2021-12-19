@@ -23,6 +23,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var MonsterMinionGroup = [Character]()
     var MonsterMinion = Character() // MiniMap Monster
     
+    var Portal = Field()
+    var PortalMinion = Field()
+    
     var MiniMap = SKSpriteNode()
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
