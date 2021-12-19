@@ -19,6 +19,7 @@
 		EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB64990A26F97908003DC953 /* Attack_Standoff.atlas */; };
 		EB64990E26F979F6003DC953 /* Standoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64990D26F979F6003DC953 /* Standoff.swift */; };
 		EB7179A0276F20B7009196BA /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB71799F276F20B7009196BA /* Field.swift */; };
+		EB7179A3276F2124009196BA /* Field_PhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7179A2276F2124009196BA /* Field_PhysicsBody.swift */; };
 		EB77D46F27298F0800D2CF18 /* Field.sks in Resources */ = {isa = PBXBuildFile; fileRef = EB77D46E27298F0800D2CF18 /* Field.sks */; };
 		EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AA26E42D2300BC39DF /* AI.swift */; };
 		EB7F61AE26E42F2700BC39DF /* CharacterUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */; };
@@ -62,6 +63,7 @@
 		EB64990A26F97908003DC953 /* Attack_Standoff.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Standoff.atlas; sourceTree = "<group>"; };
 		EB64990D26F979F6003DC953 /* Standoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standoff.swift; sourceTree = "<group>"; };
 		EB71799F276F20B7009196BA /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		EB7179A2276F2124009196BA /* Field_PhysicsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_PhysicsBody.swift; sourceTree = "<group>"; };
 		EB77D46E27298F0800D2CF18 /* Field.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Field.sks; sourceTree = "<group>"; };
 		EB7F61AA26E42D2300BC39DF /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUpdate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				EB71799F276F20B7009196BA /* Field.swift */,
+				EB7179A2276F2124009196BA /* Field_PhysicsBody.swift */,
 			);
 			path = Field;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				EB80470426B81BF00047132A /* Melee.swift in Sources */,
 				EB95E02326DA8AFA00250067 /* PhysicsBody.swift in Sources */,
 				EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */,
+				EB7179A3276F2124009196BA /* Field_PhysicsBody.swift in Sources */,
 				EB2D5E2C25AF63DF008B6A6A /* Move.swift in Sources */,
 				EB27EF1426CD3A540073CF84 /* Data.swift in Sources */,
 				EBA9673425AF5D6800229A6A /* Character.swift in Sources */,
