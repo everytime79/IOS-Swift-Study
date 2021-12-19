@@ -18,6 +18,7 @@
 		EB4B6E31270B47ED0004FEDF /* 04B_19__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = EB4B6E2B270B40540004FEDF /* 04B_19__.TTF */; };
 		EB64990B26F97908003DC953 /* Attack_Standoff.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB64990A26F97908003DC953 /* Attack_Standoff.atlas */; };
 		EB64990E26F979F6003DC953 /* Standoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64990D26F979F6003DC953 /* Standoff.swift */; };
+		EB7179A0276F20B7009196BA /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB71799F276F20B7009196BA /* Field.swift */; };
 		EB77D46F27298F0800D2CF18 /* Field.sks in Resources */ = {isa = PBXBuildFile; fileRef = EB77D46E27298F0800D2CF18 /* Field.sks */; };
 		EB7F61AB26E42D2300BC39DF /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AA26E42D2300BC39DF /* AI.swift */; };
 		EB7F61AE26E42F2700BC39DF /* CharacterUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */; };
@@ -60,6 +61,7 @@
 		EB4B6E2D270B42710004FEDF /* Damage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Damage.swift; sourceTree = "<group>"; };
 		EB64990A26F97908003DC953 /* Attack_Standoff.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Standoff.atlas; sourceTree = "<group>"; };
 		EB64990D26F979F6003DC953 /* Standoff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standoff.swift; sourceTree = "<group>"; };
+		EB71799F276F20B7009196BA /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		EB77D46E27298F0800D2CF18 /* Field.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Field.sks; sourceTree = "<group>"; };
 		EB7F61AA26E42D2300BC39DF /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		EB7F61AD26E42F2700BC39DF /* CharacterUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUpdate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 			path = Function;
 			sourceTree = "<group>";
 		};
+		EB7179A1276F20C2009196BA /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				EB71799F276F20B7009196BA /* Field.swift */,
+			);
+			path = Field;
+			sourceTree = "<group>";
+		};
 		EB8046FD26B819F10047132A /* Move */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +222,7 @@
 				EBA9673325AF5D6800229A6A /* Character.swift */,
 				EB80470226B81BD30047132A /* Attack */,
 				EB2D5E2E25AF63E3008B6A6A /* Function */,
+				EB7179A1276F20C2009196BA /* Field */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -341,6 +352,7 @@
 				EBD85880271422A9007EA2E9 /* HealthBar.swift in Sources */,
 				EB2D5E2525AF6251008B6A6A /* Share.swift in Sources */,
 				EB4B6E28270B3B5E0004FEDF /* Physics.swift in Sources */,
+				EB7179A0276F20B7009196BA /* Field.swift in Sources */,
 				EB00A58625AE05DF0048713E /* Update.swift in Sources */,
 				EB80470426B81BF00047132A /* Melee.swift in Sources */,
 				EB95E02326DA8AFA00250067 /* PhysicsBody.swift in Sources */,
