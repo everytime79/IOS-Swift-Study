@@ -6,6 +6,15 @@
 	<dict>
 		<key>Field</key>
 		<dict>
+			<key>Portal</key>
+			<dict>
+				<key>PositionX</key>
+				<integer>500</integer>
+				<key>PositionY</key>
+				<integer>500</integer>
+				<key>Destination</key>
+				<string>Village</string>
+			</dict>
 			<key>MonsterGroup</key>
 			<dict>
 				<key>Monster</key>
@@ -69,7 +78,17 @@
 			</dict>
 		</dict>
 		<key>Village</key>
-		<dict/>
+		<dict>
+			<key>Portal</key>
+			<dict>
+				<key>PositionX</key>
+				<integer>500</integer>
+				<key>PositionY</key>
+				<integer>500</integer>
+				<key>Destination</key>
+				<string>Field</string>
+			</dict>
+		</dict>
 	</dict>
 	<key>Player</key>
 	<dict>
