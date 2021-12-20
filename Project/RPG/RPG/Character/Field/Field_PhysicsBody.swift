@@ -16,6 +16,4 @@ extension Field {
         self.physicsBody?.contactTestBitMask = BodyType.Player.rawValue
         self.physicsBody?.collisionBitMask = 0
     }
-  
-    
 }
