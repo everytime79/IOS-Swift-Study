@@ -103,6 +103,26 @@ extension GameScene {
 // Monster_End
     
     
-
+// MARK: - Portal
+    func Data_Portal() {
+        
+        let PortalData = CurrentMapData["Portal"] as! [String:Any]
+        
+            let PositionX = PortalData["PositionX"] as! CGFloat
+            let PositionY = PortalData["PositionY"] as! CGFloat
+            let Destination = PortalData["Sort"] as! String
+            
+            Portal = Field(imageNamed: "Portal")
+            Portal.Destination = Destination
+            Portal.position = CGPoint(x: PositionX, y: PositionY)
+            Portal.zPosition = 0
+            Portal.PhysicsBody_Portal()
+            
+            self.addChild(Monster)
+            
+            PortalMinion = Field(color: UIColor.blue, size: CGSize(width: 5, height: 5))
+                
+            MiniMap.addChild(PortalMinion)
+    }
 // Monster_End
 }
