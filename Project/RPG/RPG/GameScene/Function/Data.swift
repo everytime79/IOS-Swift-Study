@@ -101,8 +101,6 @@ extension GameScene {
         }
     }
 // Monster_End
-    
-    
 // MARK: - Portal
     func Data_Portal() {
         
