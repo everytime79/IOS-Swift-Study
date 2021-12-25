@@ -101,7 +101,7 @@ extension GameScene {
         }
     }
 // Monster_End
-// MARK: - Portal
+// MARK: - Portal 맵과 맵간의 이동
     func Data_Portal() {
         
         let PortalData = CurrentMapData["Portal"] as! [String:Any]
