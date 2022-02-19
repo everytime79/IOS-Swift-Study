@@ -59,6 +59,8 @@ extension Character {
         MoveDelayIs = true
         SkillDelayIs = true
         
+        self.run(SKAction.sequence([MoveWaitAction, MoveDelayAction])) // 0.2 초 기다린 후 -> 다시 가능하게
+        self.run(SKAction.sequence([SkillWaitAction, SkillDelayAction])) // 0.5 초 기다린 후 -> 다시 가능하게
         
     }
         
