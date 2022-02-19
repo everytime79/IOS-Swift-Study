@@ -60,7 +60,6 @@ extension Character {
         SkillDelayIs = true
         
         
-        
     }
         
     func Attack_Meteor_Animation() {
