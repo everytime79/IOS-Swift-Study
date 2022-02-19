@@ -20,7 +20,11 @@ extension Character {
             
             Scene.addChild(AttackBody)
             
-          
+            let FadeInAction = SKAction.fadeIn(withDuration: 1.5)
+            let FallAction = SKAction.run { AttackBody.run(SKAction(named: "Attack_Meteor")!)}
+            let WaitAction = SKAction.wait(forDuration: 0.2)
+            let ShakeAction = SKAction.run { AttackBody.Attack_Meteor_Animation()}
+            let RemoveAction = SKAction.run { AttackBody.removeFromParent()
                 
             }
             let DamageAction = SKAction.run {
