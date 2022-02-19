@@ -70,12 +70,7 @@ extension Character {
         let ShakeX2 = SKAction.move(by: CGVector.init(dx: 3, dy: 0), duration: 0.05)
         let ShakeX3 = SKAction.move(by: CGVector.init(dx: -3, dy: 0), duration: 0.05)
         let ShakeX4 = SKAction.move(by: CGVector.init(dx: 3, dy: 0), duration: 0.05)
-        
-        let ShakeY1 = SKAction.move(by: CGVector.init(dx: 0, dy: -1), duration: 0.05)
-        let ShakeY2 = SKAction.move(by: CGVector.init(dx: 0, dy: 1), duration: 0.05)
-        let ShakeY3 = SKAction.move(by: CGVector.init(dx: 0, dy: -1), duration: 0.05)
-        let ShakeY4 = SKAction.move(by: CGVector.init(dx: 0, dy: 1), duration: 0.05)
-        
+    
         LocalCamera.run(SKAction.sequence([ShakeX1,ShakeX2,ShakeX3,ShakeX4]))
         LocalCamera.run(SKAction.sequence([ShakeY1,ShakeY2,ShakeY3,ShakeY4]))
     }
