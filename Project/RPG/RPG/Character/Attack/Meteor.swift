@@ -29,7 +29,21 @@ extension Character {
             }
             let DamageAction = SKAction.run {
                 
-               
+                // Range
+                let RangeBody = Character(color:  UIColor.clear, size: CGSize(width: 50, height: 50))
+
+                if self.Sort == "Player" {
+                    
+                    RangeBody.PhysicsBody_PlayerAttack()
+                    
+                } else if self.Sort == "Monster" {
+                    
+                    RangeBody.PhysicsBody_MonsterAttack()
+                    
+                }
+                
+                self.addChild(RangeBody)
+            }
             
             AttackBody.run(SKAction.sequence([FadeInAction, FallAction, WaitAction, ShakeAction, DamageAction, RemoveAction]))
             
