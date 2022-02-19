@@ -7,7 +7,6 @@ let LocalCamera = SKCameraNode()
 
 // MARK: - Enumeration
 
-
 // BodyType //
 enum BodyType: UInt32 {
     
