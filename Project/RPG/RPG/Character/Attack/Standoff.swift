@@ -12,20 +12,7 @@ extension Character {
         Attack_Standoff_Animation(AttackBody: AttackBody)
         
         // Range //
-        let RangeBody = Character(color: UIColor.clear, size: CGSize(width: 50, height: 50))
-        
-        if self.Sort == "Player" {
-            
-            RangeBody.PhysicsBody_PlayerAttack()
-            
-        } else if self.Sort == "Monster" {
-            
-            RangeBody.PhysicsBody_MonsterAttack()
-        }
-        
-        self.addChild(RangeBody)
-        Attack_Standoff_Range(RangeBody: RangeBody)
-        
+       
         // Action -> 어택에 대한 애니메이션
         let WaitAction = SKAction.wait(forDuration: 0.2)
         let RemoveAction = SKAction.run { AttackBody.removeFromParent(); RangeBody.removeFromParent()}
