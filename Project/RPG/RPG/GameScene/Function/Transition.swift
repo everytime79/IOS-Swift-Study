@@ -4,7 +4,12 @@ import GameplayKit
 extension GameScene {
     
     func Function_Transition(Desination: String){
-        let Scene GameScene
+        
+        let Scene = GameScene(fileNamed: Desination)
+        Scene?.CurrentMap = Desination
+        Scene?.scaleMode = .aspectFill
+        
+    
     }
     
     
