@@ -108,7 +108,7 @@ extension GameScene {
         
             let PositionX = PortalData["PositionX"] as! CGFloat
             let PositionY = PortalData["PositionY"] as! CGFloat
-            let Destination = PortalData["Destination"] as! String
+            let Destination = PortalData["Sort"] as! String
         // Sort not Destination?
             
             Portal = Field(imageNamed: "Portal")
