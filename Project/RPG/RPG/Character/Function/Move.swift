@@ -70,9 +70,6 @@ extension Character {
             
             LastDirection = CurrentDirection
             
-        case .W:
-            SpeedX = -SP
-            SpeedY = 0
             
             if CurrentDirection != LastDirection {
                 
