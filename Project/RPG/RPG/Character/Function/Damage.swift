@@ -70,9 +70,6 @@ extension Character {
             
             if Defender.Sort == "Player" {
                 
-                Defender.colorBlendFactor = 1
-                Defender.alpha = 1
-                Defender.color = UIColor.red
                 
                 let WaitAction = SKAction.wait(forDuration: 0.5)
                 let DeathAction = SKAction.run {
