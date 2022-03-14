@@ -29,4 +29,4 @@ extension Character {
         Health.anchorPoint = CGPoint(x: 0, y: 0.5)
         self.addChild(Health)
     }
-
+}
