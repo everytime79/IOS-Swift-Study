@@ -108,7 +108,7 @@ extension GameScene {
         
             let PositionX = PortalData["PositionX"] as! CGFloat
             let PositionY = PortalData["PositionY"] as! CGFloat
-            let Destination = PortalData["Sort"] as! String
+            let Destination = PortalData["Destination"] as! String
             
             Portal = Field(imageNamed: "Portal")
             Portal.Destination = Destination
@@ -124,4 +124,5 @@ extension GameScene {
     }
 // Monster_End
 }
+
 
