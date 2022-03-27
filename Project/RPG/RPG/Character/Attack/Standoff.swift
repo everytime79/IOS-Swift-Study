@@ -2,7 +2,7 @@ import SpriteKit
 import GameplayKit
 
 extension Character {
-  
+    
     func Attack_Standoff(){
         
         let AttackBody = Character(imageNamed: "Attack_StandoffE")
@@ -10,7 +10,7 @@ extension Character {
         
         self.addChild(AttackBody)
         Attack_Standoff_Animation(AttackBody: AttackBody)
-
+        
         // Range //
         let RangeBody = Character(color: UIColor.clear, size: CGSize(width: 50, height: 50))
         
@@ -89,12 +89,12 @@ extension Character {
             
             let RangeAction = SKAction.move(by: CGVector(dx: -Distance, dy: 0), duration: 0.2)
             RangeBody.run(RangeAction)
-
+            
         } else if self.AttackDirection == .S {
             
             let RangeAction = SKAction.move(by: CGVector(dx: 0, dy: -Distance), duration: 0.2)
             RangeBody.run(RangeAction)
-
+            
         } else if self.AttackDirection == .N {
             
             let RangeAction = SKAction.move(by: CGVector(dx: 0, dy: Distance), duration: 0.2)
