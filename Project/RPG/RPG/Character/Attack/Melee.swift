@@ -2,7 +2,7 @@ import SpriteKit
 import GameplayKit
 
 extension Character {
-  
+    
     func Attack_Melee(){
         
         let AttackBody = Character(imageNamed: "Attack_MeleeE1")
@@ -21,7 +21,7 @@ extension Character {
         } else if self.Sort == "Monster" {
             
             RangeBody.PhysicsBody_MonsterAttack()
-        
+            
         }
         
         self.addChild(RangeBody)
@@ -78,12 +78,12 @@ extension Character {
             
             let RangeAction = SKAction.move(by: CGVector(dx: -Distance, dy: 0), duration: 0.2)
             RangeBody.run(RangeAction)
-
+            
         } else if self.AttackDirection == .S {
             
             let RangeAction = SKAction.move(by: CGVector(dx: 0, dy: -Distance), duration: 0.2)
             RangeBody.run(RangeAction)
-
+            
         } else if self.AttackDirection == .N {
             
             let RangeAction = SKAction.move(by: CGVector(dx: 0, dy: Distance), duration: 0.2)
