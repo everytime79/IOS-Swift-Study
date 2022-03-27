@@ -3,7 +3,7 @@ import GameplayKit
 
 extension GameScene {
     
-// MARK: - Player
+    // MARK: - Player
     func Data_Player() {
         
         let Data = GameData["Player"] as! [String:Any]
@@ -35,10 +35,10 @@ extension GameScene {
         
         PlayerMinion = Character(color: UIColor.green, size: CGSize(width: 5, height: 5))
         MiniMap.addChild(PlayerMinion)
-
+        
     }
-// Player_End
-// MARK: - Monster
+    // Player_End
+    // MARK: - Monster
     func Data_Monster() {
         
         let MonsterGroupData = CurrentMapData["MonsterGroup"] as? [String:Any] ?? [String:Any]()
@@ -59,11 +59,11 @@ extension GameScene {
             let HP = Data["HP"] as! CGFloat
             
             let EXP = Data["EXP"] as! CGFloat
-
+            
             let SearchRange = Data["SearchRange"] as! CGFloat
             let AttackRange = Data["AttackRange"] as! CGFloat
             
-// MARK: - Monster.
+            // MARK: - Monster.
             Monster = Character(imageNamed: "Archer")
             Monster.PositionX = PositionX
             Monster.PositionY = PositionY
@@ -100,30 +100,30 @@ extension GameScene {
             
         }
     }
-// Monster_End
-// MARK: - Portal 맵과 맵간의 이동
+    // Monster_End
+    // MARK: - Portal 맵과 맵간의 이동
     func Data_Portal() {
         
         let PortalData = CurrentMapData["Portal"] as! [String:Any]
         
-            let PositionX = PortalData["PositionX"] as! CGFloat
-            let PositionY = PortalData["PositionY"] as! CGFloat
-            let Destination = PortalData["Sort"] as! String
+        let PositionX = PortalData["PositionX"] as! CGFloat
+        let PositionY = PortalData["PositionY"] as! CGFloat
+        let Destination = PortalData["Sort"] as! String
         // Sort not Destination?
-            
-            Portal = Field(imageNamed: "Portal")
-            Portal.Destination = Destination
-            Portal.position = CGPoint(x: PositionX, y: PositionY)
-            Portal.zPosition = 0
-            Portal.PhysicsBody_Portal()
-            
-            self.addChild(Monster)
-            
-            PortalMinion = Field(color: UIColor.blue, size: CGSize(width: 5, height: 5))
-                
-            MiniMap.addChild(PortalMinion)
+        
+        Portal = Field(imageNamed: "Portal")
+        Portal.Destination = Destination
+        Portal.position = CGPoint(x: PositionX, y: PositionY)
+        Portal.zPosition = 0
+        Portal.PhysicsBody_Portal()
+        
+        self.addChild(Monster)
+        
+        PortalMinion = Field(color: UIColor.blue, size: CGSize(width: 5, height: 5))
+        
+        MiniMap.addChild(PortalMinion)
     }
-// Monster_End
+    // Monster_End
 }
 
 
