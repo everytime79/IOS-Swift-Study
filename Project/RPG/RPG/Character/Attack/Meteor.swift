@@ -31,7 +31,7 @@ extension Character {
                 
                 // Range
                 let RangeBody = Character(color:  UIColor.clear, size: CGSize(width: 50, height: 50))
-
+                
                 if self.Sort == "Player" {
                     
                     RangeBody.PhysicsBody_PlayerAttack()
@@ -48,7 +48,7 @@ extension Character {
             AttackBody.run(SKAction.sequence([FadeInAction, FallAction, WaitAction, ShakeAction, DamageAction, RemoveAction]))
             
         }
-            
+        
         // Delay -> 딜레이에 대한 애니메이션
         let MoveWaitAction = SKAction.wait(forDuration: 0.2)
         let MoveDelayAction = SKAction.run { self.MoveDelayIs = false}
@@ -63,7 +63,7 @@ extension Character {
         self.run(SKAction.sequence([SkillWaitAction, SkillDelayAction])) // 0.5 초 기다린 후 -> 다시 가능하게
         
     }
-        
+    
     func Attack_Meteor_Animation() {
         
         let ShakeX1 = SKAction.move(by: CGVector.init(dx: -3, dy: 0), duration: 0.05)
