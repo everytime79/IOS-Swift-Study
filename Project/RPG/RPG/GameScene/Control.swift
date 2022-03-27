@@ -6,7 +6,7 @@ import GameplayKit
 // GameScene의 연장, 단지 별개의 파일로 나눴다.
 extension GameScene {
     
-// MARK: - Control Ball Angle
+    // MARK: - Control Ball Angle
     func ControlBallAngle(Degree: CGFloat) {
         
         if (Degree >= -45 && Degree < 45) {
@@ -16,11 +16,11 @@ extension GameScene {
         } else if (Degree >= 45 && Degree < 135) {
             
             Player.CurrentDirection =  Direction.N
-
+            
         } else if (Degree >= 135 && Degree < 180) {
             
             Player.CurrentDirection =  Direction.W
-
+            
         } else if (Degree >= -180 && Degree < -135) {
             
             Player.CurrentDirection =  Direction.W
@@ -29,12 +29,12 @@ extension GameScene {
             
             Player.CurrentDirection =  Direction.S
         }
-    
+        
     }
-// Control Ball Angle_End
+    // Control Ball Angle_End
     
     
-// MARK: - Touch
+    // MARK: - Touch
     // override func -> xcode 만의 func, override 가 없는 func이란 직접 만드는 func
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
@@ -69,7 +69,7 @@ extension GameScene {
                     if Player.SkillDelayIs == false { // false - > use Skill
                         Player.Attack_Meteor()
                         Player.Function_DelayEffect(Button: "SkillButton", Delay: 10)
-
+                        
                     }
                 }
             }
@@ -113,7 +113,7 @@ extension GameScene {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) { // 터치 후 똈을 경우
-                                
+        
         for touch in (touches) {
             
             let Location = touch.location(in: self)
@@ -122,12 +122,12 @@ extension GameScene {
                 
                 let MoveCenterActoin = SKAction.move(to: ControlBase.position, duration: 0.2)
                 MoveCenterActoin.timingMode = .easeOut // 움직이면서 느려지는 효과
-                    
+                
                 ControlBall.run(MoveCenterActoin)
                 Player.CurrentDirection = Direction.ST
                 
             }
         }
     }
-// Touch_End
+    // Touch_End
 }
