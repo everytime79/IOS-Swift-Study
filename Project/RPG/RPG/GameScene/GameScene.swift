@@ -9,7 +9,7 @@ import GameplayKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
-// MARK: - Variable
+    // MARK: - Variable
     var GameData = NSMutableDictionary()//변경이 될 수 있는 dic
     var MapData = [String:Any]()
     var CurrentMapData = [String:Any]()
@@ -44,9 +44,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var Status_Gold = SKLabelNode(fontNamed: "04b_19")
     var Gold = SKSpriteNode(imageNamed: "Gold")
     
-// Variable_End
+    // Variable_End
     
-// MARK:- didMove
+    // MARK:- didMove
     // didMove 화면이 보이자 마자 실행
     override func didMove(to view: SKView) {
         
@@ -102,14 +102,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         SkillButton.zPosition = 100
         SkillButton.alpha = 1
         LocalCamera.addChild(SkillButton)
-
+        
         // Mini Map
         MiniMap = SKSpriteNode(color: UIColor.black, size: CGSize(width: 200, height: 200))
         MiniMap.alpha = 0.6 // 불투명도
         MiniMap.zPosition = 99
         //MiniMap.position = CGPoint(x: (MiniMap.size.width / 2) - (view.frame.width) + 10, y: (view.frame.height) - (MiniMap.size.height / 2) - 10)
         MiniMap.position = CGPoint(x: -500, y: 200)
-    
+        
         LocalCamera.addChild(MiniMap)
         
         // Data
