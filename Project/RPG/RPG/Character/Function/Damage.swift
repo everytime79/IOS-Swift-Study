@@ -67,7 +67,6 @@ extension Character {
     func Damage_Death(Attacker: Character, Defender: Character, MonsterMinionGroup: [Character]) {
         
         if Defender.CurrentHP <= 0 {
-            
             if Defender.Sort == "Player" {
                 
                 Defender.colorBlendFactor = 1
