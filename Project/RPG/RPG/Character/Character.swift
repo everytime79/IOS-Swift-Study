@@ -46,15 +46,7 @@ class Character: SKSpriteNode {
     var SpeedX = CGFloat()
     var SpeedY = CGFloat()
     
-    // Mode //
-    var MoveDelayIs = Bool(false) // 값이 2개. 참 거짓 트루 폴스-> 딜레이가 있는가 없는가,
-    var AttackDelayIs = Bool(false)
-    var AttackDamageIs = Bool(true)
-    var SkillDelayIs = Bool(false)
-    var StopDelayIs = Bool(false)
-    var WalkingIs = Bool(true)
-    var GoldActiveIs = Bool(true)
-    
+ 
 // Variable_End
 }
 
