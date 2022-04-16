@@ -68,7 +68,6 @@ extension Character {
         
         if Defender.CurrentHP <= 0 {
             if Defender.Sort == "Player" {
-                
                 Defender.colorBlendFactor = 1
                 Defender.alpha = 1
                 Defender.color = UIColor.red
