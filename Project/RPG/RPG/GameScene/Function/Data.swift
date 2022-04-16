@@ -120,7 +120,6 @@ extension GameScene {
         self.addChild(Monster)
         
         PortalMinion = Field(color: UIColor.blue, size: CGSize(width: 5, height: 5))
-        
         MiniMap.addChild(PortalMinion)
     }
     // Monster_End
