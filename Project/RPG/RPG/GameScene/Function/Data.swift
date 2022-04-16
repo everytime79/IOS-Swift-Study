@@ -49,7 +49,7 @@ extension GameScene {
             let Data = value as! [String:Any]
             let PositionX = Data["PositionX"] as! CGFloat
             let PositionY = Data["PositionY"] as! CGFloat
-            let Sort = Data["Sort"] as! String
+        let Sort = Data["Sort"] as! String
             let AT = Data["AT"] as! CGFloat
             let DF = Data["DF"] as! CGFloat
             let Luck = Data["Luck"] as! CGFloat
