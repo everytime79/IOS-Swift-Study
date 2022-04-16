@@ -3,10 +3,10 @@ import GameplayKit
 
 extension Character {
     
-// MARK: - Damage Point
+    // MARK: - Damage Point
     func Damage_Point(Attacker: Character, Defender: Character, MonsterMinionGroup: [Character]) {
-    
-    // Damage Point
+        
+        // Damage Point
         let AT = Attacker.AT
         let AR = Attacker.Luck
         let DF = Defender.DF
@@ -22,48 +22,48 @@ extension Character {
         
         let DamagePoint = ATPoint - DFPoint
         
-    // Do Damage
+        // Do Damage
         Defender.CurrentHP -= CGFloat(DamagePoint)
         
-    // Damage Label
+        // Damage Label
         Damage_Lable(Attacker: Attacker, Defender: Defender, DamagePoint: DamagePoint)
         
-    // Damage Death
+        // Damage Death
         Damage_Death(Attacker: Attacker, Defender: Defender, MonsterMinionGroup: MonsterMinionGroup)
-    
+        
     }
     
-// MARK: - Damage Label
+    // MARK: - Damage Label
     func Damage_Lable(Attacker: Character, Defender: Character, DamagePoint: Int) {
         
         // Damage Label
-            let DamageLabel = SKLabelNode(fontNamed: "04b_19")
-            DamageLabel.zPosition = 13 // 상단에 출력하기 위함
-            DamageLabel.fontSize = 30 // 글자 크기
-            DamageLabel.text = "\(DamagePoint)"
+        let DamageLabel = SKLabelNode(fontNamed: "04b_19")
+        DamageLabel.zPosition = 13 // 상단에 출력하기 위함
+        DamageLabel.fontSize = 30 // 글자 크기
+        DamageLabel.text = "\(DamagePoint)"
+        
+        if self.Sort == "Player" {
             
-            if self.Sort == "Player" {
-                
-                DamageLabel.fontColor = UIColor.red
-                
-            } else if self.Sort == "Monster" {
-                
-                DamageLabel.fontColor = UIColor.cyan
-                
-            }
+            DamageLabel.fontColor = UIColor.red
             
-            Defender.addChild(DamageLabel)
+        } else if self.Sort == "Monster" {
             
-            let DamageAction = SKAction(named: "Effect_Damage")
-            let RemoveAction = SKAction.run { DamageLabel.removeFromParent() }
+            DamageLabel.fontColor = UIColor.cyan
             
-            DamageLabel.run(SKAction.sequence([DamageAction!, RemoveAction]))
-
+        }
+        
+        Defender.addChild(DamageLabel)
+        
+        let DamageAction = SKAction(named: "Effect_Damage")
+        let RemoveAction = SKAction.run { DamageLabel.removeFromParent() }
+        
+        DamageLabel.run(SKAction.sequence([DamageAction!, RemoveAction]))
+        
     }
     
     
     
-// MARK: - Death
+    // MARK: - Death
     func Damage_Death(Attacker: Character, Defender: Character, MonsterMinionGroup: [Character]) {
         
         if Defender.CurrentHP <= 0 {
@@ -102,7 +102,7 @@ extension Character {
                 }
                 
                 self.run(SKAction.sequence([WaitAction, DeathAction]))
-
+                
                 
                 // Gold Spawn
                 Spawn_Gold(Monster: Defender)
@@ -114,7 +114,7 @@ extension Character {
         }
     }
     
-// MARK: - Gold
+    // MARK: - Gold
     // Spawn Gold
     func Spawn_Gold(Monster: Character) {
         
@@ -150,9 +150,9 @@ extension Character {
         
         GoldLabel.run(SKAction.sequence([GainGoldAction!, RemoveAction]))
     }
-// <- Gold
-// MARK: - Level Up
-
+    // <- Gold
+    // MARK: - Level Up
+    
     // Level Up
     func LevelUp(Attacker: Character, Defender: Character) {
         
@@ -192,5 +192,5 @@ extension Character {
         
         LevelLabel.run(SKAction.sequence([LevelUpAction!, RemoveAction]))
     }
-// <- Level Up
+    // <- Level Up
 }
