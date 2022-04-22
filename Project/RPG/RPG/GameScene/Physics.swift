@@ -8,17 +8,6 @@ extension GameScene {
         
         // MARK: - Attack
         // Player
-        if contact.bodyA.categoryBitMask == BodyType.PlayerAttack.rawValue && contact.bodyB.categoryBitMask == BodyType.Monster.rawValue {
-            
-            let PlayerAttackBody = contact.bodyA.node as! Character
-            let Monster = contact.bodyB.node as! Character
-            
-            if PlayerAttackBody.AttackDamageIs == true {
-                
-                PlayerAttackBody.AttackDamageIs = false
-                Monster.Damage_Point(Attacker: Player, Defender: Monster, MonsterMinionGroup: MonsterMinionGroup)
-                PlayerAttackBody.removeFromParent()
-            }
             
         } else if contact.bodyB.categoryBitMask == BodyType.PlayerAttack.rawValue && contact.bodyA.categoryBitMask == BodyType.Monster.rawValue {
             
