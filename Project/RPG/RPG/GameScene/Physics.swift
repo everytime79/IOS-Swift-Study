@@ -21,7 +21,7 @@ extension GameScene {
             }
             
         } else if contact.bodyB.categoryBitMask == BodyType.PlayerAttack.rawValue && contact.bodyA.categoryBitMask == BodyType.Monster.rawValue {
-            
+             
             let PlayerAttackBody = contact.bodyB.node as! Character
             let Monster = contact.bodyA.node as! Character
             
