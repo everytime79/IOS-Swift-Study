@@ -36,7 +36,8 @@ class GameViewController: UIViewController {
         Scene.CurrentMap = CurrentMap
         Scene.scaleMode = .aspectFill // 화면 꽉차게
         
-
+        
+        let View = self.view as! SKView
         View.presentScene(Scene)
         View.ignoresSiblingOrder = true
         View.showsFPS = true
