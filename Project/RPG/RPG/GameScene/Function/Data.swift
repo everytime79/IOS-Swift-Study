@@ -110,12 +110,7 @@ extension GameScene {
         let PositionY = PortalData["PositionY"] as! CGFloat
         let Destination = PortalData["Sort"] as! String
         // Sort not Destination?
-        
-        Portal = Field(imageNamed: "Portal")
-        Portal.Destination = Destination
-        Portal.position = CGPoint(x: PositionX, y: PositionY)
-        Portal.zPosition = 0
-        Portal.PhysicsBody_Portal()
+       
         
         self.addChild(Monster)
         
