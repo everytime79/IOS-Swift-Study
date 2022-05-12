@@ -117,7 +117,6 @@ extension GameScene {
         Portal.zPosition = 0
         Portal.PhysicsBody_Portal()
         
-        
         PortalMinion = Field(color: UIColor.blue, size: CGSize(width: 5, height: 5))
         MiniMap.addChild(PortalMinion)
     }
