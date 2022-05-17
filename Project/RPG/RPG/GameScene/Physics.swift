@@ -41,7 +41,10 @@ extension GameScene {
             
             if MonsterAttackBody.AttackDamageIs == true {
                 
-               
+                MonsterAttackBody.AttackDamageIs = false
+                Player.Damage_Point(Attacker: Monster, Defender: Player, MonsterMinionGroup: MonsterMinionGroup)
+                
+                MonsterAttackBody.removeFromParent()
             }
             
         } else if contact.bodyB.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyA.categoryBitMask == BodyType.Player.rawValue {
