@@ -46,7 +46,6 @@ extension GameScene {
                 
                 MonsterAttackBody.removeFromParent()
             }
-            
         } else if contact.bodyB.categoryBitMask == BodyType.MonsterAttack.rawValue && contact.bodyA.categoryBitMask == BodyType.Player.rawValue {
             
             let MonsterAttackBody = contact.bodyB.node as! Character
