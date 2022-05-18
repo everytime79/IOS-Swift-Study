@@ -59,12 +59,7 @@ extension GameScene {
                 MonsterAttackBody.removeFromParent()
             }
         }
-        // MARK: - Field
-        
-        // Gold
-        if contact.bodyA.categoryBitMask == BodyType.Player.rawValue && contact.bodyB.categoryBitMask == BodyType.Gold.rawValue {
-            
-            if let Gold = contact.bodyB.node as? Character {
+       
                 
                 Gold.removeFromParent()
                 
