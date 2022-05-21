@@ -25,7 +25,6 @@ class GameViewController: UIViewController {
             return .all
         }
     }
-
     // <- Rotaion & Orientation
     
     override func viewDidLoad() {
