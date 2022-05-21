@@ -2,7 +2,7 @@ import SpriteKit
 import GameplayKit
 
 extension Character {
- 
+//방향별 움직임
     func Function_Move() {
         
         switch CurrentDirection {
