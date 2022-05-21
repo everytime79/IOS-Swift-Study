@@ -24,7 +24,6 @@ class GameViewController: UIViewController {
         } else {
             return .all
         }
-    }
     
     // <- Rotaion & Orientation
     
