@@ -9,7 +9,8 @@ extension GameScene {
         Scene?.CurrentMap = Desination
         Scene?.scaleMode = .aspectFill
         
-       
+        let Transition = SKTransition.fade(with: UIColor.black, duration: 1)
+        self.view?.presentScene(Scene!, transition: Transition)
     }
     // 11:34
 }
