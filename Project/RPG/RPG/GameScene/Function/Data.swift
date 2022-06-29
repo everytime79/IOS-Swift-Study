@@ -15,18 +15,7 @@ extension GameScene {
         let Luck = Data["Luck"] as! CGFloat
         let HP = Data["HP"] as! CGFloat
         
-        Player = Character(imageNamed: "RedSwan")
-        Player.Sort = Sort
-        Player.Costume = Costume
-        Player.AT = AT
-        Player.DF = DF
-        Player.Luck = Luck
-        Player.SP = SP
-        Player.HP = HP
-        Player.CurrentHP = HP
-        
-        Player.LV = 1
-        Player.EXP = 0
+       
         
         Player.zPosition = 10
         Player.Function_HealthBar()
