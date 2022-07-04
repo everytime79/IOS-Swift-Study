@@ -51,7 +51,11 @@ extension Character {
                 let MoveAtlas = SKTextureAtlas(named: self.Costume + "MoveE")
                 var MoveFrame = [SKTexture]()
                 
-           
+                //반복 실행
+                for i in 1...MoveAtlas.textureNames.count / 2 {
+                    //1부터 4까지
+                    let TextureName = self.Costume + "MoveE" + "\(i)" //i는 숫자임으로 문자로 바꿔준다.
+                    MoveFrame .append(MoveAtlas.textureNamed(TextureName))
                         
                 }
                 
