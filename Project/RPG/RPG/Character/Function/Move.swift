@@ -59,12 +59,7 @@ extension Character {
                         
                 }
                 
-                let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
-                // repeat한다. with 무브프레임, 바뀌는 시간 0.125
-                self.run(MoveAnimationAction, withKey: "Move")
-                // 캐릭터가 실행, 그리고 이 액션의 이름은 Move
-                
-                AttackDirection = CurrentDirection
+       
                 
             }
             
