@@ -48,10 +48,7 @@ extension Character {
             // 동쪽으로 가는 동안,
             if CurrentDirection != LastDirection {
                 
-                let MoveAtlas = SKTextureAtlas(named: self.Costume + "MoveE")
-                var MoveFrame = [SKTexture]()
-                
-           
+            
                         
                 }
                 
