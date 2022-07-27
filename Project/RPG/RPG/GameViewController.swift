@@ -27,4 +27,19 @@ class GameViewController: UIViewController {
     }
     // <- Rotaion & Orientation
     
-   
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            let CurrentMap = "Village" // 시작할 맵이 무엇인지
+            Scene = GameScene(fileNamed: CurrentMap)!
+            Scene.CurrentMap = CurrentMap
+            Scene.scaleMode = .aspectFill // 화면 꽉차게
+            
+            let View = self.view as! SKView
+            View.presentScene(Scene)
+            View.ignoresSiblingOrder = true
+            View.showsFPS = true
+            View.showsNodeCount = true
+        }
+    }
+
