@@ -13,12 +13,6 @@ class Character: SKSpriteNode {
     var AttackDirection = Direction.S
     
     // Status //
-    var PositionX = CGFloat()
-    var PositionY = CGFloat()
-    var Sort = String()
-    var Costume = String()
-    var Class = String()
-    
     var AT = CGFloat()
     var DF = CGFloat()
     var Luck = CGFloat()
